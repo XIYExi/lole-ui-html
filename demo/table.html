@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lole-UI原生 Table组件</title>
+    <link rel="stylesheet" href="../src/table.css"/>
+    <style>
+        fieldset{
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<fieldset>
+    <legend>基本使用</legend>
+    <table class="lole-table celled table">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>年龄</th>
+            <th>Job</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td data-label="Name">James</td>
+            <td data-label="Age">24</td>
+            <td data-label="Job">Engineer</td>
+        </tr>
+        <tr>
+            <td data-label="Name">吉尔</td>
+            <td data-label="Age">26</td>
+            <td data-label="Job">Engineer</td>
+        </tr>
+        <tr>
+            <td data-label="Name">Elyse</td>
+            <td data-label="Age">24</td>
+            <td data-label="Job">Designer</td>
+        </tr>
+        </tbody>
+    </table>
+</fieldset>
+
+<fieldset>
+    <legend>无边框</legend>
+    <table class="lole-table celled striped table">
+        <thead>
+        <tr><th colspan="3">
+            Git Repository
+        </th>
+        </tr></thead>
+        <tbody>
+        <tr>
+            <td class="collapsing">
+                node_modules
+            </td>
+            <td>Initial commit</td>
+            <td class="right aligned collapsing">10 hours ago</td>
+        </tr>
+        <tr>
+            <td>
+                test
+            </td>
+            <td>Initial commit</td>
+            <td class="right aligned">10 hours ago</td>
+        </tr>
+        <tr>
+            <td>
+                build
+            </td>
+            <td>Initial commit</td>
+            <td class="right aligned">10 hours ago</td>
+        </tr>
+        <tr>
+            <td>
+                package.json
+            </td>
+            <td>Initial commit</td>
+            <td class="right aligned">10 hours ago</td>
+        </tr>
+        <tr>
+            <td>
+                Gruntfile.js
+            </td>
+            <td>Initial commit</td>
+            <td class="right aligned">10 hours ago</td>
+        </tr>
+        </tbody>
+    </table>
+</fieldset>
+
+<fieldset>
+    <legend>自定义</legend>
+    <table class="lole-table definition table">
+        <thead>
+        <tr><th></th>
+            <th>参数</th>
+            <th>Description</th>
+        </tr></thead>
+        <tbody>
+        <tr>
+            <td>重置评分</td>
+            <td>None</td>
+            <td>重置为默认值</td>
+        </tr>
+        <tr>
+            <td>设置评分</td>
+            <td>rating (integer)</td>
+            <td>将评分设定为指定的星级</td>
+        </tr>
+        </tbody></table>
+</fieldset>
+
+<fieldset>
+    <legend>结构化</legend>
+    <table class="lole-table celled structured table">
+        <thead>
+        <tr>
+            <th rowspan="2">Name</th>
+            <th rowspan="2">类型</th>
+            <th rowspan="2">Files</th>
+            <th colspan="3">Languages</th>
+        </tr>
+        <tr>
+            <th>Ruby</th>
+            <th>JavaScript</th>
+            <th>Python</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Alpha 团队</td>
+            <td>项目 1</td>
+            <td class="right aligned">2</td>
+            <td class="center aligned">
+                确实
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td rowspan="3">Beta 团队</td>
+            <td>项目 1</td>
+            <td class="right aligned">52</td>
+            <td class="center aligned">
+                合理
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>项目 2</td>
+            <td class="right aligned">12</td>
+            <td></td>
+            <td class="center aligned">
+                可行
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>项目 3</td>
+            <td class="right aligned">21</td>
+            <td class="center aligned">
+                同意
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        </tbody>
+    </table>
+</fieldset>
+
+<fieldset>
+    <legend>Primary / Info / Warning / Error</legend>
+    <table class="lole-table celled table">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Status</th>
+            <th>Notes</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>未命名</td>
+            <td>未知</td>
+            <td class="info">None</td>
+        </tr>
+        <tr class="primary">
+            <td>吉米</td>
+            <td>证实的</td>
+            <td>None</td>
+        </tr>
+        <tr>
+            <td>杰米</td>
+            <td>未知</td>
+            <td class="warning">Requires call</td>
+        </tr>
+        <tr class="error">
+            <td>吉尔</td>
+            <td>未知</td>
+            <td>None</td>
+        </tr>
+        </tbody>
+    </table>
+</fieldset>
+
+<fieldset>
+    <legend>激活 / 禁用</legend>
+    <table class="lole-table celled table">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Status</th>
+            <th>Notes</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="disabled">杰米</td>
+            <td>已审核</td>
+            <td>必须回答</td>
+        </tr>
+        <tr class="active">
+            <td>约翰</td>
+            <td>Selected</td>
+            <td>None</td>
+        </tr>
+        <tr>
+            <td>杰米</td>
+            <td>已审核</td>
+            <td>必须回答</td>
+        </tr>
+        <tr>
+            <td class="disabled">吉尔</td>
+            <td>已审核</td>
+            <td>None</td>
+        </tr>
+        </tbody>
+    </table>
+</fieldset>
+
+<fieldset>
+    <legend>固定的</legend>
+    <table class="lole-table celled fixed table">
+        <thead>
+        <tr><th>Name</th>
+            <th>Status</th>
+            <th>Description</th>
+        </tr></thead>
+        <tbody>
+        <tr>
+            <td>约翰</td>
+            <td>已审核</td>
+            <td>John is an interesting boy but sometimes you don't really have enough room to describe everything you'd like</td>
+        </tr>
+        <tr>
+            <td>杰米</td>
+            <td>已审核</td>
+            <td>Jamie is a kind girl but sometimes you don't really have enough room to describe everything you'd like</td>
+        </tr>
+        <tr>
+            <td>吉尔</td>
+            <td>Denied</td>
+            <td>Jill is an alright girl but sometimes you don't really have enough room to describe everything you'd like</td>
+        </tr>
+        </tbody>
+    </table>
+</fieldset>
+
+<fieldset>
+    <legend>可选择</legend>
+    <table class="lole-table selectable celled table">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Status</th>
+            <th>Notes</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>约翰</td>
+            <td>没反应</td>
+            <td>None</td>
+        </tr>
+        <tr>
+            <td>杰米</td>
+            <td>已审核</td>
+            <td>必须回答</td>
+        </tr>
+        <tr>
+            <td>吉尔</td>
+            <td>Denied</td>
+            <td>None</td>
+        </tr>
+        <tr class="warning">
+            <td>约翰</td>
+            <td>没反应</td>
+            <td>None</td>
+        </tr>
+        <tr>
+            <td>杰米</td>
+            <td class="primary">已审核</td>
+            <td class="warning">必须回答</td>
+        </tr>
+        <tr>
+            <td>吉尔</td>
+            <td class="info">Denied</td>
+            <td>None</td>
+        </tr>
+        </tbody>
+    </table>
+</fieldset>
+
+<fieldset>
+    <legend>垂直对齐</legend>
+    <table class="lole-table striped table">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Status</th>
+            <th>Notes</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="top aligned">
+            <td>约翰</td>
+            <td>已审核</td>
+            <td class="top aligned">
+                Notes<br>
+                1<br>
+                2<br>
+            </td>
+        </tr>
+        <tr>
+            <td>杰米</td>
+            <td class="bottom aligned">已审核</td>
+            <td>
+                Notes<br>
+                1<br>
+                2<br>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</fieldset>
+
+<fieldset>
+    <legend>文本对齐</legend>
+    <table class="lole-table striped table">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Status</th>
+            <th class="right aligned">Notes</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="center aligned">
+            <td>约翰</td>
+            <td>已审核</td>
+            <td class="right aligned">None</td>
+        </tr>
+        <tr>
+            <td>杰米</td>
+            <td>已审核</td>
+            <td class="right aligned">必须回答</td>
+        </tr>
+        <tr>
+            <td>吉尔</td>
+            <td>Denied</td>
+            <td class="right aligned">None</td>
+        </tr>
+        </tbody>
+    </table>
+</fieldset>
+
+<fieldset>
+    <legend>条纹</legend>
+    <table class="lole-table striped table">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>加入日期</th>
+            <th>电子邮箱</th>
+            <th>Called</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>约翰·莉丽亚</td>
+            <td>2013年9月14日</td>
+            <td>jhlilk22@yahoo.com</td>
+            <td>否</td>
+        </tr>
+        <tr>
+            <td>杰米·哈灵顿</td>
+            <td>2014年1月11日</td>
+            <td>jamieharingonton@yahoo.com</td>
+            <td>是</td>
+        </tr>
+        <tr>
+            <td>吉尔·刘易斯</td>
+            <td>2014年5月11日</td>
+            <td>jilsewris22@yahoo.com</td>
+            <td>是</td>
+        </tr>
+        <tr>
+            <td>约翰·莉丽亚</td>
+            <td>2013年9月14日</td>
+            <td>jhlilk22@yahoo.com</td>
+            <td>否</td>
+        </tr>
+        <tr>
+            <td>约翰·莉丽亚</td>
+            <td>2013年9月14日</td>
+            <td>jhlilk22@yahoo.com</td>
+            <td>否</td>
+        </tr>
+        <tr>
+            <td>杰米·哈灵顿</td>
+            <td>2014年1月11日</td>
+            <td>jamieharingonton@yahoo.com</td>
+            <td>是</td>
+        </tr>
+        <tr>
+            <td>吉尔·刘易斯</td>
+            <td>2014年5月11日</td>
+            <td>jilsewris22@yahoo.com</td>
+            <td>是</td>
+        </tr>
+        <tr>
+            <td>约翰·莉丽亚</td>
+            <td>2013年9月14日</td>
+            <td>jhlilk22@yahoo.com</td>
+            <td>否</td>
+        </tr>
+        </tbody>
+    </table>
+</fieldset>
+
+<fieldset>
+    <legend>单元格拆解</legend>
+    <table class="lole-table table">
+        <tbody>
+        <tr>
+            <td class="collapsing">
+                <i class="folder icon"></i> node_modules
+            </td>
+            <td>Initial commit</td>
+            <td>10 hours ago</td>
+        </tr>
+        <tr>
+            <td>
+                <i class="folder icon"></i> test
+            </td>
+            <td>Initial commit</td>
+            <td>10 hours ago</td>
+        </tr>
+        <tr>
+            <td>
+                <i class="folder icon"></i> build
+            </td>
+            <td>Initial commit</td>
+            <td>10 hours ago</td>
+        </tr>
+        </tbody>
+    </table>
+</fieldset>
+
+<fieldset>
+    <legend>列数</legend>
+    <table class="lole-table five column table">
+        <thead>
+        <tr><th>Name</th>
+            <th>Status</th>
+            <th>年龄</th>
+            <th>Gender</th>
+            <th>Notes</th>
+        </tr></thead>
+        <tbody>
+        <tr>
+            <td>约翰</td>
+            <td>已审核</td>
+            <td>22</td>
+            <td>Male</td>
+            <td>None</td>
+        </tr>
+        <tr>
+            <td>杰米</td>
+            <td>已审核</td>
+            <td>32</td>
+            <td>Male</td>
+            <td>必须回答</td>
+        </tr>
+        <tr>
+            <td>吉尔</td>
+            <td>Denied</td>
+            <td>22</td>
+            <td>Female</td>
+            <td>None</td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr><th>3个 人</th>
+            <th>2个 已审批</th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr></tfoot>
+    </table>
+</fieldset>
+
+<fieldset>
+    <legend>列宽</legend>
+    <table class="lole-table table">
+        <thead>
+        <tr><th class="ten wide">Name</th>
+            <th class="ten wide">Status</th>
+        </tr></thead>
+        <tbody>
+        <tr>
+            <td>约翰</td>
+            <td>已审核</td>
+        </tr>
+        <tr>
+            <td>杰米</td>
+            <td>已审核</td>
+        </tr>
+        <tr>
+            <td>吉尔</td>
+            <td>Denied</td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr><th>3个 人</th>
+            <th>2个 已审批</th>
+        </tr></tfoot>
+    </table>
+</fieldset>
+
+<fieldset>
+    <legend>主题色</legend>
+    <table class="lole-table primary table">
+        <thead>
+        <tr><th>Food</th>
+            <th>卡路里</th>
+            <th>蛋白质</th>
+        </tr></thead><tbody>
+    <tr>
+        <td>苹果</td>
+        <td>200</td>
+        <td>0g</td>
+    </tr>
+    <tr>
+        <td>橘黄色</td>
+        <td>310</td>
+        <td>0g</td>
+    </tr>
+    </tbody>
+    </table>
+    <table class="lole-table orange table">
+        <thead>
+        <tr><th>Food</th>
+            <th>卡路里</th>
+            <th>蛋白质</th>
+        </tr></thead><tbody>
+    <tr>
+        <td>苹果</td>
+        <td>200</td>
+        <td>0g</td>
+    </tr>
+    <tr>
+        <td>橘黄色</td>
+        <td>310</td>
+        <td>0g</td>
+    </tr>
+    </tbody>
+    </table>
+    <table class="lole-table yellow table">
+        <thead>
+        <tr><th>Food</th>
+            <th>卡路里</th>
+            <th>蛋白质</th>
+        </tr></thead><tbody>
+    <tr>
+        <td>苹果</td>
+        <td>200</td>
+        <td>0g</td>
+    </tr>
+    <tr>
+        <td>橘黄色</td>
+        <td>310</td>
+        <td>0g</td>
+    </tr>
+    </tbody>
+    </table>
+    <table class="lole-table indigo table">
+        <thead>
+        <tr><th>Food</th>
+            <th>卡路里</th>
+            <th>蛋白质</th>
+        </tr></thead><tbody>
+    <tr>
+        <td>苹果</td>
+        <td>200</td>
+        <td>0g</td>
+    </tr>
+    <tr>
+        <td>橘黄色</td>
+        <td>310</td>
+        <td>0g</td>
+    </tr>
+    </tbody>
+    </table>
+    <table class="lole-table purple table">
+        <thead>
+        <tr><th>Food</th>
+            <th>卡路里</th>
+            <th>蛋白质</th>
+        </tr></thead><tbody>
+    <tr>
+        <td>苹果</td>
+        <td>200</td>
+        <td>0g</td>
+    </tr>
+    <tr>
+        <td>橘黄色</td>
+        <td>310</td>
+        <td>0g</td>
+    </tr>
+    </tbody>
+    </table>
+    <table class="lole-table teal table">
+        <thead>
+        <tr><th>Food</th>
+            <th>卡路里</th>
+            <th>蛋白质</th>
+        </tr></thead><tbody>
+    <tr>
+        <td>苹果</td>
+        <td>200</td>
+        <td>0g</td>
+    </tr>
+    <tr>
+        <td>橘黄色</td>
+        <td>310</td>
+        <td>0g</td>
+    </tr>
+    </tbody>
+    </table>
+    <table class="lole-table red table">
+        <thead>
+        <tr><th>Food</th>
+            <th>卡路里</th>
+            <th>蛋白质</th>
+        </tr></thead><tbody>
+    <tr>
+        <td>苹果</td>
+        <td>200</td>
+        <td>0g</td>
+    </tr>
+    <tr>
+        <td>橘黄色</td>
+        <td>310</td>
+        <td>0g</td>
+    </tr>
+    </tbody>
+    </table>
+    <table class="lole-table pink table">
+        <thead>
+        <tr><th>Food</th>
+            <th>卡路里</th>
+            <th>蛋白质</th>
+        </tr></thead><tbody>
+    <tr>
+        <td>苹果</td>
+        <td>200</td>
+        <td>0g</td>
+    </tr>
+    <tr>
+        <td>橘黄色</td>
+        <td>310</td>
+        <td>0g</td>
+    </tr>
+    </tbody>
+    </table>
+    <table class="lole-table cyan table">
+        <thead>
+        <tr><th>Food</th>
+            <th>卡路里</th>
+            <th>蛋白质</th>
+        </tr></thead><tbody>
+    <tr>
+        <td>苹果</td>
+        <td>200</td>
+        <td>0g</td>
+    </tr>
+    <tr>
+        <td>橘黄色</td>
+        <td>310</td>
+        <td>0g</td>
+    </tr>
+    </tbody>
+    </table>
+    <table class="lole-table green table">
+        <thead>
+        <tr><th>Food</th>
+            <th>卡路里</th>
+            <th>蛋白质</th>
+        </tr></thead><tbody>
+    <tr>
+        <td>苹果</td>
+        <td>200</td>
+        <td>0g</td>
+    </tr>
+    <tr>
+        <td>橘黄色</td>
+        <td>310</td>
+        <td>0g</td>
+    </tr>
+    </tbody>
+    </table>
+    <table class="lole-table gray table">
+        <thead>
+        <tr><th>Food</th>
+            <th>卡路里</th>
+            <th>蛋白质</th>
+        </tr></thead><tbody>
+    <tr>
+        <td>苹果</td>
+        <td>200</td>
+        <td>0g</td>
+    </tr>
+    <tr>
+        <td>橘黄色</td>
+        <td>310</td>
+        <td>0g</td>
+    </tr>
+    </tbody>
+    </table>
+    <table class="lole-table black table">
+        <thead>
+        <tr><th>Food</th>
+            <th>卡路里</th>
+            <th>蛋白质</th>
+        </tr></thead><tbody>
+    <tr>
+        <td>苹果</td>
+        <td>200</td>
+        <td>0g</td>
+    </tr>
+    <tr>
+        <td>橘黄色</td>
+        <td>310</td>
+        <td>0g</td>
+    </tr>
+    </tbody>
+    </table>
+</fieldset>
+
+<fieldset>
+    <legend>色彩反转</legend>
+    <table class="lole-table inverted table">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Status</th>
+            <th>Notes</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>约翰</td>
+            <td>已审核</td>
+            <td>None</td>
+        </tr>
+        <tr>
+            <td>杰米</td>
+            <td>已审核</td>
+            <td>必须回答</td>
+        </tr>
+        <tr>
+            <td>吉尔</td>
+            <td>Denied</td>
+            <td>None</td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr><th>3个 人</th>
+            <th>2个 已审批</th>
+            <th></th>
+        </tr></tfoot>
+    </table>
+    <table class="lole-table inverted primary table">
+        <thead>
+        <tr><th>Food</th>
+            <th>卡路里</th>
+            <th>蛋白质</th>
+        </tr></thead><tbody>
+    <tr>
+        <td>苹果</td>
+        <td>200</td>
+        <td>0g</td>
+    </tr>
+    <tr>
+        <td>橘黄色</td>
+        <td>310</td>
+        <td>0g</td>
+    </tr>
+    </tbody>
+    </table>
+    <table class="lole-table inverted orange table">
+        <thead>
+        <tr><th>Food</th>
+            <th>卡路里</th>
+            <th>蛋白质</th>
+        </tr></thead><tbody>
+    <tr>
+        <td>苹果</td>
+        <td>200</td>
+        <td>0g</td>
+    </tr>
+    <tr>
+        <td>橘黄色</td>
+        <td>310</td>
+        <td>0g</td>
+    </tr>
+    </tbody>
+    </table>
+    <table class="lole-table inverted yellow table">
+        <thead>
+        <tr><th>Food</th>
+            <th>卡路里</th>
+            <th>蛋白质</th>
+        </tr></thead><tbody>
+    <tr>
+        <td>苹果</td>
+        <td>200</td>
+        <td>0g</td>
+    </tr>
+    <tr>
+        <td>橘黄色</td>
+        <td>310</td>
+        <td>0g</td>
+    </tr>
+    </tbody>
+    </table>
+    <table class="lole-table inverted red table">
+        <thead>
+        <tr><th>Food</th>
+            <th>卡路里</th>
+            <th>蛋白质</th>
+        </tr></thead><tbody>
+    <tr>
+        <td>苹果</td>
+        <td>200</td>
+        <td>0g</td>
+    </tr>
+    <tr>
+        <td>橘黄色</td>
+        <td>310</td>
+        <td>0g</td>
+    </tr>
+    </tbody>
+    </table>
+    <table class="lole-table inverted green table">
+        <thead>
+        <tr><th>Food</th>
+            <th>卡路里</th>
+            <th>蛋白质</th>
+        </tr></thead><tbody>
+    <tr>
+        <td>苹果</td>
+        <td>200</td>
+        <td>0g</td>
+    </tr>
+    <tr>
+        <td>橘黄色</td>
+        <td>310</td>
+        <td>0g</td>
+    </tr>
+    </tbody>
+    </table>
+    <table class="lole-table inverted teal table">
+        <thead>
+        <tr><th>Food</th>
+            <th>卡路里</th>
+            <th>蛋白质</th>
+        </tr></thead><tbody>
+    <tr>
+        <td>苹果</td>
+        <td>200</td>
+        <td>0g</td>
+    </tr>
+    <tr>
+        <td>橘黄色</td>
+        <td>310</td>
+        <td>0g</td>
+    </tr>
+    </tbody>
+    </table>
+    <table class="lole-table inverted cyan table">
+        <thead>
+        <tr><th>Food</th>
+            <th>卡路里</th>
+            <th>蛋白质</th>
+        </tr></thead><tbody>
+    <tr>
+        <td>苹果</td>
+        <td>200</td>
+        <td>0g</td>
+    </tr>
+    <tr>
+        <td>橘黄色</td>
+        <td>310</td>
+        <td>0g</td>
+    </tr>
+    </tbody>
+    </table>
+    <table class="lole-table inverted indigo table">
+        <thead>
+        <tr><th>Food</th>
+            <th>卡路里</th>
+            <th>蛋白质</th>
+        </tr></thead><tbody>
+    <tr>
+        <td>苹果</td>
+        <td>200</td>
+        <td>0g</td>
+    </tr>
+    <tr>
+        <td>橘黄色</td>
+        <td>310</td>
+        <td>0g</td>
+    </tr>
+    </tbody>
+    </table>
+    <table class="lole-table inverted purple table">
+        <thead>
+        <tr><th>Food</th>
+            <th>卡路里</th>
+            <th>蛋白质</th>
+        </tr></thead><tbody>
+    <tr>
+        <td>苹果</td>
+        <td>200</td>
+        <td>0g</td>
+    </tr>
+    <tr>
+        <td>橘黄色</td>
+        <td>310</td>
+        <td>0g</td>
+    </tr>
+    </tbody>
+    </table>
+    <table class="lole-table inverted pink table">
+        <thead>
+        <tr><th>Food</th>
+            <th>卡路里</th>
+            <th>蛋白质</th>
+        </tr></thead><tbody>
+    <tr>
+        <td>苹果</td>
+        <td>200</td>
+        <td>0g</td>
+    </tr>
+    <tr>
+        <td>橘黄色</td>
+        <td>310</td>
+        <td>0g</td>
+    </tr>
+    </tbody>
+    </table>
+    <table class="lole-table inverted gray table">
+        <thead>
+        <tr><th>Food</th>
+            <th>卡路里</th>
+            <th>蛋白质</th>
+        </tr></thead><tbody>
+    <tr>
+        <td>苹果</td>
+        <td>200</td>
+        <td>0g</td>
+    </tr>
+    <tr>
+        <td>橘黄色</td>
+        <td>310</td>
+        <td>0g</td>
+    </tr>
+    </tbody>
+    </table>
+</fieldset>
+
+<fieldset>
+    <legend>排序</legend>
+    <table class="lole-table sortable celled table">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Status</th>
+            <th>Notes</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>约翰</td>
+            <td>没反应</td>
+            <td>None</td>
+        </tr>
+        <tr>
+            <td>杰米</td>
+            <td class="positive">已审核</td>
+            <td class="warning">必须回答</td>
+        </tr>
+        <tr>
+            <td>吉尔</td>
+            <td class="negative">Denied</td>
+            <td>None</td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr><th>3个 人</th>
+            <th>2个 已审批</th>
+            <th></th>
+        </tr></tfoot>
+    </table>
+</fieldset>
+
+<fieldset>
+    <legend>宽松 / 紧凑</legend>
+    <table class="lole-table padded table">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Status</th>
+            <th>Notes</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>约翰</td>
+            <td>已审核</td>
+            <td>他非常有趣，我很享受跟他打电话，希望还有机会再聊。</td>
+        </tr>
+        <tr>
+            <td>杰米</td>
+            <td>已审核</td>
+            <td>Jamie 对购买我们的产品不感兴趣。</td>
+        </tr>
+        </tbody>
+    </table>
+    <table class="lole-table compact table">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Status</th>
+            <th>Notes</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>约翰</td>
+            <td>已审核</td>
+            <td>None</td>
+        </tr>
+        <tr>
+            <td>杰米</td>
+            <td>已审核</td>
+            <td>必须回答</td>
+        </tr>
+        <tr>
+            <td>约翰</td>
+            <td>已审核</td>
+            <td>None</td>
+        </tr>
+        <tr>
+            <td>杰米</td>
+            <td>已审核</td>
+            <td>必须回答</td>
+        </tr>
+        <tr>
+            <td>约翰</td>
+            <td>已审核</td>
+            <td>None</td>
+        </tr>
+        <tr>
+            <td>杰米</td>
+            <td>已审核</td>
+            <td>必须回答</td>
+        </tr>
+        <tr>
+            <td>约翰</td>
+            <td>已审核</td>
+            <td>None</td>
+        </tr>
+        <tr>
+            <td>杰米</td>
+            <td>已审核</td>
+            <td>必须回答</td>
+        </tr>
+        </tbody>
+    </table>
+</fieldset>
+
+<fieldset>
+    <legend>尺寸</legend>
+    <table class="lole-table small table">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Status</th>
+            <th>Notes</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>约翰</td>
+            <td>已审核</td>
+            <td>None</td>
+        </tr>
+        <tr>
+            <td>杰米</td>
+            <td>已审核</td>
+            <td>必须回答</td>
+        </tr>
+        <tr>
+            <td>吉尔</td>
+            <td>Denied</td>
+            <td>None</td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr><th>3个 人</th>
+            <th>2个 已审批</th>
+            <th></th>
+        </tr></tfoot>
+    </table>
+    <table class="lole-table large table">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Status</th>
+            <th>Notes</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>约翰</td>
+            <td>已审核</td>
+            <td>None</td>
+        </tr>
+        <tr>
+            <td>杰米</td>
+            <td>已审核</td>
+            <td>必须回答</td>
+        </tr>
+        <tr>
+            <td>吉尔</td>
+            <td>Denied</td>
+            <td>None</td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr><th>3个 人</th>
+            <th>2个 已审批</th>
+            <th></th>
+        </tr></tfoot>
+    </table>
+</fieldset>
+
+</body>
+</html>

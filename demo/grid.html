@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lole-UI原生 Grid栅格布局</title>
+    <link rel="stylesheet" href="../src/grid.css">
+</head>
+<body>
+
+<fieldset>
+    <legend>24栅格布局</legend>
+    <div class="lole-grid divided grid">
+        <div class="row">
+            <div class="col"><p/></div>
+            <div class="col"><p/></div>
+            <div class="col"><p/></div>
+            <div class="col"><p/></div>
+            <div class="col"><p/></div>
+            <div class="col"><p/></div>
+            <div class="col"><p/></div>
+            <div class="col"><p/></div>
+            <div class="col"><p/></div>
+
+            <div class="col"><p/></div>
+            <div class="col"><p/></div>
+            <div class="col"><p/></div>
+            <div class="col"><p/></div>
+            <div class="col"><p/></div>
+            <div class="col"><p/></div>
+            <div class="col"><p/></div>
+            <div class="col"><p/></div>
+
+            <div class="col"><p/></div>
+            <div class="col"><p/></div>
+            <div class="col"><p/></div>
+            <div class="col"><p/></div>
+            <div class="col"><p/></div>
+            <div class="col"><p/></div>
+            <div class="col"><p/></div>
+
+        </div>
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend>网格的列之间可以有分割线</legend>
+    <div class="lole-grid three col divided grid">
+        <div class="row">
+            <div class="col">
+                <p></p>
+            </div>
+            <div class="col">
+                <p></p>
+            </div>
+            <div class="col">
+                <p></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <p></p>
+            </div>
+            <div class="col">
+                <p></p>
+            </div>
+            <div class="col">
+                <p></p>
+            </div>
+        </div>
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend>网格的行之间可以有分割线</legend>
+    <div class="lole-grid vertically divided grid">
+        <div class="two col divided row">
+            <div class="col">
+                <p></p>
+            </div>
+            <div class="col">
+                <p></p>
+            </div>
+        </div>
+        <div class="three col divided row">
+            <div class="col">
+                <p></p>
+            </div>
+            <div class="col">
+                <p></p>
+            </div>
+            <div class="col">
+                <p></p>
+            </div>
+        </div>
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend>网格</legend>
+    <div class="lole-grid celled grid">
+        <div class="row">
+            <div class="six wide col">
+                <p></p>
+            </div>
+            <div class="six wide col">
+                <p></p>
+            </div>
+            <div class="six wide col">
+                <p></p>
+            </div>
+            <div class="six wide col">
+                <p></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="eight wide col">
+                <p></p>
+            </div>
+            <div class="eight wide col">
+                <p></p>
+            </div>
+            <div class="eight wide col">
+                <p></p>
+            </div>
+        </div>
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend>无边框网格</legend>
+    <div class="lole-grid internally celled grid">
+        <div class="row">
+            <div class="three wide col">
+                <p></p>
+            </div>
+            <div class="eighteen wide col">
+                <p></p>
+            </div>
+            <div class="three wide col">
+                <p></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="three wide col">
+                <p></p>
+            </div>
+            <div class="eighteen wide col">
+                <p></p>
+            </div>
+            <div class="three wide col">
+                <p></p>
+            </div>
+        </div>
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend>行</legend>
+    <div class="lole-grid three col grid">
+        <div class="row">
+            <div class="col">
+                <p style="border: 1px #fadb14 solid;height:20px"></p>
+            </div>
+            <div class="col">
+                <p style="border: 1px #fadb14 solid;height:20px"></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p style="border: 1px #fadb14 solid;height:20px"></p>
+            </div>
+            <div class="col">
+                <p style="border: 1px #fadb14 solid;height:20px"></p>
+            </div>
+            <div class="col">
+                <p style="border: 1px #fadb14 solid;height:20px"></p>
+            </div>
+        </div>
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend>列</legend>
+    <div class="lole-grid grid">
+        <div class="eight wide col">
+            <p style="border: 1px #fadb14 solid;height:20px"></p>
+        </div>
+        <div class="eight wide col">
+            <p style="border: 1px #fadb14 solid;height:20px"></p>
+        </div>
+        <div class="eight wide col">
+            <p style="border: 1px #fadb14 solid;height:20px"></p>
+        </div>
+        <div class="eight wide col">
+            <p style="border: 1px #fadb14 solid;height:20px"></p>
+        </div>
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend>浮动</legend>
+    <div class="lole-grid grid">
+        <div class="left floated five wide col">
+            <p style="border: 1px #fadb14 solid;height:20px"></p>
+        </div>
+        <div class="right floated five wide col">
+            <p style="border: 1px #fadb14 solid;height:20px"></p>
+        </div>
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend>列数</legend>
+    <div class="lole-grid grid">
+        <div class="three col row">
+            <div class="col">
+                <p style="border: 1px #fadb14 solid;height:20px"></p>
+            </div>
+            <div class="col">
+                <p style="border: 1px #fadb14 solid;height:20px"></p>
+            </div>
+            <div class="col">
+                <p style="border: 1px #fadb14 solid;height:20px"></p>
+            </div>
+        </div>
+        <div class="four col row">
+            <div class="col">
+                <p style="border: 1px #fadb14 solid;height:20px"></p>
+            </div>
+            <div class="col">
+                <p style="border: 1px #fadb14 solid;height:20px"></p>
+            </div>
+            <div class="col">
+                <p style="border: 1px #fadb14 solid;height:20px"></p>
+            </div>
+            <div class="col">
+                <p style="border: 1px #fadb14 solid;height:20px"></p>
+            </div>
+        </div>
+        <div class="five col row">
+            <div class="col">
+                <p style="border: 1px #fadb14 solid;height:20px"></p>
+            </div>
+            <div class="col">
+                <p style="border: 1px #fadb14 solid;height:20px"></p>
+            </div>
+            <div class="col">
+                <p style="border: 1px #fadb14 solid;height:20px"></p>
+            </div>
+            <div class="col">
+                <p style="border: 1px #fadb14 solid;height:20px"></p>
+            </div>
+            <div class="col">
+                <p style="border: 1px #fadb14 solid;height:20px"></p>
+            </div>
+        </div>
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend>是同equal with自动划分</legend>
+    <div class="lole-grid equal width grid">
+        <div class="col">
+            <p style="border: 1px #fadb14 solid;height:20px">1</p>
+        </div>
+        <div class="twelve wide col">
+            <p style="border: 1px #fadb14 solid;height:20px">2</p>
+        </div>
+        <div class="col">
+            <p style="border: 1px #fadb14 solid;height:20px">3</p>
+        </div>
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend>使用Stretched自动整合行高</legend>
+    <div class="lole-grid three col divided grid">
+        <div class="stretched row">
+            <div class="col">
+                <p style="border: 1px #fadb14 solid;height:20px">1</p>
+            </div>
+            <div class="col">
+                <p style="border: 1px #fadb14 solid;height:20px">1</p>
+                <p style="border: 1px #fadb14 solid;height:20px">2</p>
+            </div>
+            <div class="col">
+                <p style="border: 1px #fadb14 solid;height:20px">1</p>
+                <p style="border: 1px #fadb14 solid;height:20px">2</p>
+                <p style="border: 1px #fadb14 solid;height:20px">3</p>
+            </div>
+        </div>
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend>松散排列</legend>
+    <div class="lole-grid four col relaxed grid">
+        <div class="col">
+            <p style="border: 1px #fadb14 solid;height:20px">1</p>
+        </div>
+        <div class="col">
+            <p style="border: 1px #fadb14 solid;height:20px">2</p>
+        </div>
+        <div class="col">
+            <p style="border: 1px #fadb14 solid;height:20px">3</p>
+        </div>
+        <div class="col">
+            <p style="border: 1px #fadb14 solid;height:20px">4</p>
+        </div>
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend>主题颜</legend>
+    <div class="lole-grid five col celled grid">
+        <div class="primary col">樱白</div>
+        <div class="orange col">橘黄色</div>
+        <div class="yellow col">黄色</div>
+        <div class="red col">红色</div>
+        <div class="green col">绿色</div>
+        <div class="teal col">蓝绿色</div>
+        <div class="cyan col">青色</div>
+        <div class="indigo col">靛蓝色</div>
+        <div class="purple col">紫色</div>
+        <div class="pink col">粉色</div>
+        <div class="gray col">灰色</div>
+        <div class="black col">黑色</div>
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend>居中</legend>
+    <div class="lole-grid two col centered grid">
+        <div class="col">
+            <p style="border: 1px #fadb14 solid;height:20px">1</p>
+        </div>
+        <div class="four col centered row">
+            <div class="col">
+                <p style="border: 1px #fadb14 solid;height:20px">1</p>
+            </div>
+            <div class="col">
+                <p style="border: 1px #fadb14 solid;height:20px">2</p>
+            </div>
+            <div class="col">
+                <p style="border: 1px #fadb14 solid;height:20px">3</p>
+            </div>
+        </div>
+        <div class="four col row">
+            <div class="col">
+                <p style="border: 1px #fadb14 solid;height:20px">1</p>
+            </div>
+            <div class="col">
+                <p style="border: 1px #fadb14 solid;height:20px">2</p>
+            </div>
+            <div class="col">
+                <p style="border: 1px #fadb14 solid;height:20px">3</p>
+            </div>
+            <div class="col">
+                <p style="border: 1px #fadb14 solid;height:20px">4</p>
+            </div>
+        </div>
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend>文本对其</legend>
+    <div class="lole-grid center aligned three col grid">
+        <div class="row">
+            <div class="col">
+                <div style="border: 1px #fadb14 solid;height:20px">
+                    1
+                </div>
+            </div>
+            <div class="col">
+                <div style="border: 1px #fadb14 solid">
+                    <div style="border-bottom: 1px #fadb14 solid;height:20px">
+                        1
+                    </div>
+                    <div style="border-bottom: 1px #fadb14 solid;height:20px">
+                        2
+                    </div>
+                    <div style="height:20px">
+                        3
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div style="border: 1px #fadb14 solid;height:20px">1</div>
+            </div>
+        </div>
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend>自由组合</legend>
+    <div class="lole-grid middle aligned four col centered grid">
+        <div class="row">
+            <div class="col">
+                <div style="border: 1px #fadb14 solid;height:50px">1</div>
+            </div>
+            <div class="col">
+                <div style="border: 1px #fadb14 solid;height:50px">1</div>
+                <div style="border: 1px #fadb14 solid;height:50px">1</div>
+            </div>
+            <div class="col">
+                <div style="border: 1px #fadb14 solid;height:50px">1</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="lole-grid four col centered grid" style="padding-top: 30px;border-top: 1px black solid">
+        <div class="top aligned row">
+            <div class="col">
+                <div style="border: 1px #fadb14 solid;height:50px">2</div>
+            </div>
+            <div class="col">
+                <div style="border: 1px #fadb14 solid;height:50px">2</div>
+                <div style="border: 1px #fadb14 solid;height:50px">2</div>
+            </div>
+            <div class="col">
+                <div style="border: 1px #fadb14 solid;height:50px">2</div>
+            </div>
+        </div>
+        <div class="middle aligned row">
+            <div class="col">
+                <div style="border: 1px #fadb14 solid;height:50px">2</div>
+            </div>
+            <div class="col">
+                <div style="border: 1px #fadb14 solid;height:50px">2</div>
+                <div style="border: 1px #fadb14 solid;height:50px">2</div>
+            </div>
+            <div class="col">
+                <div style="border: 1px #fadb14 solid;height:50px">2</div>
+            </div>
+        </div>
+        <div class="bottom aligned row">
+            <div class="col">
+                <div style="border: 1px #fadb14 solid;height:50px">2</div>
+            </div>
+            <div class="col">
+                <div style="border: 1px #fadb14 solid;height:50px">2</div>
+                <div style="border: 1px #fadb14 solid;height:50px">2</div>
+            </div>
+            <div class="col">
+                <div style="border: 1px #fadb14 solid;height:50px">2</div>
+            </div>
+        </div>
+    </div>
+</fieldset>
+
+</body>
+</html>
