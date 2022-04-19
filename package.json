@@ -6,10 +6,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {
-    "sass": "^1.49.8",
-    "sass-loader": "^12.6.0"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",

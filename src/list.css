@@ -1,0 +1,866 @@
+
+
+/*
+需要注意的是虽然h5中提供的列表标签是ul.ol，但是为了让div加上样式就可以渲染效果，这里需要通过 标签名.lole-list.list 的形式定义
+*/
+/*基本属性*/
+ul.lole-list.list,
+ol.lole-list.list,
+.lole-list.list{
+    list-style-type: none;
+    margin: 1em 0em;
+    padding: 0em 0em;
+}
+ul.lole-list:first-child,
+ol.lole-list:first-child,
+.lole-list:first-child{
+    margin-top: 0;
+    padding-top: 0;
+}
+ul.lole-list:last-child,
+ol.lole-list:last-child,
+.lole-list:last-child{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+
+/*内容*/
+ul.lole-list.list > li:first-child:after,
+ol.lole-list.list > li:first-child:after,
+.lole-list.list > .list > .item,
+.lole-list.list > .item:after{
+    content: '';
+    display: block;
+    height: 0;
+    clear: unset;
+    visibility: hidden;
+}
+
+ul.lole-list.list li:first-child,
+ol.lole-list.list li:first-child,
+.lole-list.list .list > .item:first-child,
+.lole-list.list > .item:first-child {
+    padding-top: 0;
+}
+ul.lole-list.list li:last-child,
+ol.lole-list.list li:last-child,
+.lole-list.list .list > .item:last-child,
+.lole-list.list > .item:last-child {
+    padding-bottom: 0;
+}
+
+ul.lole-list.list li,
+ol.lole-list.list li,
+.lole-list.list .list > .item,
+.lole-list.list > .item{
+    overflow: hidden;
+    margin: 2px;
+}
+
+/*child list*/
+ul.lole-list.list ul,
+ol.lole-list.list ol,
+.lole-list.list .list {
+    clear: both;
+    margin: 0em;
+    padding: 0.75em 0em 0.25em 0.5em;
+}
+
+/* Child Item */
+ul.lole-list.list ul li,
+ol.lole-list.list ol li,
+.lole-list.list .list > .item {
+    padding: 0.14285714em 0em;
+    line-height: inherit;
+}
+
+/* Icon */
+.lole-list.list .list > .item > i.icon,
+.lole-list.list > .item > i.icon {
+    display: table-cell;
+    margin: 0em;
+    padding-top: 0em;
+    padding-right: 0.28571429em;
+    vertical-align: top;
+    -webkit-transition: color 0.1s ease;
+    transition: color 0.1s ease;
+}
+.lole-list.list .list > .item > i.icon:only-child,
+.lole-list.list > .item > i.icon:only-child {
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+/* Image */
+.lole-list.list .list > .item > .image,
+.lole-list.list > .item > .image {
+    display: table-cell;
+    background-color: transparent;
+    margin: 0em;
+    vertical-align: top;
+}
+.lole-list.list .list > .item > .image:not(:only-child):not(img),
+.lole-list.list > .item > .image:not(:only-child):not(img) {
+    padding-right: 0.5em;
+}
+.lole-list.list .list > .item > .image img,
+.lole-list.list > .item > .image img {
+    vertical-align: top;
+}
+.lole-list.list .list > .item > img.image,
+.lole-list.list .list > .item > .image:only-child,
+.lole-list.list > .item > img.image,
+.lole-list.list > .item > .image:only-child {
+    display: inline-block;
+}
+
+
+/* Content */
+.lole-list.list .list > .item > .content,
+.lole-list.list > .item > .content {
+    line-height: 1.14285714em;
+}
+.lole-list.list .list > .item > .image + .content,
+.lole-list.list .list > .item > .icon + .content,
+.lole-list.list > .item > .image + .content,
+.lole-list.list > .item > .icon + .content {
+    display: table-cell;
+    padding: 0em 0em 0em 0.5em;
+    vertical-align: top;
+}
+.lole-list.list .list > .item > img.image + .content,
+.lole-list.list > .item > img.image + .content {
+    display: inline-block;
+}
+.lole-list.list .list > .item > .content > .list,
+.lole-list.list > .item > .content > .list {
+    margin-left: 0em;
+    padding-left: 0em;
+}
+
+/* Header */
+.lole-list.list .list > .item .header,
+.lole-list.list > .item .header {
+    display: block;
+    margin: 0em;
+    font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+/* Description */
+.lole-list.list .list > .item .description,
+.lole-list.list > .item .description {
+    display: block;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+
+/* Child Link */
+.lole-list.list > .item a,
+.lole-list.list .list > .item a {
+    cursor: pointer;
+}
+
+/* Linking Item */
+.lole-list.list .list > a.item,
+.lole-list.list > a.item {
+    cursor: pointer;
+    color: #4183C4;
+}
+.lole-list.list .list > a.item:hover,
+.lole-list.list > a.item:hover {
+    color: #1e70bf;
+}
+
+
+/* Linked Item Icons */
+.lole-list.list .list > a.item i.icon,
+.lole-list.list > a.item i.icon {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+/* Header Link */
+.lole-list.list .list > .item a.header,
+.lole-list.list > .item a.header {
+    cursor: pointer;
+    color: #4183C4 !important;
+}
+.lole-list.list .list > .item a.header:hover,
+.lole-list.list > .item a.header:hover {
+    color: #1e70bf !important;
+}
+
+
+/* Floated Content */
+.lole-list[class*="left floated"].list {
+    float: left;
+}
+.lole-list[class*="right floated"].list {
+
+    float: right;
+}
+.lole-list.list .list > .item [class*="left floated"],
+.lole-list.list > .item [class*="left floated"] {
+    float: left;
+    margin: 0em 1em 0em 0em;
+}
+.lole-list.list .list > .item [class*="right floated"],
+.lole-list.list > .item [class*="right floated"] {
+    float: right;
+    margin: 0em 0em 0em 1em;
+
+}
+
+
+/*coupling*/
+.lole-list.menu .lole-list.list > .item,
+.lole-list.menu .lole-list.list .list > .item {
+    display: list-item;
+    table-layout: fixed;
+    background-color: transparent;
+    list-style-type: none;
+    list-style-position: outside;
+    padding: 0.21428571em 0em;
+    line-height: 1.14285714em;
+}
+.lole-list.menu .lole-list.list .list > .item:before,
+.lole-list.menu .lole-list.list > .item:before {
+    border: none;
+    background: none;
+}
+.lole-list.menu .lole-list.list .list > .item:first-child,
+.lole-list.menu .lole-list.list > .item:first-child {
+    padding-top: 0em;
+}
+.lole-list.menu .lole-list.list .list > .item:last-child,
+.lole-list.menu .lole-list.list > .item:last-child {
+    padding-bottom: 0em;
+}
+
+/*-------------------
+      Horizontal
+--------------------*/
+
+.lole-list.horizontal.list {
+    display: inline-block;
+    font-size: 0em;
+}
+.lole-list.horizontal.list > .item {
+    display: inline-block;
+    margin-left: 1em;
+    font-size: 1rem;
+}
+.lole-list.horizontal.list:not(.celled) > .item:first-child {
+    margin-left: 0em !important;
+    padding-left: 0em !important;
+}
+.lole-list.horizontal.list .list {
+    padding-left: 0em;
+    padding-bottom: 0em;
+}
+.lole-list.horizontal.list > .item > .image,
+.lole-list.horizontal.list .list > .item > .image,
+.lole-list.horizontal.list > .item > .icon,
+.lole-list.horizontal.list .list > .item > .icon,
+.lole-list.horizontal.list > .item > .content,
+.lole-list.horizontal.list .list > .item > .content {
+    vertical-align: middle;
+}
+
+/* Padding on all elements */
+.lole-list.horizontal.list > .item:first-child,
+.lole-list.horizontal.list > .item:last-child {
+    padding-top: 0.21428571em;
+    padding-bottom: 0.21428571em;
+}
+
+/* Horizontal List */
+.lole-list.horizontal.list > .item > i.icon {
+    margin: 0em;
+    padding: 0em 0.25em 0em 0em;
+}
+.lole-list.horizontal.list > .item > .icon,
+.lole-list.horizontal.list > .item > .icon + .content {
+    float: none;
+    display: inline-block;
+}
+
+
+/*-------------------
+       Disabled
+--------------------*/
+
+.lole-list.list .list > .disabled.item,
+.lole-list.list > .disabled.item {
+    pointer-events: none;
+    color: rgba(40, 40, 40, 0.3) !important;
+}
+.lole-list.inverted.list .list > .disabled.item,
+.lole-list.inverted.list > .disabled.item {
+    color: rgba(225, 225, 225, 0.3) !important;
+}
+
+/*-------------------
+        Hover
+--------------------*/
+
+.lole-list.list .list > a.item:hover .icon,
+.lole-list.list > a.item:hover .icon {
+    color: rgba(0, 0, 0, 0.87);
+}
+
+/*-------------------
+       Inverted
+--------------------*/
+
+.lole-list.inverted.list .list > a.item > .icon,
+.lole-list.inverted.list > a.item > .icon {
+    color: rgba(255, 255, 255, 0.7);
+}
+.lole-list.inverted.list .list > .item .header,
+.lole-list.inverted.list > .item .header {
+    color: rgba(255, 255, 255, 0.9);
+}
+.lole-list.inverted.list .list > .item .description,
+.lole-list.inverted.list > .item .description {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Item Link */
+.lole-list.inverted.list .list > a.item,
+.lole-list.inverted.list > a.item {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.9);
+}
+.lole-list.inverted.list .list > a.item:hover,
+.lole-list.inverted.list > a.item:hover {
+    color: #1e70bf;
+}
+
+/* Linking Content */
+.lole-list.inverted.list .item a:not(.lole-list) {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+.lole-list.inverted.list .item a:not(.lole-list):hover {
+    color: #1e70bf !important;
+}
+
+/*-------------------
+       Aligned
+--------------------*/
+
+.lole-list.list[class*="top aligned"] .image,
+.lole-list.list[class*="top aligned"] .content,
+.lole-list.list [class*="top aligned"] {
+    vertical-align: top !important;
+}
+.lole-list.list[class*="middle aligned"] .image,
+.lole-list.list[class*="middle aligned"] .content,
+.lole-list.list [class*="middle aligned"] {
+    vertical-align: middle !important;
+}
+.lole-list.list[class*="bottom aligned"] .image,
+.lole-list.list[class*="bottom aligned"] .content,
+.lole-list.list [class*="bottom aligned"] {
+    vertical-align: bottom !important;
+}
+
+
+/*-------------------
+       Link
+--------------------*/
+
+.lole-list.link.list .item,
+.lole-list.link.list a.item,
+.lole-list.link.list .item a:not(.lole-list) {
+    color: rgba(0, 0, 0, 0.4);
+    -webkit-transition: 0.1s color ease;
+    transition: 0.1s color ease;
+}
+.lole-list.link.list a.item:hover,
+.lole-list.link.list .item a:not(.lole-list):hover {
+    color: rgba(0, 0, 0, 0.8);
+}
+.lole-list.link.list a.item:active,
+.lole-list.link.list .item a:not(.lole-list):active {
+    color: rgba(0, 0, 0, 0.9);
+}
+.lole-list.link.list .active.item,
+.lole-list.link.list .active.item a:not(.lole-list) {
+    color: rgba(0, 0, 0, 0.95);
+}
+
+
+/* Inverted */
+.lole-list.inverted.link.list .item,
+.lole-list.inverted.link.list a.item,
+.lole-list.inverted.link.list .item a:not(.lole-list) {
+    color: rgba(255, 255, 255, 0.5);
+}
+.lole-list.inverted.link.list a.item:hover,
+.lole-list.inverted.link.list .item a:not(.lole-list):hover {
+    color: #ffffff;
+}
+.lole-list.inverted.link.list a.item:active,
+.lole-list.inverted.link.list .item a:not(.lole-list):active {
+    color: #ffffff;
+}
+.lole-list.inverted.link.list a.active.item,
+.lole-list.inverted.link.list .active.item a:not(.lole-list) {
+    color: #ffffff;
+}
+
+/*-------------------
+      Selection
+--------------------*/
+
+.lole-list.selection.list .list > .item,
+.lole-list.selection.list > .item {
+    cursor: pointer;
+    background: transparent;
+    padding: 0.5em 0.5em;
+    margin: 0em;
+    color: rgba(0, 0, 0, 0.4);
+    border-radius: 0.5em;
+    -webkit-transition: 0.1s color ease, 0.1s padding-left ease, 0.1s background-color ease;
+    transition: 0.1s color ease, 0.1s padding-left ease, 0.1s background-color ease;
+}
+.lole-list.selection.list .list > .item:last-child,
+.lole-list.selection.list > .item:last-child {
+    margin-bottom: 0em;
+}
+.lole-list.selection.list.list > .item:hover,
+.lole-list.selection.list > .item:hover {
+    background: rgba(0, 0, 0, 0.03);
+    color: rgba(0, 0, 0, 0.8);
+}
+.lole-list.selection.list .list > .item:active,
+.lole-list.selection.list > .item:active {
+    background: rgba(0, 0, 0, 0.05);
+    color: rgba(0, 0, 0, 0.9);
+}
+.lole-list.selection.list .list > .item.active,
+.lole-list.selection.list > .item.active {
+    background: rgba(0, 0, 0, 0.05);
+    color: rgba(0, 0, 0, 0.95);
+}
+
+/* Inverted */
+.lole-list.inverted.selection.list > .item,
+.lole-list.inverted.selection.list > .item {
+    background: transparent;
+    color: rgba(255, 255, 255, 0.5);
+}
+.lole-list.inverted.selection.list > .item:hover,
+.lole-list.inverted.selection.list > .item:hover {
+    background: rgba(255, 255, 255, 0.02);
+    color: #ffffff;
+}
+.lole-list.inverted.selection.list > .item:active,
+.lole-list.inverted.selection.list > .item:active {
+    background: rgba(255, 255, 255, 0.08);
+    color: #ffffff;
+}
+.lole-list.inverted.selection.list > .item.active,
+.lole-list.inverted.selection.list > .item.active {
+    background: rgba(255, 255, 255, 0.08);
+    color: #ffffff;
+}
+/* Celled / Divided Selection List */
+.lole-list.celled.selection.list .list > .item,
+.lole-list.divided.selection.list .list > .item,
+.lole-list.celled.selection.list > .item,
+.lole-list.divided.selection.list > .item {
+    border-radius: 0em;
+}
+
+
+/*-------------------
+       Animated
+--------------------*/
+
+.lole-list.animated.list > .item {
+    -webkit-animation: 0.25s color ease 0.1s, 0.25s padding-left ease 0.1s, 0.25s background-color ease 0.1s;
+    animation: 0.25s color ease 0.1s, 0.25s padding-left ease 0.1s, 0.25s background-color ease 0.1s;
+}
+.lole-list.animated.list:not(.horizontal) > .item:hover {
+    padding-left: 1em;
+}
+
+
+/*-------------------
+       Fitted
+--------------------*/
+
+.lole-list.fitted.list:not(.selection) .list > .item,
+.lole-list.fitted.list:not(.selection) > .item {
+    padding-left: 0em;
+    padding-right: 0em;
+}
+.lole-list.fitted.selection.list .list > .item,
+.lole-list.fitted.selection.list > .item {
+    margin-left: -0.5em;
+    margin-right: -0.5em;
+}
+
+/*-------------------
+      Bulleted
+--------------------*/
+
+ul.lole-list.list,
+.lole-list.bulleted.list {
+    margin-left: 1.25rem;
+}
+ul.lole-list.list li,
+.lole-list.bulleted.list .list > .item,
+.lole-list.bulleted.list > .item {
+    position: relative;
+}
+ul.lole-list.list li:before,
+.lole-list.bulleted.list .list > .item:before,
+.lole-list.bulleted.list > .item:before {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+    position: absolute;
+    top: auto;
+    left: auto;
+    font-weight: normal;
+    margin-left: -1.25rem;
+    content: '•';
+    opacity: 1;
+    color: inherit;
+    vertical-align: top;
+}
+ul.lole-list.list li:before,
+.lole-list.bulleted.list .list > a.item:before,
+.lole-list.bulleted.list > a.item:before {
+    color: rgba(0, 0, 0, 0.87);
+}
+ul.lole-list.list ul,
+.lole-list.bulleted.list .list {
+    padding-left: 1.25rem;
+}
+
+/* Horizontal Bulleted */
+ul.lole-list.horizontal.bulleted.list,
+.lole-list.horizontal.bulleted.list {
+    margin-left: 0em;
+}
+ul.lole-list.horizontal.bulleted.list li,
+.lole-list.horizontal.bulleted.list > .item {
+    margin-left: 1.75rem;
+}
+ul.lole-list.horizontal.bulleted.list li:first-child,
+.lole-list.horizontal.bulleted.list > .item:first-child {
+    margin-left: 0em;
+}
+ul.lole-list.horizontal.bulleted.list li::before,
+.lole-list.horizontal.bulleted.list > .item::before {
+    color: rgba(0, 0, 0, 0.87);
+}
+ul.lole-list.horizontal.bulleted.list li:first-child::before,
+.lole-list.horizontal.bulleted.list > .item:first-child::before {
+    display: none;
+}
+
+
+/*-------------------
+       Ordered
+--------------------*/
+
+ol.lole-list.list,
+.lole-list.ordered.list,
+.lole-list.ordered.list .list,
+ol.lole-list.list ol {
+    counter-reset: ordered;
+    margin-left: 1.25rem;
+    list-style-type: none;
+}
+ol.lole-list.list li,
+.lole-list.ordered.list .list > .item,
+.lole-list.ordered.list > .item {
+    list-style-type: none;
+    position: relative;
+}
+ol.lole-list.list li:before,
+.lole-list.ordered.list .list > .item:before,
+.lole-list.ordered.list > .item:before {
+    position: absolute;
+    top: auto;
+    left: auto;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+    margin-left: -1.25rem;
+    counter-increment: ordered;
+    content: counters(ordered, ".") " ";
+    text-align: right;
+    color: rgba(0, 0, 0, 0.87);
+    vertical-align: middle;
+    opacity: 0.8;
+}
+ol.lole-list.inverted.list li:before,
+.lole-list.ordered.inverted.list .list > .item:before,
+.lole-list.ordered.inverted.list > .item:before {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Value */
+.lole-list.ordered.list > .list > .item[data-value],
+.lole-list.ordered.list > .item[data-value] {
+    content: attr(data-value);
+}
+ol.lole-list.list li[value]:before {
+    content: attr(value);
+}
+
+/* Child Lists */
+ol.lole-list.list ol,
+.lole-list.ordered.list .list {
+    margin-left: 1em;
+    padding-top: 0.5em;
+    display: grid;
+}
+ol.lole-list.list ol li:before,
+.lole-list.ordered.list .list > .item:before {
+    margin-left: -2em;
+}
+
+
+/* Horizontal Ordered */
+ol.lole-list.horizontal.list,
+.lole-list.ordered.horizontal.list {
+    margin-left: 0em;
+}
+ol.lole-list.horizontal.list li:before,
+.lole-list.ordered.horizontal.list .list > .item:before,
+.lole-list.ordered.horizontal.list > .item:before {
+    position: static;
+    margin: 0em 0.5em 0em 0em;
+}
+
+
+/*-------------------
+       Divided
+--------------------*/
+
+.lole-list.divided.list > .item {
+    border-top: 1px solid rgba(34, 36, 38, 0.15);
+}
+.lole-list.divided.list .list > .item {
+    border-top: none;
+}
+.lole-list.divided.list .item .list > .item {
+    border-top: none;
+}
+.lole-list.divided.list .list > .item:first-child,
+.lole-list.divided.list > .item:first-child {
+    border-top: none;
+}
+
+/* Sub Menu */
+.lole-list.divided.list:not(.horizontal) .list > .item:first-child {
+    border-top-width: 1px;
+}
+
+/* Divided bulleted */
+.lole-list.divided.bulleted.list:not(.horizontal),
+.lole-list.divided.bulleted.list .list {
+    margin-left: 0em;
+    padding-left: 0em;
+}
+.lole-list.divided.bulleted.list > .item:not(.horizontal) {
+    padding-left: 1.25rem;
+}
+
+/* Divided Ordered */
+.lole-list.divided.ordered.list {
+    margin-left: 0em;
+}
+.lole-list.divided.ordered.list .list > .item,
+.lole-list.divided.ordered.list > .item {
+    padding-left: 1.25rem;
+}
+.lole-list.divided.ordered.list .item .list {
+    margin-left: 0em;
+    margin-right: 0em;
+    padding-bottom: 0.21428571em;
+}
+.lole-list.divided.ordered.list .item .list > .item {
+    padding-left: 1em;
+}
+
+/* Divided Selection */
+.lole-list.divided.selection.list .list > .item,
+.lole-list.divided.selection.list > .item {
+    margin: 0em;
+    border-radius: 0em;
+}
+
+/* Divided horizontal */
+.lole-list.divided.horizontal.list {
+    margin-left: 0em;
+}
+.lole-list.divided.horizontal.list > .item:not(:first-child) {
+    padding-left: 0.5em;
+}
+.lole-list.divided.horizontal.list > .item:not(:last-child) {
+    padding-right: 0.5em;
+}
+.lole-list.divided.horizontal.list > .item {
+    border-top: none;
+    border-left: 1px solid rgba(34, 36, 38, 0.15);
+    margin: 0em;
+    line-height: 0.6;
+}
+.lole-list.horizontal.divided.list > .item:first-child {
+    border-left: none;
+}
+
+/* Inverted */
+.lole-list.divided.inverted.list > .item,
+.lole-list.divided.inverted.list > .list,
+.lole-list.divided.inverted.horizontal.list > .item {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+/*-------------------
+        Celled
+--------------------*/
+
+.lole-list.celled.list > .item,
+.lole-list.celled.list > .list {
+    border-top: 1px solid rgba(34, 36, 38, 0.15);
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+.lole-list.celled.list > .item:last-child {
+    border-bottom: 1px solid rgba(34, 36, 38, 0.15);
+}
+
+/* Padding on all elements */
+.lole-list.celled.list > .item:first-child,
+.lole-list.celled.list > .item:last-child {
+    padding-top: 0.21428571em;
+    padding-bottom: 0.21428571em;
+}
+
+/* Sub Menu */
+.lole-list.celled.list .item .list > .item {
+    border-width: 0px;
+}
+.lole-list.celled.list .list > .item:first-child {
+    border-top-width: 0px;
+}
+
+/* Celled Bulleted */
+.lole-list.celled.bulleted.list {
+    margin-left: 0em;
+}
+.lole-list.celled.bulleted.list .list > .item,
+.lole-list.celled.bulleted.list > .item {
+    padding-left: 1.25rem;
+}
+.lole-list.celled.bulleted.list .item .list {
+    margin-left: -1.25rem;
+    margin-right: -1.25rem;
+    padding-bottom: 0.21428571em;
+}
+
+/* Celled Ordered */
+.lole-list.celled.ordered.list {
+    margin-left: 0em;
+}
+.lole-list.celled.ordered.list .list > .item,
+.lole-list.celled.ordered.list > .item {
+    padding-left: 1.25rem;
+}
+.lole-list.celled.ordered.list .item .list {
+    margin-left: 0em;
+    margin-right: 0em;
+    padding-bottom: 0.21428571em;
+}
+.lole-list.celled.ordered.list .list > .item {
+    padding-left: 1em;
+}
+
+/* Celled Horizontal */
+.lole-list.horizontal.celled.list {
+    margin-left: 0em;
+}
+.lole-list.horizontal.celled.list .list > .item,
+.lole-list.horizontal.celled.list > .item {
+    border-top: none;
+    border-left: 1px solid rgba(34, 36, 38, 0.15);
+    margin: 0em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    line-height: 0.6;
+}
+.lole-list.horizontal.celled.list .list > .item:last-child,
+.lole-list.horizontal.celled.list > .item:last-child {
+    border-bottom: none;
+    border-right: 1px solid rgba(34, 36, 38, 0.15);
+}
+
+/* Inverted */
+.lole-list.celled.inverted.list > .item,
+.lole-list.celled.inverted.list > .list {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.lole-list.celled.inverted.horizontal.list .list > .item,
+.lole-list.celled.inverted.horizontal.list > .item {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/*-------------------
+       Relaxed
+--------------------*/
+
+.lole-list.relaxed.list:not(.horizontal) > .item:not(:first-child) {
+    padding-top: 0.42857143em;
+}
+.lole-list.relaxed.list:not(.horizontal) > .item:not(:last-child) {
+    padding-bottom: 0.42857143em;
+}
+.lole-list.horizontal.relaxed.list .list > .item:not(:first-child),
+.lole-list.horizontal.relaxed.list > .item:not(:first-child) {
+    padding-left: 1rem;
+}
+.lole-list.horizontal.relaxed.list .list > .item:not(:last-child),
+.lole-list.horizontal.relaxed.list > .item:not(:last-child) {
+    padding-right: 1rem;
+}
+
+/*size*/
+.lole-list.small.list{
+    font-size: 0.7em;
+}
+.lole-list.list{
+    font-size: 1em;
+}
+.lole-list.large.list{
+    font-size: 1.3em;
+}
+
+.lole-list.small.horizontal.list .list > .item,
+.lole-list.small.horizontal.list > .item {
+    font-size: 0.7rem;
+}
+.lole-list.horizontal.list .list > .item,
+.lole-list.horizontal.list > .item {
+    font-size: 1rem;
+}
+.lole-list.large.horizontal.list .list > .item,
+.lole-list.large.horizontal.list > .item {
+    font-size: 1.3rem;
+}
+

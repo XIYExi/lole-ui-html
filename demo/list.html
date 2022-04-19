@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lole-UI原生 List列表</title>
+    <link rel="stylesheet" href="../src/index.css"/>
+    <style>
+        fieldset{
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<fieldset>
+    <legend>列表</legend>
+    <div class="lole-list list">
+        <div class="item">
+            <i class="fa fa-address-book icon"></i>
+            <div class="content">
+                lole UI
+            </div>
+        </div>
+        <div class="item">
+            <i class="fa fa-spinner icon"></i>
+            <div class="content">
+                Designed By xiye.
+            </div>
+        </div>
+        <div class="item">
+            <i class="fa fa-circle-o-notch icon"></i>
+            <div class="content">
+                <a href="http://lole.feifeilong.work">lole-UI原生</a>
+            </div>
+        </div>
+        <div class="item">
+            <i class="fa fa-cube icon"></i>
+            <div class="content">
+                <a href="http://lole.feifeilong.work">lole-UI React</a>
+            </div>
+        </div>
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend>树状list</legend>
+    <div class="lole-list list">
+        <div class="item">
+            <i class="fa fa-book icon"></i>
+            <div class="content">
+                <div class="header">src</div>
+                <div class="description">Source files for project</div>
+                <div class="list">
+                    <div class="item">
+                        <i class="fa fa-book icon"></i>
+                        <div class="content">
+                            <div class="header">site</div>
+                            <div class="description">你网站的主题</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <i class="fa fa-book icon"></i>
+                        <div class="content">
+                            <div class="header">themes</div>
+                            <div class="description">Packaged theme files</div>
+                            <div class="list">
+                                <div class="item">
+                                    <i class="fa fa-book icon"></i>
+                                    <div class="content">
+                                        <div class="header">默认值</div>
+                                        <div class="description">Default packaged theme</div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <i class="fa fa-book icon"></i>
+                                    <div class="content">
+                                        <div class="header">my_theme</div>
+                                        <div class="description">Packaged themes are also available in this folder</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <i class="fa fa-file-code-o icon"></i>
+                        <div class="content">
+                            <div class="header">theme.config</div>
+                            <div class="description">Config file for setting packaged themes</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <i class="fa fa-book icon"></i>
+            <div class="content">
+                <div class="header">dist</div>
+                <div class="description">编译 CSS 和 JS 文件</div>
+                <div class="list">
+                    <div class="item">
+                        <i class="fa fa-book icon"></i>
+                        <div class="content">
+                            <div class="header">组件</div>
+                            <div class="description">Individual component CSS and JS</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <i class="fa fa-file-code-o icon"></i>
+            <div class="content">
+                <div class="header">semantic.json</div>
+                <div class="description">Contains build settings for gulp</div>
+            </div>
+        </div>
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend>符号</legend>
+    <div class="lole-list bulleted list">
+        <div class="item">增加权限</div>
+        <div class="item">邀请好友</div>
+        <div class="item">
+            <div>利益</div>
+            <div class="list">
+                <a class="item" href="#">Link to somewhere</a>
+                <div class="item">折扣</div>
+                <div class="item">折扣</div>
+            </div>
+        </div>
+        <div class="item">Warranty</div>
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend>有序列表</legend>
+    <div class="lole-list ordered list">
+        <a class="item">起步</a>
+        <a class="item">介绍</a>
+        <div class="item">
+            <a>Languages</a>
+            <div class="list">
+                <a class="item">HTML</a>
+                <a class="item">Javascript</a>
+                <a class="item">CSS</a>
+            </div>
+        </div>
+        <a class="item">Review</a>
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend>自定义序号</legend>
+    <ol class="lole-list list">
+        <li value="*">注册</li>
+        <li value="*">用户福利</li>
+        <li value="*">用户类型 <ol>
+            <li value="-">管理员</li>
+            <li value="-">高级用户</li>
+            <li value="-">普通用户</li>
+        </ol>
+        </li>
+        <li value="*">删除您的用户</li>
+    </ol>
+</fieldset>
+
+<fieldset>
+    <legend>连接</legend>
+    <div class="lole-list link list">
+        <div class="active item">工作</div>
+        <a class="item">摸鱼</a>
+        <a class="item">摸鱼</a>
+        <a class="item">摸鱼</a>
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend>标题</legend>
+    <div class="lole-list list">
+        <div class="item">
+            <a class="header">标题</a>
+            <div class="description">
+                Click a link in our <a>description</a>.
+            </div>
+        </div>
+        <div class="item">
+            <a class="header">了解更多</a>
+            <div class="description">在 <a>常见问题</a> 了解更多关于本站 </div>
+        </div>
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend>描述</legend>
+    <div class="lole-list list">
+        <div class="item">
+            <i class="fa fa-rss icon"></i>
+            <div class="content">
+                <a class="header">Krolewskie Jadlo</a>
+                <div class="description">An excellent polish restaurant, quick delivery and hearty, filling meals.</div>
+            </div>
+        </div>
+        <div class="item">
+            <i class="fa fa-rss icon"></i>
+            <div class="content">
+                <a class="header">Xian Famous Foods</a>
+                <div class="description">A taste of Shaanxi's delicious culinary traditions, with delights like spicy cold noodles and lamb burgers.</div>
+            </div>
+        </div>
+        <div class="item">
+            <i class="fa fa-rss icon"></i>
+            <div class="content">
+                <a class="header">Sapporo Haru</a>
+                <div class="description">Greenpoint's best choice for quick and delicious sushi.</div>
+            </div>
+        </div>
+        <div class="item">
+            <i class="fa fa-rss icon"></i>
+            <div class="content">
+                <a class="header">Enid's</a>
+                <div class="description">At night a bar, during the day a delicious brunch spot.</div>
+            </div>
+        </div>
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend>水平</legend>
+    <div class="lole-list horizontal bulleted link list">
+        <a class="item">用户条款 </a>
+        <a class="item">
+            Privacy Policy
+        </a>
+        <a class="item">
+            Contact Us
+        </a>
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend>反色</legend>
+    <div class="lole-list inverted segment">
+        <div class="lole-list inverted relaxed divided list">
+            <div class="item">
+                <div class="content">
+                    <div class="header">Snickerdoodle</div>
+                    An excellent companion
+                </div>
+            </div>
+            <div class="item">
+                <div class="content">
+                    <div class="header">Poodle</div>
+                    A poodle, its pretty basic
+                </div>
+            </div>
+            <div class="item">
+                <div class="content">
+                    <div class="header">Paulo</div>
+                    He's also a dog
+                </div>
+            </div>
+        </div>
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend>可选择</legend>
+    <div class="lole-list middle aligned selection list">
+        <div class="item">
+            <i class="fa fa-rss icon"></i>
+            <div class="content">
+                <div class="header">海伦</div>
+            </div>
+        </div>
+        <div class="item">
+            <i class="fa fa-rss icon"></i>
+            <div class="content">
+                <div class="header">Christian</div>
+            </div>
+        </div>
+        <div class="item">
+            <i class="fa fa-rss icon"></i>
+            <div class="content">
+                <div class="header">丹尼尔</div>
+            </div>
+        </div>
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend>动画</legend>
+    <div class="lole-list selection middle aligned animated list">
+        <div class="item">
+            <i class="fa fa-rss icon"></i>
+            <div class="content">
+                <div class="header">海伦</div>
+            </div>
+        </div>
+        <div class="item">
+            <i class="fa fa-rss icon"></i>
+            <div class="content">
+                <div class="header">Christian</div>
+            </div>
+        </div>
+        <div class="item">
+            <i class="fa fa-rss icon"></i>
+            <div class="content">
+                <div class="header">丹尼尔</div>
+            </div>
+        </div>
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend>松散Mode</legend>
+    <div class="lole-list relaxed horizontal list">
+        <div class="item">
+            <i class="fa fa-rss icon"></i>
+            <div class="content">
+                <a class="header">丹尼尔 路易斯</a>
+            </div>
+        </div>
+        <div class="item">
+            <i class="fa fa-rss icon"></i>
+            <div class="content">
+                <a class="header">Stevie Feliciano</a>
+            </div>
+        </div>
+        <div class="item">
+            <i class="fa fa-rss icon"></i>
+            <div class="content">
+                <a class="header">Elliot Fu</a>
+            </div>
+        </div>
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend>单元格</legend>
+    <div class="lole-list celled ordered list">
+        <div class="item">Cats</div>
+        <div class="item">马</div>
+        <div class="item">Dogs
+            <div class="list">
+                <div class="item">拉布拉多贵宾狗</div>
+                <div class="item">Shiba Inu</div>
+                <div class="item">马士提夫</div>
+            </div>
+        </div>
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend>尺寸</legend>
+    <div class="lole-list small vertically divided list">
+        <div class="item">
+            <i class="fa fa-rss icon"></i>
+            <div class="content">
+                <div class="header">海伦</div>
+            </div>
+        </div>
+        <div class="item">
+            <i class="fa fa-rss icon"></i>
+            <div class="content">
+                <div class="header">Christian</div>
+            </div>
+        </div>
+        <div class="item">
+            <i class="fa fa-rss icon"></i>
+            <div class="content">
+                <div class="header">丹尼尔</div>
+            </div>
+        </div>
+    </div>
+    <div class="lole-list vertically divided list">
+        <div class="item">
+            <i class="fa fa-rss icon"></i>
+            <div class="content">
+                <div class="header">海伦</div>
+            </div>
+        </div>
+        <div class="item">
+            <i class="fa fa-rss icon"></i>
+            <div class="content">
+                <div class="header">Christian</div>
+            </div>
+        </div>
+        <div class="item">
+            <i class="fa fa-rss icon"></i>
+            <div class="content">
+                <div class="header">丹尼尔</div>
+            </div>
+        </div>
+    </div>
+    <div class="lole-list large vertically divided list">
+        <div class="item">
+            <i class="fa fa-rss icon"></i>
+            <div class="content">
+                <div class="header">海伦</div>
+            </div>
+        </div>
+        <div class="item">
+            <i class="fa fa-rss icon"></i>
+            <div class="content">
+                <div class="header">Christian</div>
+            </div>
+        </div>
+        <div class="item">
+            <i class="fa fa-rss icon"></i>
+            <div class="content">
+                <div class="header">丹尼尔</div>
+            </div>
+        </div>
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend>对齐</legend>
+    <div class="lole-list horizontal list">
+        <div class="item">
+            <i class="fa fa-rss icon"></i>
+            <div class="top aligned content" style="font-size: 12px">
+                Top Aligned
+            </div>
+        </div>
+        <div class="item">
+            <i class="fa fa-rss icon"></i>
+            <div class="middle aligned content" style="font-size: 12px">中间 </div>
+        </div>
+        <div class="item">
+            <i class="fa fa-rss icon"></i>
+            <div class="bottom aligned content" style="font-size: 12px">
+                Bottom
+            </div>
+        </div>
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend>浮动</legend>
+    <div class="lole-list large bottom aligned divided list">
+        <div class="item">
+            <div class="right floated content">
+                <button  class="lole-btn sm button">Add</button>
+            </div>
+            <i class="fa fa-rss icon"></i>
+            <div class="content">
+                Lena
+            </div>
+        </div>
+        <div class="item">
+            <div class="right floated content">
+                <button class="lole-btn sm button">Add</button>
+            </div>
+            <i class="fa fa-rss icon"></i>
+            <div class="content">
+                Lindsay
+            </div>
+        </div>
+        <div class="item">
+            <div class="right floated content">
+                <button class="lole-btn sm button">Add</button>
+            </div>
+            <i class="fa fa-rss icon"></i>
+            <div class="content">
+                Mark
+            </div>
+        </div>
+        <div class="item">
+            <div class="right floated content">
+                <button class="lole-btn sm button">Add</button>
+            </div>
+            <i class="fa fa-rss icon"></i>
+            <div class="content">
+                Molly
+            </div>
+        </div>
+    </div>
+</fieldset>
+
+</body>
+</html>
