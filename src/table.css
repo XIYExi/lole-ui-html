@@ -1,0 +1,892 @@
+/* common */
+.lole-table.table{
+    width: 100%;
+    background: #FFFFFF;
+    margin: 1em 0em;
+    border: 1px solid rgba(34, 36, 38, 0.15);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0.1rem;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.87);
+    border-collapse: separate;
+    border-spacing: 0px;
+}
+.lole-table.table:first-child {
+    margin-top: 0em;
+}
+.lole-table.table:last-child {
+    margin-bottom: 0em;
+}
+
+/*content*/
+.lole-table.table th,
+.lole-table.table td {
+    -webkit-transition: background 0.1s ease, color 0.1s ease;
+    transition: background 0.1s ease, color 0.1s ease;
+}
+
+/* header */
+.lole-table thead{
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+.lole-table.table th{
+    cursor: auto;
+    background: #F9FAFB;
+    text-align: inherit;
+    color: rgba(0, 0, 0, 0.87);
+    padding: 0.9em 0.75em;
+    vertical-align: inherit;
+    font-style: normal;
+    font-weight: bold;
+    text-transform: none;
+    border-bottom: 1px solid rgba(34, 36, 38, 0.1);
+    border-left: none;
+}
+.lole-table.table thead tr > th:first-child {
+    border-left: none;
+}
+.lole-table.table thead tr:first-child > th:first-child {
+    border-radius: 0.28571429rem 0em 0em 0em;
+}
+.lole-table.table thead tr:first-child > th:last-child {
+    border-radius: 0em 0.28571429rem 0em 0em;
+}
+.lole-table.table thead tr:first-child > th:only-child {
+    border-radius: 0.28571429rem 0.28571429rem 0em 0em;
+}
+
+/* Footer */
+.lole-table.table tfoot {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.lole-table.table tfoot th {
+    cursor: auto;
+    border-top: 1px solid rgba(34, 36, 38, 0.15);
+    background: #F9FAFB;
+    text-align: inherit;
+    color: rgba(0, 0, 0, 0.87);
+    padding: 0.75em 0.75em;
+    vertical-align: middle;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: none;
+}
+.lole-table.table tfoot tr > th:first-child {
+    border-left: none;
+}
+.lole-table.table tfoot tr:first-child > th:first-child {
+    border-radius: 0em 0em 0em 0.25rem;
+}
+.lole-table.table tfoot tr:first-child > th:last-child {
+    border-radius: 0em 0em 0.25rem 0em;
+}
+.lole-table.table tfoot tr:first-child > th:only-child {
+    border-radius: 0em 0em 0.25rem 0.25rem;
+}
+
+/* Table Row */
+.lole-table.table tr td {
+    border-top: 1px solid rgba(34, 36, 38, 0.1);
+}
+.lole-table.table tr:first-child td {
+    border-top: none;
+}
+
+/* Table Cells */
+.lole-table.table td {
+    padding: 0.75em 0.75em;
+    text-align: inherit;
+}
+
+/*--------------
+    Complex
+---------------*/
+
+/*结构化*/
+.lole-table.structured.table {
+    border-collapse: collapse;
+}
+.lole-table.structured.table thead th {
+    border-left: none;
+    border-right: none;
+}
+.lole-table.structured.sortable.table thead th {
+    border-left: 1px solid rgba(34, 36, 38, 0.15);
+    border-right: 1px solid rgba(34, 36, 38, 0.15);
+}
+.lole-table.structured.basic.table th {
+    border-left: none;
+    border-right: none;
+}
+.lole-table.structured.celled.table tr th,
+.lole-table.structured.celled.table tr td {
+    border-left: 1px solid rgba(34, 36, 38, 0.1);
+    border-right: 1px solid rgba(34, 36, 38, 0.1);
+}
+
+/*定义*/
+.lole-table.definition.table thead:not(.full-width) th:first-child {
+    pointer-events: none;
+    background: transparent;
+    font-weight: normal;
+    color: rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: -1px -1px 0px 1px #FFFFFF;
+    box-shadow: -1px -1px 0px 1px #FFFFFF;
+}
+.lole-table.definition.table tfoot:not(.full-width) th:first-child {
+    pointer-events: none;
+    background: transparent;
+    font-weight: normal;
+    color: rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 1px 1px 0px 1px #FFFFFF;
+    box-shadow: 1px 1px 0px 1px #FFFFFF;
+}
+
+/* Remove Border */
+.lole-table.celled.definition.table thead:not(.full-width) th:first-child {
+    -webkit-box-shadow: 0px -1px 0px 1px #FFFFFF;
+    box-shadow: 0px -1px 0px 1px #FFFFFF;
+}
+.lole-table.celled.definition.table tfoot:not(.full-width) th:first-child {
+    -webkit-box-shadow: 0px 1px 0px 1px #FFFFFF;
+    box-shadow: 0px 1px 0px 1px #FFFFFF;
+}
+
+/* Highlight Defining Column */
+.lole-table.definition.table tr td:first-child:not(.ignored),
+.lole-table.definition.table tr td.definition {
+    background: rgba(0, 0, 0, 0.03);
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.95);
+    text-transform: none;
+    font-size: 1em;
+}
+
+/* Fix 2nd Column */
+.lole-table.definition.table thead:not(.full-width) th:nth-child(2) {
+    border-left: 1px solid rgba(34, 36, 38, 0.15);
+}
+.lole-table.definition.table tfoot:not(.full-width) th:nth-child(2) {
+    border-left: 1px solid rgba(34, 36, 38, 0.15);
+}
+.lole-table.definition.table td:nth-child(2) {
+    border-left: 1px solid rgba(34, 36, 38, 0.15);
+}
+
+
+/*  === 状态 ===  */
+/*primary*/
+.lole-table.table tr.primary,
+.lole-table.table td.primary {
+    -webkit-box-shadow: 0px 0px 0px #A3C293 inset;
+    box-shadow: 0px 0px 0px #A3C293 inset;
+}
+.lole-table.table tr.primary,
+.lole-table.table td.primary {
+    background: #FCFFF5 !important;
+    color: rgb(249, 204, 226) !important;
+}
+
+/*info*/
+.lole-table.table tr.info,
+.lole-table.table td.info {
+    -webkit-box-shadow: 0px 0px 0px #E0B4B4 inset;
+    box-shadow: 0px 0px 0px #E0B4B4 inset;
+}
+.lole-table.table tr.info,
+.lole-table.table td.info {
+    background: #FFF6F6 !important;
+    color: #17a2b8 !important;
+}
+
+/*error*/
+.lole-table.table tr.error,
+.lole-table.table td.error {
+    -webkit-box-shadow: 0px 0px 0px #E0B4B4 inset;
+    box-shadow: 0px 0px 0px #E0B4B4 inset;
+}
+.lole-table.table tr.error,
+.lole-table.table td.error {
+    background: #FFF6F6 !important;
+    color: #dc3545 !important;
+}
+
+/*warning*/
+.lole-table.table tr.warning,
+.lole-table.table td.warning {
+    -webkit-box-shadow: 0px 0px 0px #C9BA9B inset;
+    box-shadow: 0px 0px 0px #C9BA9B inset;
+}
+.lole-table.table tr.warning,
+.lole-table.table td.warning {
+    background: #FFFAF3 !important;
+    color: #fadb14 !important;
+}
+
+
+/*激活 active*/
+.lole-table.table tr.active,
+.lole-table.table td.active {
+    -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.87) inset;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.87) inset;
+}
+.lole-table.table tr.active,
+.lole-table.table td.active {
+    background: #E0E0E0 !important;
+    color: rgba(0, 0, 0, 0.87) !important;
+}
+
+/*disabled 禁用*/
+.lole-table.table tr.disabled td,
+.lole-table.table tr td.disabled,
+.lole-table.table tr.disabled:hover,
+.lole-table.table tr:hover td.disabled {
+    pointer-events: none;
+    color: rgba(40, 40, 40, 0.3);
+}
+
+/*文字对齐*/
+.lole-table.table[class*="left aligned"],
+.lole-table.table [class*="left aligned"] {
+    text-align: left;
+}
+.lole-table.table[class*="center aligned"],
+.lole-table.table [class*="center aligned"] {
+    text-align: center;
+}
+.lole-table.table[class*="right aligned"],
+.lole-table.table [class*="right aligned"] {
+    text-align: right;
+}
+
+/*垂直对其*/
+.lole-table.table[class*="top aligned"],
+.lole-table.table [class*="top aligned"] {
+    vertical-align: top;
+}
+.lole-table.table[class*="middle aligned"],
+.lole-table.table [class*="middle aligned"] {
+    vertical-align: middle;
+}
+.lole-table.table[class*="bottom aligned"],
+.lole-table.table [class*="bottom aligned"] {
+    vertical-align: bottom;
+}
+
+/*collapsing*/
+.lole-table.table th.collapsing,
+.lole-table.table td.collapsing {
+    width: 1px;
+    white-space: nowrap;
+}
+
+/*fixed*/
+.lole-table.fixed.table {
+    table-layout: fixed;
+}
+.lole-table.fixed.table th,
+.lole-table.fixed.table td {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/*selectable*/
+.lole-table.selectable.table tbody tr:hover,
+.lole-table.table tbody tr td.selectable:hover {
+    background: rgba(0, 0, 0, 0.05) !important;
+    color: rgba(0, 0, 0, 0.95) !important;
+}
+.lole-table.selectable.inverted.table tbody tr:hover,
+.lole-table.inverted.table tbody tr td.selectable:hover {
+    background: rgba(255, 255, 255, 0.08) !important;
+    color: #ffffff !important;
+}
+
+/* Selectable Cell Link */
+.lole-table.table tbody tr td.selectable {
+    padding: 0em;
+}
+.lole-table.table tbody tr td.selectable > a:not(.lole-table) {
+    display: block;
+    color: inherit;
+    padding: 0.78571429em 0.78571429em;
+}
+
+/*other states*/
+.lole-table.selectable.table tr.error:hover,
+.lole-table.table tr td.selectable.error:hover,
+.lole-table.selectable.table tr:hover td.error {
+    background: #ffe7e7 !important;
+    color: #dc3545 !important;
+}
+
+.lole-table.selectable.table tr.warning:hover,
+.lole-table.table tr td.selectable.warning:hover,
+.lole-table.selectable.table tr:hover td.warning {
+    background: #fff4e4 !important;
+    color: #fadb14 !important;
+}
+
+.lole-table.selectable.table tr.active:hover,
+.lole-table.table tr td.selectable.active:hover,
+.lole-table.selectable.table tr:hover td.active {
+    background: #E0E0E0 !important;
+    color: rgba(0, 0, 0, 0.87) !important;
+}
+.lole-table.selectable.table tr.primary:hover,
+.lole-table.table tr td.selectable.primary:hover,
+.lole-table.selectable.table tr:hover td.primary {
+    background: #f7ffe6 !important;
+    color: rgb(249, 204, 226) !important;
+}
+.lole-table.selectable.table tr.info:hover,
+.lole-table.table tr td.selectable.info:hover,
+.lole-table.selectable.table tr:hover td.info {
+    background: #ffe7e7 !important;
+    color: #17a2b8 !important;
+}
+
+
+/*吸附*/
+
+/*middle*/
+.lole-table.attached.table {
+    top: 0px;
+    bottom: 0px;
+    border-radius: 0px;
+    margin: 0em -1px;
+    width: calc(100% +  2px );
+    max-width: calc(100% +  2px );
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 1px solid #D4D4D5;
+}
+.lole-table.attached + .lole-table.attached.table:not(.top) {
+    border-top: none;
+}
+
+/* Top */
+.lole-table[class*="top attached"].table {
+    bottom: 0px;
+    margin-bottom: 0em;
+    top: 0px;
+    margin-top: 1em;
+    border-radius: 0.28571429rem 0.28571429rem 0em 0em;
+}
+.lole-table.table[class*="top attached"]:first-child {
+    margin-top: 0em;
+}
+
+/* Bottom */
+.lole-table[class*="bottom attached"].table {
+    bottom: 0px;
+    margin-top: 0em;
+    top: 0px;
+    margin-bottom: 1em;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0em 0em 0.28571429rem 0.28571429rem;
+}
+.lole-table[class*="bottom attached"].table:last-child {
+    margin-bottom: 0em;
+}
+
+
+
+/*striped条纹*/
+/* Table Striping */
+.lole-table.striped.table > tr:nth-child(2n),
+.lole-table.striped.table tbody tr:nth-child(2n) {
+    background-color: rgba(0, 0, 50, 0.02);
+}
+
+/* Stripes */
+.lole-table.inverted.striped.table > tr:nth-child(2n),
+.lole-table.inverted.striped.table tbody tr:nth-child(2n) {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Allow striped active hover */
+.lole-table.striped.selectable.selectable.selectable.table tbody tr.active:hover {
+    background: #EFEFEF !important;
+    color: rgba(0, 0, 0, 0.95) !important;
+}
+
+/*--------------
+   Single Line
+---------------*/
+
+.lole-table.table[class*="single line"],
+.lole-table.table [class*="single line"] {
+    white-space: nowrap;
+}
+.lole-table.table[class*="single line"],
+.lole-table.table [class*="single line"] {
+    white-space: nowrap;
+}
+
+/* color */
+/*primary*/
+.lole-table.primary.table {
+    border-top: 0.2em solid  rgb(249, 204, 226);
+}
+.lole-table.inverted.primary.table {
+    background-color:  rgb(249, 204, 226) !important;
+    color: #FFFFFF !important;
+}
+
+/*indigo*/
+.lole-table.indigo.table {
+    border-top: 0.2em solid  #6610f2;
+}
+.lole-table.inverted.indigo.table {
+    background-color:  #6610f2 !important;
+    color: #FFFFFF !important;
+}
+
+/*purple*/
+.lole-table.purple.table {
+    border-top: 0.2em solid  #6f42c1;
+}
+.lole-table.inverted.purple.table {
+    background-color:  #6f42c1 !important;
+    color: #FFFFFF !important;
+}
+/*pink*/
+.lole-table.pink.table {
+    border-top: 0.2em solid  #d63384;
+}
+.lole-table.inverted.pink.table {
+    background-color:  #d63384 !important;
+    color: #FFFFFF !important;
+}
+
+/*red*/
+.lole-table.red.table {
+    border-top: 0.2em solid #dc3545;
+}
+.lole-table.inverted.red.table {
+    background-color:  #dc3545 !important;
+    color: #FFFFFF !important;
+}
+
+/*orange*/
+.lole-table.orange.table {
+    border-top: 0.2em solid #fd7e14;
+}
+.lole-table.inverted.orange.table {
+    background-color:  #fd7e14 !important;
+    color: #FFFFFF !important;
+}
+
+/*yellow*/
+.lole-table.yellow.table {
+    border-top: 0.2em solid #fadb14;
+}
+.lole-table.inverted.yellow.table {
+    background-color:  #fadb14 !important;
+    color: #FFFFFF !important;
+}
+/*green*/
+.lole-table.green.table {
+    border-top: 0.2em solid #52c41a;
+}
+.lole-table.inverted.green.table {
+    background-color: #52c41a !important;
+    color: #FFFFFF !important;
+}
+/*teal*/
+.lole-table.teal.table {
+    border-top: 0.2em solid #20c997;
+}
+.lole-table.inverted.teal.table {
+    background-color: #20c997 !important;
+    color: #FFFFFF !important;
+}
+/*cyan*/
+.lole-table.cyan.table {
+    border-top: 0.2em solid #17a2b8;
+}
+.lole-table.inverted.cyan.table {
+    background-color: #17a2b8 !important;
+    color: #FFFFFF !important;
+}
+
+/* gray-500 */
+.lole-table.gray.table {
+    border-top: 0.2em solid #adb5bd;
+}
+.lole-table.inverted.gray.table {
+    background-color: #adb5bd !important;
+    color: #FFFFFF !important;
+}
+
+/* black */
+.lole-table.black.table {
+    border-top: 0.2em solid #1B1C1D;
+}
+.lole-table.inverted.black.table {
+    background-color: #1B1C1D !important;
+    color: #FFFFFF !important;
+}
+
+
+/*col count*/
+.lole-table.one.col.table td {
+    width: 100%;
+}
+.lole-table.two.col.table td {
+    width: 50%;
+}
+.lole-table.three.col.table td {
+    width: 33.33333333%;
+}
+.lole-table.four.col.table td {
+    width: 25%;
+}
+.lole-table.five.col.table td {
+    width: 20%;
+}
+.lole-table.six.col.table td {
+    width: 16.66666667%;
+}
+.lole-table.seven.col.table td {
+    width: 14.28571429%;
+}
+.lole-table.eight.col.table td {
+    width: 12.5%;
+}
+.lole-table.nine.col.table td {
+    width: 11.11111111%;
+}
+.lole-table.ten.col.table td {
+    width: 10%;
+}
+.lole-table.eleven.col.table td {
+    width: 9.09090909%;
+}
+.lole-table.twelve.col.table td {
+    width: 8.33333333%;
+}
+.lole-table.thirteen.col.table td {
+    width: 7.69230769%;
+}
+.lole-table.fourteen.col.table td {
+    width: 7.14285714%;
+}
+.lole-table.fifteen.col.table td {
+    width: 6.66666667%;
+}
+.lole-table.sixteen.col.table td {
+    width: 6.25%;
+}
+.lole-table.seventeen.col.table td {
+    width: 5.88235294%;
+}
+.lole-table.eighteen.col.table td {
+    width: 5.55555556%;
+}
+.lole-table.nineteen.col.table td {
+    width: 5.26315789%;
+}
+.lole-table.twenty.col.table td {
+    width: 5%;
+}
+.lole-table.twenty-one.col.table td {
+    width: 4.76190476%;
+}
+.lole-table.twenty-two.col.table td {
+    width: 4.54545454%;
+}
+.lole-table.twenty-three.col.table td {
+    width: 4.34782609%;
+}
+.lole-table.twenty-four.col.table td {
+    width: 4.16666667%;
+}
+
+
+
+.lole-table.table th.one.wide,
+.lole-table.table td.one.wide {
+    width: 4.16666667% !important;
+}
+
+.lole-table.table th.two.wide,
+.lole-table.table td.two.wide {
+    width: 8.33333334% !important;
+}
+
+.lole-table.table th.three.wide,
+.lole-table.table td.three.wide  {
+    width: 12.5% !important;
+}
+
+.lole-table.table th.four.wide,
+.lole-table.table td.four.wide  {
+    width: 16.66666667% !important;
+}
+
+.lole-table.table th.five.wide,
+.lole-table.table td.five.wide{
+    width: 20.83333334% !important;
+}
+
+.lole-table.table th.six.wide,
+.lole-table.table td.six.wide {
+    width: 25% !important;
+}
+
+.lole-table.table th.seven.wide,
+.lole-table.table td.seven.wide {
+    width: 29.16666667% !important;
+}
+
+.lole-table.table th.eight.wide,
+.lole-table.table td.eight.wide {
+    width: 33.33333333% !important;
+}
+
+.lole-table.table th.nine.wide,
+.lole-table.table td.nine.wide{
+    width: 37.5% !important;
+}
+
+.lole-table.table th.ten.wide,
+.lole-table.table td.ten.wide {
+    width: 41.66666667% !important;
+}
+
+.lole-table.table th.eleven.wide,
+.lole-table.table td.eleven.wide {
+    width: 45.83333334% !important;
+}
+
+.lole-table.table th.twelve.wide,
+.lole-table.table td.twelve.wide {
+    width: 50% !important;
+}
+
+.lole-table.table th.thirteen.wide,
+.lole-table.table td.thirteen.wide {
+    width:  54.16666667% !important;
+}
+
+.lole-table.table th.fourteen.wide,
+.lole-table.table td.fourteen.wide {
+    width:58.33333334% !important;
+}
+
+.lole-table.table th.fifteen.wide,
+.lole-table.table td.fifteen.wide {
+    width: 62.5% !important;
+}
+
+.lole-table.table th.sixteen.wide,
+.lole-table.table td.sixteen.wide {
+    width: 66.66666667% !important;
+}
+
+.lole-table.table th.seventeen.wide,
+.lole-table.table td.seventeen.wide {
+    width: 70.83333334%  !important;
+}
+
+.lole-table.table th.eighteen.wide,
+.lole-table.table td.eighteen.wide {
+    width:75% !important;
+}
+
+.lole-table.table th.nineteen.wide,
+.lole-table.table td.nineteen.wide{
+    width: 79.16666667% !important;
+}
+
+.lole-table.table th.twenty.wide,
+.lole-table.table td.twenty.wide{
+    width: 83.33333334% !important;
+}
+
+.lole-table.table th.twenty-one.wide,
+.lole-table.table td.twenty-one.wide {
+    width: 87.5%  !important;
+}
+
+.lole-table.table th.twenty-two.wide,
+.lole-table.table td.twenty-two.wide {
+    width:91.66666667% !important;
+}
+
+.lole-table.table th.twenty-three.wide,
+.lole-table.table td.twenty-three.wide {
+    width: 95.83333334% !important;
+}
+
+.lole-table.table th.twenty-four.wide,
+.lole-table.table td.twenty-four.wide {
+    width: 100% !important;
+}
+
+/*sortable*/
+.lole-table.sortable.table thead th {
+    cursor: pointer;
+    white-space: nowrap;
+    border-left: 1px solid rgba(34, 36, 38, 0.15);
+    color: rgba(0, 0, 0, 0.87);
+}
+.lole-table.sortable.table thead th:first-child {
+    border-left: none;
+}
+.lole-table.sortable.table thead th.sorted,
+.lole-table.sortable.table thead th.sorted:hover {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.lole-table.sortable.table thead th:after {
+    display: none;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    content: '';
+    height: 1em;
+    width: auto;
+    opacity: 0.8;
+    margin: 0em 0em 0em 0.5em;
+    font-family: 'Icons';
+}
+.lole-table.sortable.table thead th.ascending:after {
+    content: '\f0d8';
+}
+.lole-table.sortable.table thead th.descending:after {
+    content: '\f0d7';
+}
+
+/* Hover */
+.lole-table.sortable.table th.disabled:hover {
+    cursor: auto;
+    color: rgba(40, 40, 40, 0.3);
+}
+.lole-table.sortable.table thead th:hover {
+    background: rgba(0, 0, 0, 0.05);
+    color: rgba(0, 0, 0, 0.8);
+}
+
+/* Sorted */
+.lole-table.sortable.table thead th.sorted {
+    background: rgba(0, 0, 0, 0.05);
+    color: rgba(0, 0, 0, 0.95);
+}
+.lole-table.sortable.table thead th.sorted:after {
+    display: inline-block;
+}
+
+/* Sorted Hover */
+.lole-table.sortable.table thead th.sorted:hover {
+    background: rgba(0, 0, 0, 0.05);
+    color: rgba(0, 0, 0, 0.95);
+}
+
+/* Inverted */
+.lole-table.inverted.sortable.table thead th.sorted {
+    background: rgba(255, 255, 255, 0.15) -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.05)));
+    background: rgba(255, 255, 255, 0.15) -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05));
+    background: rgba(255, 255, 255, 0.15) linear-gradient(transparent, rgba(0, 0, 0, 0.05));
+    color: #ffffff;
+}
+.lole-table.inverted.sortable.table thead th:hover {
+    background: rgba(255, 255, 255, 0.08) -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.05)));
+    background: rgba(255, 255, 255, 0.08) -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05));
+    background: rgba(255, 255, 255, 0.08) linear-gradient(transparent, rgba(0, 0, 0, 0.05));
+    color: #ffffff;
+}
+.lole-table.inverted.sortable.table thead th {
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+
+/* Text Color */
+.lole-table.inverted.table {
+    background: #333333;
+    color: rgba(255, 255, 255, 0.9);
+    border: none;
+}
+.lole-table.inverted.table th {
+    background-color: rgba(0, 0, 0, 0.15);
+    border-color: rgba(255, 255, 255, 0.1) !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+.lole-table.inverted.table tr td {
+    border-color: rgba(255, 255, 255, 0.1) !important;
+}
+.lole-table.inverted.table tr.disabled td,
+.lole-table.inverted.table tr td.disabled,
+.lole-table.inverted.table tr.disabled:hover td,
+.lole-table.inverted.table tr:hover td.disabled {
+    pointer-events: none;
+    color: rgba(225, 225, 225, 0.3);
+}
+
+/* Definition */
+.lole-table.inverted.definition.table tfoot:not(.full-width) th:first-child,
+.lole-table.inverted.definition.table thead:not(.full-width) th:first-child {
+    background: #FFFFFF;
+}
+.lole-table.inverted.definition.table tr td:first-child {
+    background: rgba(255, 255, 255, 0.02);
+    color: #ffffff;
+}
+
+/*celled*/
+.lole-table.celled.table tr th,
+.lole-table.celled.table tr td {
+    border-left: 1px solid rgba(34, 36, 38, 0.1);
+}
+.lole-table.celled.table tr th:first-child,
+.lole-table.celled.table tr td:first-child {
+    border-left: none;
+}
+
+
+/*collapsing*/
+.lole-table.collapsing.table {
+    width: auto;
+}
+
+/*padded*/
+.lole-table.padded.table th {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.lole-table.padded.table th,
+.lole-table.padded.table td {
+    padding: 1em 1em;
+}
+
+/*compact*/
+.lole-table.compact.table th {
+    padding-left: 0.7em;
+    padding-right: 0.7em;
+}
+.lole-table.compact.table td {
+    padding: 0.5em 0.7em;
+}
+
+/*size */
+.lole-table.small.table {
+    font-size: 0.9em;
+}
+
+/* Standard */
+.lole-table.table {
+    font-size: 1em;
+}
+
+/* Large */
+.lole-table.large.table {
+    font-size: 1.1em;
+}

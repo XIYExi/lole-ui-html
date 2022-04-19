@@ -1,0 +1,902 @@
+
+.lole-grid.grid{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: -1rem;
+    align-items: stretch;
+    padding: 0em;
+}
+
+
+.lole-grid.relaxed.grid{
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+}
+.lole-grid.grid + .grid{
+    margin-top: 1rem;
+}
+
+
+/* rows */
+.lole-grid.grid > .row{
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: inherit;
+    -ms-flex-pack: inherit;
+    justify-content: inherit;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: 100% !important;
+    padding: 0rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* columns */
+/* same with lole ui react, use 24 columns */
+.lole-grid.grid > .col:not(.row),
+.lole-grid.grid > .row > .col{
+    position: relative;
+    display: inline-block;
+    /*
+    <div class='lole-ui grid'>
+        <div class='col'>
+        </div>
+    </div>
+     */
+    width: 4.16666667%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    vertical-align: top;
+}
+.lole-grid.grid > *{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.lole-grid.grid > .col:not(.row){
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.lole-grid.grid > .row > .col{
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
+
+.lole-grid.grid > .lole-grid.grid:first-child{
+    margin-top: 0;
+}
+.lole-grid.grid > .lole-grid.grid:last-child{
+    margin-bottom: 0;
+}
+
+
+/*只有一个col的时候，直接讲长度设置为100%*/
+.lole-grid.grid > .col:only-child,
+.lole-grid.grid > .row > .col:only-child{
+    width: 100%;
+}
+
+/* col划分具体设置 */
+/*1 col*/
+.lole-grid[class*='one col'].grid > .row > .col,
+.lole-grid[class*='one col'].grid > .col:not(.row){
+    width: calc(100% - 3rem);
+}
+.lole-grid.grid > [class*='one col'].row > .col{
+    width: calc(100% - 3rem)!important;
+}
+
+/*2 col*/
+.lole-grid[class*='two col'].grid > .row > .col,
+.lole-grid[class*='two col'].grid > .col:not(.row){
+    width: calc(50% - 3rem);
+}
+.lole-grid.grid > [class*='two col'].row > .col{
+    width: calc(50% - 3rem)!important;
+}
+
+/*3 col*/
+.lole-grid[class*='three col'].grid > .row > .col,
+.lole-grid[class*='three col'].grid > .col:not(.row){
+    width: calc(33.33333333% - 3rem);
+}
+.lole-grid.grid > [class*='three col'].row > .col{
+    width: calc(33.33333333% - 3rem)!important;
+}
+
+/*4 col*/
+.lole-grid[class*='four col'].grid > .row > .col,
+.lole-grid[class*='four col'].grid > .col:not(.row){
+    width: calc(25% - 3rem);
+}
+.lole-grid.grid > [class*='four col'].row > .col{
+    width: calc(25% - 3rem)!important;
+}
+
+/*5 col*/
+.lole-grid[class*='five col'].grid > .row > .col,
+.lole-grid[class*='five col'].grid > .col:not(.row){
+    width: calc(20% - 3rem);
+}
+.lole-grid.grid > [class*='five col'].row > .col{
+    width: calc(20% - 3rem)!important;
+}
+
+/*6 col*/
+.lole-grid[class*='six col'].grid > .row > .col,
+.lole-grid[class*='six col'].grid > .col:not(.row){
+    width: calc(16.66666667% - 3rem);
+}
+.lole-grid.grid > [class*='six col'].row > .col{
+    width: calc(16.66666667% - 3rem)!important;
+}
+
+/*7 col*/
+.lole-grid[class*='seven col'].grid > .row > .col,
+.lole-grid[class*='seven col'].grid > .col:not(.row){
+    width: calc(14.28571429% - 3rem);
+}
+.lole-grid.grid > [class*='seven col'].row > .col{
+    width: calc(14.28571429% - 3rem)!important;
+}
+
+/*8 col*/
+.lole-grid[class*='eight col'].grid > .row > .col,
+.lole-grid[class*='eight col'].grid > .col:not(.row){
+    width: calc(12.5% - 3rem);
+}
+.lole-grid.grid > [class*='eight col'].row > .col{
+    width: calc(12.5% - 3rem)!important;
+}
+
+/*9 col*/
+.lole-grid[class*='nine col'].grid > .row > .col,
+.lole-grid[class*='nine col'].grid > .col:not(.row){
+    width: calc(11.11111111% - 3rem);
+}
+.lole-grid.grid > [class*='nine col'].row > .col{
+    width: calc(11.11111111% - 3rem)!important;
+}
+
+/*10 col*/
+.lole-grid[class*='ten col'].grid > .row > .col,
+.lole-grid[class*='ten col'].grid > .col:not(.row){
+    width: calc(10% - 3rem);
+}
+.lole-grid.grid > [class*='ten col'].row > .col{
+    width: calc(10% - 3rem)!important;
+}
+
+/*11 col*/
+.lole-grid[class*='eleven col'].grid > .row > .col,
+.lole-grid[class*='eleven col'].grid > .col:not(.row){
+    width: calc(9.09090909% - 3rem);
+}
+.lole-grid.grid > [class*='eleven col'].row > .col{
+    width: calc(9.09090909% - 3rem) !important;
+}
+
+/*12 col*/
+.lole-grid[class*='twelve col'].grid > .row > .col,
+.lole-grid[class*='twelve col'].grid > .col:not(.row){
+    width: calc(8.33333333% - 3rem);
+}
+.lole-grid.grid > [class*='twelve col'].row > .col{
+    width: calc(8.33333333% - 3rem) !important;
+}
+
+/*13 col*/
+.lole-grid[class*='thirteen col'].grid > .row > .col,
+.lole-grid[class*='thirteen col'].grid > .col:not(.row){
+    width: calc(7.69230769% - 3rem);
+}
+.lole-grid.grid > [class*='thirteen col'].row > .col{
+    width: calc(7.69230769% - 3rem) !important;
+}
+
+/*14 col*/
+.lole-grid[class*='fourteen  col'].grid > .row > .col,
+.lole-grid[class*='fourteen  col'].grid > .col:not(.row){
+    width: calc(7.14285714% - 3rem);
+}
+.lole-grid.grid > [class*='fourteen col'].row > .col{
+    width: calc(7.14285714% - 3rem) !important;
+}
+
+/*15 col*/
+.lole-grid[class*='fifteen  col'].grid > .row > .col,
+.lole-grid[class*='fifteen  col'].grid > .col:not(.row){
+    width: calc(6.66666667% - 3rem);
+}
+.lole-grid.grid > [class*='fifteen col'].row > .col{
+    width: calc(6.66666667% - 3rem) !important;
+}
+
+/*16 col*/
+.lole-grid[class*='sixteen col'].grid > .row > .col,
+.lole-grid[class*='sixteen col'].grid > .col:not(.row){
+    width: calc(6.25% - 3rem);
+}
+.lole-grid.grid > [class*='sixteen col'].row > .col{
+    width: calc(6.25% - 3rem) !important;
+}
+
+/*17 col*/
+.lole-grid[class*='seventeen col'].grid > .row > .col,
+.lole-grid[class*='seventeen col'].grid > .col:not(.row){
+    width: calc(5.88235294% - 3rem);
+}
+.lole-grid.grid > [class*='seventeen col'].row > .col{
+    width: calc(5.88235294% - 3rem) !important;
+}
+
+/*18 col*/
+.lole-grid[class*='eighteen col'].grid > .row > .col,
+.lole-grid[class*='eighteen col'].grid > .col:not(.row){
+    width: calc(5.55555556% - 3rem);
+}
+.lole-grid.grid > [class*='eighteen col'].row > .col{
+    width: calc(5.55555556% - 3rem) !important;
+}
+
+/*19 col*/
+.lole-grid[class*='nineteen col'].grid > .row > .col,
+.lole-grid[class*='nineteen col'].grid > .col:not(.row){
+    width: calc(5.26315789% - 3rem);
+}
+.lole-grid.grid > [class*='nineteen col'].row > .col{
+    width: calc(5.26315789% - 3rem) !important;
+}
+
+/*20 col*/
+.lole-grid[class*='twenty col'].grid > .row > .col,
+.lole-grid[class*='twenty col'].grid > .col:not(.row){
+    width: calc(5% - 3rem);
+}
+.lole-grid.grid > [class*='twenty col'].row > .col{
+    width: calc(5% - 3rem) !important;
+}
+
+/*21 col*/
+.lole-grid[class*='twenty-one col'].grid > .row > .col,
+.lole-grid[class*='twenty-one col'].grid > .col:not(.row){
+    width: calc(4.76190476% - 3rem);
+}
+.lole-grid.grid > [class*='twenty-one col'].row > .col{
+    width: calc(4.76190476% - 3rem) !important;
+}
+
+/*22 col*/
+.lole-grid[class*='twenty-two col'].grid > .row > .col,
+.lole-grid[class*='twenty-two col'].grid > .col:not(.row){
+    width: calc(4.54545454% - 3rem);
+}
+.lole-grid.grid > [class*='twenty-two col'].row > .col{
+    width: calc(4.54545454% - 3rem) !important;
+}
+
+/*23 col*/
+.lole-grid[class*='twenty-three col'].grid > .row > .col,
+.lole-grid[class*='twenty-three col'].grid > .col:not(.row){
+    width: calc(4.34782609% - 3rem);
+}
+.lole-grid.grid > [class*='twenty-three col'].row > .col{
+    width: calc(4.34782609% - 3rem) !important;
+}
+
+/*24 col*/
+.lole-grid[class*='twenty-four col'].grid > .row > .col,
+.lole-grid[class*='twenty-four col'].grid > .col:not(.row){
+    width: calc(4.16666667% - 3rem);
+}
+.lole-grid.grid > [class*='twenty-four col'].row > .col{
+    width: calc(4.16666667% - 3rem) !important;
+}
+
+
+
+
+.lole-grid.grid > .row > [class*="one wide"].col,
+.lole-grid.grid > .col.row > [class*="one wide"].col,
+.lole-grid.grid > [class*="one wide"].col,
+.lole-grid.col.grid > [class*="one wide"].col {
+    width: 4.16666667% !important;
+}
+
+.lole-grid.grid > .row > [class*="two wide"].col,
+.lole-grid.grid > .col.row > [class*="two wide"].col,
+.lole-grid.grid > [class*="two wide"].col,
+.lole-grid.col.grid > [class*="two wide"].col {
+    width: 8.33333334% !important;
+}
+
+.lole-grid.grid > .row > [class*="three wide"].col,
+.lole-grid.grid > .col.row > [class*="three wide"].col,
+.lole-grid.grid > [class*="three wide"].col,
+.lole-grid.col.grid > [class*="three wide"].col {
+    width: 12.5% !important;
+}
+
+.lole-grid.grid > .row > [class*="four wide"].col,
+.lole-grid.grid > .col.row > [class*="four wide"].col,
+.lole-grid.grid > [class*="four wide"].col,
+.lole-grid.col.grid > [class*="four wide"].col {
+    width: 16.66666667% !important;
+}
+
+.lole-grid.grid > .row > [class*="five wide"].col,
+.lole-grid.grid > .col.row > [class*="five wide"].col,
+.lole-grid.grid > [class*="five wide"].col,
+.lole-grid.col.grid > [class*="five wide"].col {
+    width: 20.83333334% !important;
+}
+
+.lole-grid.grid > .row > [class*="six wide"].col,
+.lole-grid.grid > .col.row > [class*="six wide"].col,
+.lole-grid.grid > [class*="six wide"].col,
+.lole-grid.col.grid > [class*="six wide"].col {
+    width: 25% !important;
+}
+
+.lole-grid.grid > .row > [class*="seven wide"].col,
+.lole-grid.grid > .col.row > [class*="seven wide"].col,
+.lole-grid.grid > [class*="seven wide"].col,
+.lole-grid.col.grid > [class*="seven wide"].col {
+    width: 29.16666667% !important;
+}
+
+.lole-grid.grid > .row > [class*="eight wide"].col,
+.lole-grid.grid > .col.row > [class*="eight wide"].col,
+.lole-grid.grid > [class*="eight wide"].col,
+.lole-grid.col.grid > [class*="eight wide"].col {
+    width: 33.33333333% !important;
+}
+
+.lole-grid.grid > .row > [class*="nine wide"].col,
+.lole-grid.grid > .col.row > [class*="nine wide"].col,
+.lole-grid.grid > [class*="nine wide"].col,
+.lole-grid.col.grid > [class*="nine wide"].col {
+    width: 37.5% !important;
+}
+
+.lole-grid.grid > .row > [class*="ten wide"].col,
+.lole-grid.grid > .col.row > [class*="ten wide"].col,
+.lole-grid.grid > [class*="ten wide"].col,
+.lole-grid.col.grid > [class*="ten wide"].col {
+    width: 41.66666667% !important;
+}
+
+.lole-grid.grid > .row > [class*="eleven wide"].col,
+.lole-grid.grid > .col.row > [class*="eleven wide"].col,
+.lole-grid.grid > [class*="eleven wide"].col,
+.lole-grid.col.grid > [class*="eleven wide"].col {
+    width: 45.83333334% !important;
+}
+
+.lole-grid.grid > .row > [class*="twelve wide"].col,
+.lole-grid.grid > .col.row > [class*="twelve wide"].col,
+.lole-grid.grid > [class*="twelve wide"].col,
+.lole-grid.col.grid > [class*="twelve wide"].col {
+    width: 50% !important;
+}
+
+.lole-grid.grid > .row > [class*="thirteen wide"].col,
+.lole-grid.grid > .col.row > [class*="thirteen wide"].col,
+.lole-grid.grid > [class*="thirteen wide"].col,
+.lole-grid.col.grid > [class*="thirteen wide"].col {
+    width:  54.16666667% !important;
+}
+
+.lole-grid.grid > .row > [class*="fourteen wide"].col,
+.lole-grid.grid > .col.row > [class*="fourteen wide"].col,
+.lole-grid.grid > [class*="fourteen wide"].col,
+.lole-grid.col.grid > [class*="fourteen wide"].col {
+    width:58.33333334% !important;
+}
+
+.lole-grid.grid > .row > [class*="fifteen wide"].col,
+.lole-grid.grid > .col.row > [class*="fifteen wide"].col,
+.lole-grid.grid > [class*="fifteen wide"].col,
+.lole-grid.col.grid > [class*="fifteen wide"].col {
+    width: 62.5% !important;
+}
+
+.lole-grid.grid > .row > [class*="sixteen wide"].col,
+.lole-grid.grid > .col.row > [class*="sixteen wide"].col,
+.lole-grid.grid > [class*="sixteen wide"].col,
+.lole-grid.col.grid > [class*="sixteen wide"].col {
+    width: 66.66666667% !important;
+}
+
+.lole-grid.grid > .row > [class*="seventeen wide"].col,
+.lole-grid.grid > .col.row > [class*="seventeen wide"].col,
+.lole-grid.grid > [class*="seventeen wide"].col,
+.lole-grid.col.grid > [class*="seventeen wide"].col {
+    width: 70.83333334%  !important;
+}
+
+.lole-grid.grid > .row > [class*="eighteen wide"].col,
+.lole-grid.grid > .col.row > [class*="eighteen wide"].col,
+.lole-grid.grid > [class*="eighteen wide"].col,
+.lole-grid.col.grid > [class*="eighteen wide"].col {
+    width:75% !important;
+}
+
+.lole-grid.grid > .row > [class*="nineteen wide"].col,
+.lole-grid.grid > .col.row > [class*="nineteen wide"].col,
+.lole-grid.grid > [class*="nineteen wide"].col,
+.lole-grid.col.grid > [class*="nineteen wide"].col {
+    width: 79.16666667% !important;
+}
+
+.lole-grid.grid > .row > [class*="twenty wide"].col,
+.lole-grid.grid > .col.row > [class*="twenty wide"].col,
+.lole-grid.grid > [class*="twenty wide"].col,
+.lole-grid.col.grid > [class*="twenty wide"].col {
+    width: 83.33333334% !important;
+}
+
+.lole-grid.grid > .row > [class*="twenty-one wide"].col,
+.lole-grid.grid > .col.row > [class*="twenty-one wide"].col,
+.lole-grid.grid > [class*="twenty-one wide"].col,
+.lole-grid.col.grid > [class*="twenty-one wide"].col {
+    width: 87.5%  !important;
+}
+
+.lole-grid.grid > .row > [class*="twenty-two wide"].col,
+.lole-grid.grid > .col.row > [class*="twenty-two wide"].col,
+.lole-grid.grid > [class*="twenty-two wide"].col,
+.lole-grid.col.grid > [class*="twenty-two wide"].col {
+    width:91.66666667% !important;
+}
+
+.lole-grid.grid > .row > [class*="twenty-three wide"].col,
+.lole-grid.grid > .col.row > [class*="twenty-three wide"].col,
+.lole-grid.grid > [class*="twenty-three wide"].col,
+.lole-grid.col.grid > [class*="twenty-three wide"].col {
+    width: 95.83333334% !important;
+}
+
+.lole-grid.grid > .row > [class*="twenty-four wide"].col,
+.lole-grid.grid > .col.row > [class*="twenty-four wide"].col,
+.lole-grid.grid > [class*="twenty-four wide"].col,
+.lole-grid.col.grid > [class*="twenty-four wide"].col {
+    width: 100% !important;
+}
+
+/* centered */
+.lole-grid.centered.grid,
+.lole-grid.centered.grid > .row,
+.lole-grid.grid > .centered.row{
+    text-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.lole-grid.centered.grid > .col:not(.aligned):not(.justified):not(.row),
+.lole-grid.centered.grid > .row > .col:not(.aligned):not(.justified),
+.lole-grid .centered.row > .col:not(.aligned):not(.justified){
+    text-align: left;
+}
+.lole-grid.grid > .centered.col,
+.lole-grid.grid > .row > .centered.col{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* relaxed */
+.lole-grid.relaxed.grid > .col:not(.row),
+.lole-grid.relaxed.grid > .row > .col,
+.lole-grid.grid > .relaxed.row > .col{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+/*floated*/
+.lole-grid.grid [class*='left floated'].col{
+    margin-right: auto;
+}
+.lole-grid.grid [class*='right floated'].col{
+    margin-left: auto;
+}
+
+/* divided */
+.lole-grid.divided.grid:not([class*="vertically divided"]) > .col:not(.row),
+.lole-grid.divided.grid:not([class*="vertically divided"]) > .row > .col {
+    -webkit-box-shadow: -1px 0px 0px 0px rgba(34, 36, 38, 0.15);
+    box-shadow: -1px 0px 0px 0px rgba(34, 36, 38, 0.15);
+}
+
+.lole-grid[class*="vertically divided"].grid > .col:not(.row),
+.lole-grid[class*="vertically divided"].grid > .row > .col {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+}
+.lole-grid[class*="vertically divided"].grid > .row {
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
+/* No divider on first column on row */
+.lole-grid.divided.grid:not([class*="vertically divided"]) > .col:first-child,
+.lole-grid.divided.grid:not([class*="vertically divided"]) > .row > .col:first-child {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+/* No space on top of first row */
+.lole-grid[class*="vertically divided"].grid > .row:first-child > .col {
+    margin-top: 0em;
+}
+/* Divided Row */
+.lole-grid.grid > .divided.row > .col {
+    -webkit-box-shadow: -1px 0px 0px 0px rgba(34, 36, 38, 0.15);
+    box-shadow: -1px 0px 0px 0px rgba(34, 36, 38, 0.15);
+}
+.lole-grid.grid > .divided.row > .col:first-child {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+/* Vertically Divided */
+.lole-grid[class*="vertically divided"].grid > .row {
+    position: relative;
+}
+.lole-grid[class*="vertically divided"].grid > .row:before {
+    position: absolute;
+    content: "";
+    top: 0em;
+    left: 0px;
+    width: calc(100% -  2rem );
+    height: 1px;
+    margin: 0% 1rem;
+    -webkit-box-shadow: 0px -1px 0px 0px rgba(34, 36, 38, 0.15);
+    box-shadow: 0px -1px 0px 0px rgba(34, 36, 38, 0.15);
+}
+/* Padded Horizontally Divided */
+[class*="horizontally padded"].lole-grid.divided.grid,
+.lole-grid.padded.divided.grid:not(.vertically):not(.horizontally) {
+    width: 100%;
+}
+
+/* First Row Vertically Divided */
+.lole-grid[class*="vertically divided"].grid > .row:first-child:before {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+/* Inverted Divided */
+.lole-grid.inverted.divided.grid:not([class*="vertically divided"]) > .col:not(.row),
+.lole-grid.inverted.divided.grid:not([class*="vertically divided"]) > .row > .col {
+    -webkit-box-shadow: -1px 0px 0px 0px rgba(255, 255, 255, 0.1);
+    box-shadow: -1px 0px 0px 0px rgba(255, 255, 255, 0.1);
+}
+.lole-grid.inverted.divided.grid:not([class*="vertically divided"]) > .col:not(.row):first-child,
+.lole-grid.inverted.divided.grid:not([class*="vertically divided"]) > .row > .col:first-child {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.lole-grid.inverted[class*="vertically divided"].grid > .row:before {
+    -webkit-box-shadow: 0px -1px 0px 0px rgba(255, 255, 255, 0.1);
+    box-shadow: 0px -1px 0px 0px rgba(255, 255, 255, 0.1);
+}
+/* Relaxed */
+.lole-grid.relaxed[class*="vertically divided"].grid > .row:before {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    width: calc(100% -  3rem );
+}
+.lole-grid.relaxed.grid > .row,
+.lole-grid.relaxed.grid > .col:not(.row),
+.lole-grid.relaxed.grid > .row > .col{
+}
+
+
+/* celled */
+.lole-grid.celled.grid {
+    width: 100%;
+    margin: 1em 0em;
+    -webkit-box-shadow: 0px 0px 0px 1px #D4D4D5;
+    box-shadow: 0px 0px 0px 1px #D4D4D5;
+}
+.lole-grid.celled.grid > .row {
+    width: 100% !important;
+    margin: 0em;
+    padding: 0em;
+    -webkit-box-shadow: 0px -1px 0px 0px #D4D4D5;
+    box-shadow: 0px -1px 0px 0px #D4D4D5;
+}
+.lole-grid.celled.grid > .col:not(.row),
+.lole-grid.celled.grid > .row > .col {
+    -webkit-box-shadow: -1px 0px 0px 0px #D4D4D5;
+    box-shadow: -1px 0px 0px 0px #D4D4D5;
+}
+.lole-grid.celled.grid > .col:first-child,
+.lole-grid.celled.grid > .row > .col:first-child {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.lole-grid.celled.grid > .col:not(.row),
+.lole-grid.celled.grid > .row > .col {
+    padding: 1em;
+}
+.lole-grid.relaxed.celled.grid > .col:not(.row),
+.lole-grid.relaxed.celled.grid > .row > .col {
+    padding: 1.5em;
+}
+/* Internally Celled */
+.lole-grid[class*="internally celled"].grid {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    margin: 0em;
+}
+.lole-grid[class*="internally celled"].grid > .row:first-child {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.lole-grid[class*="internally celled"].grid > .row > .col:first-child {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+/* Vertically Aligned */
+/* Top Aligned */
+.lole-grid[class*="top aligned"].grid > .col:not(.row),
+.lole-grid[class*="top aligned"].grid > .row > .col,
+.lole-grid.grid > [class*="top aligned"].row > .col,
+.lole-grid.grid > [class*="top aligned"].col:not(.row),
+.lole-grid.grid > .row > [class*="top aligned"].col {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    vertical-align: top;
+    -ms-flex-item-align: start !important;
+    align-self: flex-start !important;
+}
+
+/* Middle Aligned */
+.lole-grid[class*="middle aligned"].grid > .col:not(.row),
+.lole-grid[class*="middle aligned"].grid > .row > .col,
+.lole-grid.grid > [class*="middle aligned"].row > .col,
+.lole-grid.grid > [class*="middle aligned"].col:not(.row),
+.lole-grid.grid > .row > [class*="middle aligned"].col {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    vertical-align: middle;
+    -ms-flex-item-align: center !important;
+    align-self: center !important;
+}
+
+/* Bottom Aligned */
+.lole-grid[class*="bottom aligned"].grid > .col:not(.row),
+.lole-grid[class*="bottom aligned"].grid > .row > .col,
+.lole-grid.grid > [class*="bottom aligned"].row > .col,
+.lole-grid.grid > [class*="bottom aligned"].col:not(.row),
+.lole-grid.grid > .row > [class*="bottom aligned"].col {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    vertical-align: bottom;
+    -ms-flex-item-align: end !important;
+    align-self: flex-end !important;
+}
+/* Stretched */
+.lole-grid.stretched.grid > .row > .col,
+.lole-grid.stretched.grid > .col,
+.lole-grid.grid > .stretched.row > .col,
+.lole-grid.grid > .stretched.col:not(.row),
+.lole-grid.grid > .row > .stretched.col {
+    display: inline-flex !important;
+    -ms-flex-item-align: stretch;
+    align-self: stretch;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.lole-grid.stretched.grid > .row > .col > *,
+.lole-grid.stretched.grid > .col > *,
+.lole-grid.grid > .stretched.row > .col > *,
+.lole-grid.grid > .stretched.col:not(.row) > *,
+.lole-grid.grid > .row > .stretched.col > * {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+
+/* Horizontally Centered */
+/* Left Aligned */
+.lole-grid[class*="left aligned"].grid > .col,
+.lole-grid[class*="left aligned"].grid > .row > .col,
+.lole-grid.grid > [class*="left aligned"].row > .col,
+.lole-grid.grid > [class*="left aligned"].col.col,
+.lole-grid.grid > .row > [class*="left aligned"].col.col {
+    text-align: left;
+    -ms-flex-item-align: inherit;
+    align-self: inherit;
+}
+
+/* Center Aligned */
+.lole-grid[class*="center aligned"].grid > .col,
+.lole-grid[class*="center aligned"].grid > .row > .col,
+.lole-grid.grid > [class*="center aligned"].row > .col,
+.lole-grid.grid > [class*="center aligned"].col.col,
+.lole-grid.grid > .row > [class*="center aligned"].col.col {
+    text-align: center;
+    -ms-flex-item-align: inherit;
+    align-self: inherit;
+}
+.lole-grid[class*="center aligned"].grid {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+/* Right Aligned */
+.lole-grid[class*="right aligned"].grid > .col,
+.lole-grid[class*="right aligned"].grid > .row > .col,
+.lole-grid.grid > [class*="right aligned"].row > .col,
+.lole-grid.grid > [class*="right aligned"].col.col,
+.lole-grid.grid > .row > [class*="right aligned"].col.col {
+    text-align: right;
+    -ms-flex-item-align: inherit;
+    align-self: inherit;
+}
+
+/* Justified */
+.lole-grid.justified.grid > .col,
+.lole-grid.justified.grid > .row > .col,
+.lole-grid.grid > .justified.row > .col,
+.lole-grid.grid > .justified.col.col,
+.lole-grid.grid > .row > .justified.col.col {
+    text-align: justify;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+
+/* colored */
+.lole-grid.grid > .row > .primary.col,
+.lole-grid.grid > .row > .indigo.col,
+.lole-grid.grid > .row > .purple.col,
+.lole-grid.grid > .row > .pink.col,
+.lole-grid.grid > .row > .red.col,
+.lole-grid.grid > .row > .orange.col,
+.lole-grid.grid > .row > .yellow.col,
+.lole-grid.grid > .row > .green.col,
+.lole-grid.grid > .row > .teal.col,
+.lole-grid.grid > .row > .cyan.col{
+    margin-top: -1rem;
+    margin-bottom: -1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/*primary*/
+.lole-grid.grid > .primary.row,
+.lole-grid.grid > .primary.col,
+.lole-grid.grid > .row > .primary.col{
+    background-color: rgb(249, 204, 226) !important;
+    color: #FFFFFF;
+}
+
+/*$indigo*/
+.lole-grid.grid > .indigo.row,
+.lole-grid.grid > .indigo.col,
+.lole-grid.grid > .row > .indigo.col{
+    background-color: #6610f2 !important;
+    color: #FFFFFF;
+}
+
+/*$purple*/
+.lole-grid.grid > .purple.row,
+.lole-grid.grid > .purple.col,
+.lole-grid.grid > .row > .purple.col{
+    background-color: #6f42c1 !important;
+    color: #FFFFFF;
+}
+
+/*pink*/
+.lole-grid.grid > .pink.row,
+.lole-grid.grid > .pink.col,
+.lole-grid.grid > .row > .pink.col{
+    background-color: #d63384 !important;
+    color: #FFFFFF;
+}
+
+/*red*/
+.lole-grid.grid > .red.row,
+.lole-grid.grid > .red.col,
+.lole-grid.grid > .row > .red.col{
+    background-color: #dc3545 !important;
+    color: #FFFFFF;
+}
+
+/*orange*/
+.lole-grid.grid > .orange.row,
+.lole-grid.grid > .orange.col,
+.lole-grid.grid > .row > .orange.col{
+    background-color: #fd7e14 !important;
+    color: #FFFFFF;
+}
+
+/*$yellow*/
+.lole-grid.grid > .yellow.row,
+.lole-grid.grid > .yellow.col,
+.lole-grid.grid > .row > .yellow.col{
+    background-color: #fadb14 !important;
+    color: #FFFFFF;
+}
+
+/*$green*/
+.lole-grid.grid > .green.row,
+.lole-grid.grid > .green.col,
+.lole-grid.grid > .row > .green.col{
+    background-color: #52c41a !important;
+    color: #FFFFFF;
+}
+
+/*teal*/
+.lole-grid.grid > .teal.row,
+.lole-grid.grid > .teal.col,
+.lole-grid.grid > .row > .teal.col{
+    background-color: #20c997 !important;
+    color: #FFFFFF;
+}
+
+/*cyan*/
+.lole-grid.grid > .cyan.row,
+.lole-grid.grid > .cyan.col,
+.lole-grid.grid > .row > .cyan.col{
+    background-color: #17a2b8 !important;
+    color: #FFFFFF;
+}
+
+/*gray*/
+.lole-grid.grid > .gray.row,
+.lole-grid.grid > .gray.col,
+.lole-grid.grid > .row > .gray.col{
+    background-color: #343a40  !important;
+    color: #FFFFFF;
+}
+
+/*black*/
+.lole-grid.grid > .black.row,
+.lole-grid.grid > .black.col,
+.lole-grid.grid > .row > .black.col{
+    background-color: #000000  !important;
+    color: #FFFFFF;
+}
+
+
+/* Equal Width */
+.lole-grid[class*="equal width"].grid > .col:not(.row),
+.lole-grid[class*="equal width"].grid > .row > .col,
+.lole-grid.grid > [class*="equal width"].row > .col {
+    display: inline-block;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+.lole-grid[class*="equal width"].grid > .wide.col,
+.lole-grid[class*="equal width"].grid > .row > .wide.col,
+.lole-grid.grid > [class*="equal width"].row > .wide.col {
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+}

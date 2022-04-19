@@ -1,0 +1,16 @@
+/* 屏幕宽度在340px至410px时，基准尺寸使用20px */
+html{
+    font-size: 20px;
+}
+/* 屏幕宽度小于340px时，基准尺寸使用18px */
+@media (max-width: 340px){
+    html{
+        font-size: 18px;
+    }
+}
+/* 屏幕宽度大于410px时，基准尺寸使用22px */
+@media (min-width: 410px){
+    html{
+        font-size: 22px;
+    }
+}
