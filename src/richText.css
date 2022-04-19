@@ -1,0 +1,73 @@
+body{
+    background-color: sienna;
+    margin: 0;
+}
+.title{
+    color: #fff;
+    text-align: center;
+    margin-top: 30px;
+
+}
+.my-button-text{
+    background-color: #e7eaef;
+    border:none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: rgb(59, 59, 59);
+    font-size: 15px;
+}
+.my-button-text:hover{
+    background-color: #bfcfeb;
+    cursor: pointer;
+}
+.options{
+    background-color: #e7eaef;
+    padding: 10px;
+}
+.text-editor-main{
+    width:1200px;
+    margin: auto;
+    margin-top: 50px;
+    box-shadow: 0.3rem 0.9rem 0.9rem rgba(0, 0, 0, 0.1);
+}
+.contentOutput{
+    background-color: #fff;
+    height: 350px;
+    overflow-wrap: break-word;
+    padding: 30px;
+    font-size: 1rem;
+    
+}
+.floating-button{
+    position: fixed;
+    background-color: tomato;
+    padding: 10px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    bottom: 70px;
+    right: 60px;
+    box-shadow:0rem 0rem 1rem rgba(0, 0, 0, 0.2);
+    color: #fff;
+    transition: all ease-in-out 0.3s;
+}
+.floating-button > i{
+    margin-left: 7px;
+    margin-top: 7px;
+}
+.floating-button:hover{
+    cursor: pointer;
+    background-color: rgb(244, 73, 42);
+    transform: rotate(360deg);
+}
+.fullscreen-title{
+    display: none;
+}
+.fullscreen-text-editor{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+.fullscreen-output{
+    height: 550px;;
+}
