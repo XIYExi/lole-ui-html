@@ -65,85 +65,85 @@
 }
 
 /*类型*/
-.primary{
+.primary.button{
     color: #fff;
     background: rgb(249, 204, 226);
     border-color: rgb(249, 204, 226);
 }
-.primary:hover{
+.primary.button:hover{
     color: #fff;
     background: rgba(249,204,226,0.75);
     border-color: rgba(249,204,226,0.1);
 }
-.primary:focus{
+.primary.button:focus{
     color: #fff;
     background: rgba(249,204,226,0.075);
     border-color: rgba(249,204,226,0.1);
 }
-.primary.disabled{
+.primary.button.disabled{
     color: #fff;
     background: rgba(249,204,226,0.75);
     border-color: rgba(249,204,226,0.1);
 }
 
-.danger{
+.danger.button{
     color: #fff;
     background: #dc3545;
     border-color: #dc3545;
 }
-.danger:hover{
+.danger.button:hover{
     color: #fff;
     background: rgba(220,53,69,0.75);
     border-color: rgba(220,53,69,0.1);
 }
-.danger:focus{
+.danger.button:focus{
     color: #fff;
     background: rgba(220,53,69,0.75);
     border-color: rgba(220,53,69,0.1);
 }
-.danger.disabled{
+.danger.button.disabled{
     color: #fff;
     background: rgba(220,53,69,0.75);
     border-color: rgba(220,53,69,0.1);
 }
 
-.link {
+.link.button {
     font-weight: 400;
     color: rgba(249, 204, 226,0.75);
     text-decoration: none;
     box-shadow: none;
 }
-.link:hover{
+.link.button:hover{
     color: rgba(249, 204, 226,0.75);
     text-decoration: underline;
 }
-.link:focus{
+.link.button:focus{
     text-decoration: underline;
     box-shadow: none;
 }
-.link.disabled{
+.link.button.disabled{
     color: rgba(249, 204, 226,0.75);
     box-shadow: none;
     pointer-events: none;
 }
 
-.dash{
+.dash.button{
     color: #5b6067;
     background: #fff;
     border-color: #ced4da;
     border-style: dashed;
 }
-.dash:hover{
+.dash.button:hover{
     color: rgb(249, 204, 226);
     background: #fff;
     border-color: rgb(249, 204, 226);
 }
-.dash:focus{
+.dash.button:focus{
     color: rgb(249, 204, 226);
     background: #fff;
     border-color: rgb(249, 204, 226);
 }
-.dash.disabled{
+.dash.button.disabled{
     color: rgb(249, 204, 226);
     background: #fff;
     border-color: rgb(249, 204, 226);

@@ -1,0 +1,1 @@
+npx postcss src/index.css -o dist/lole-ui-html0.5.1.min.css -u postcss-import autoprefixer cssnano --no-map

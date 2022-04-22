@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lole-UI原生 Zone自定义区块</title>
+    <link rel="stylesheet" href="../src/index.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        legend{
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        fieldset{
+            margin-top: 5em;
+            border-style:none!important;
+        }
+        xmp{
+            font-family: 'Open Sans', sans-serif;
+            color: rgb(249, 204, 226);
+        }
+        .item{
+            padding-top: 0.5em!important;
+        }
+
+
+    </style>
+</head>
+<body>
+<div style="display: flex">
+    <div style="width: 20vw">
+        <div class="lole-menu celled vertical menu"
+             style="
+                 position:fixed;
+                 width: 20vw;
+                 height: 100%;
+                 background: #e9ecef;/*gray-200*/
+             "
+        >
+            <a href="#base"><div class="item">基本使用</div></a>
+            <a href="#raised"><div class="item">提升</div></a>
+            <a href="#stacked"><div class="item">叠加</div></a>
+            <a href="#piled"><div class="item">堆叠</div></a>
+            <a href="#vertical"><div class="item">垂直段落</div></a>
+            <a href="#combine"><div class="item">组合</div></a>
+            <a href="#complex"><div class="item">复杂组合</div></a>
+            <a href="#horizontal"><div class="item">水平组合</div></a>
+            <a href="#disabled"><div class="item">禁用</div></a>
+            <a href="#loading"><div class="item">加载</div></a>
+            <a href="#inverted"><div class="item">反色</div></a>
+            <a href="#color"><div class="item">色条</div></a>
+            <a href="#circle"><div class="item">圆形</div></a>
+            <a href="#floated"><div class="item">浮动</div></a>
+            <a href="#aligned"><div class="item">文本对齐</div></a>
+            <a href="#basic"><div class="item">基本</div></a>
+        </div>
+    </div>
+
+    <div style="width: 80vw">
+
+        <h1 style="text-align: center">lole-UI原生 Zone自定义区块</h1>
+
+        <fieldset id="base">
+            <legend id="base-code">基本使用</legend>
+            <div class="lole-zone zone">
+                <div class="lole-grid grid">
+                    <div class="four col row">
+                        <div class="col">这是一个简单的Zone</div>
+                        <div class="col">Zone就是区块</div>
+                        <div class="col">我们只提供基本的样式和组合</div>
+                        <div class="col">剩下的交给你</div>
+                    </div>
+                </div>
+            </div>
+            <div class="lole-zone zone" id="base-code-show" style="display: none">
+<xmp>
+    <div class="lole-zone zone">
+        <div class="lole-grid grid">
+            <div class="four col row">
+                <div class="col">这是一个简单的Zone</div>
+                <div class="col">Zone就是区块</div>
+                <div class="col">我们只提供基本的样式和组合</div>
+                <div class="col">剩下的交给你</div>
+            </div>
+        </div>
+    </div>
+</xmp>
+            </div>
+        </fieldset>
+
+        <fieldset id="raised">
+            <legend id="raised-code">提升</legend>
+            <div class="lole-zone raised zone">
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+            </div>
+            <div class="lole-zone zone" id="raised-code-show" style="display: none">
+<xmp>
+    <div class="lole-zone raised zone">
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+            Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+            Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+        </p>
+    </div>
+</xmp>
+            </div>
+        </fieldset>
+
+        <fieldset id="stacked">
+            <legend id="stacked-code">叠加</legend>
+            <div class="lole-zone stacked zone">
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+            </div>
+            <div class="lole-zone zone" id="stacked-code-show" style="display: none">
+<xmp>
+    <div class="lole-zone stacked zone">
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+            Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.
+            Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+        </p>
+    </div>
+</xmp>
+            </div>
+        </fieldset>
+
+        <fieldset id="piled">
+            <legend id="piled-code">堆叠</legend>
+            <div class="lole-zone piled zone">
+                <h4>Header</h4>
+                <p>Te eum doming eirmod, nominati pertinacia argumentum ad his. Ex eam alia facete scriptorem,
+                    est autem aliquip detraxit at. Usu ocurreret referrentur at, cu epicurei appellantur vix.
+                    Cum ea laoreet recteque electram, eos choro alterum definiebas in. Vim dolorum definiebas an. Mei ex natum rebum iisque.</p>
+                <p>Audiam quaerendum eu sea, pro omittam definiebas ex. Te est latine definitiones.
+                    Quot wisi nulla ex duo. Vis sint solet expetenda ne, his te phaedrum referrentur consectetuer.
+                    Id vix fabulas oporteat, ei quo vide phaedrum, vim vivendum maiestatis in.</p>
+                <p>Eu quo homero blandit intellegebat. Incorrupte consequuntur mei id.
+                    Mei ut facer dolores adolescens, no illum aperiri quo, usu odio brute at. Qui te porro electram, ea dico facete utroque quo.
+                    Populo quodsi te eam, wisi everti eos ex, eum elitr altera utamur at. Quodsi convenire mnesarchum eu per, quas minimum postulant per id.</p>
+            </div>
+
+            <div class="lole-zone zone" id="piled-code-show" style="display: none">
+<xmp>
+    <div class="lole-zone piled zone">
+        <h4>Header</h4>
+        <p>Te eum doming eirmod, nominati pertinacia argumentum ad his. Ex eam alia facete scriptorem,
+            est autem aliquip detraxit at. Usu ocurreret referrentur at, cu epicurei appellantur vix.
+            Cum ea laoreet recteque electram, eos choro alterum definiebas in. Vim dolorum definiebas an. Mei ex natum rebum iisque.</p>
+        <p>Audiam quaerendum eu sea, pro omittam definiebas ex. Te est latine definitiones.
+            Quot wisi nulla ex duo. Vis sint solet expetenda ne, his te phaedrum referrentur consectetuer.
+            Id vix fabulas oporteat, ei quo vide phaedrum, vim vivendum maiestatis in.</p>
+        <p>Eu quo homero blandit intellegebat. Incorrupte consequuntur mei id.
+            Mei ut facer dolores adolescens, no illum aperiri quo, usu odio brute at. Qui te porro electram, ea dico facete utroque quo.
+            Populo quodsi te eam, wisi everti eos ex, eum elitr altera utamur at. Quodsi convenire mnesarchum eu per, quas minimum postulant per id.</p>
+    </div>
+</xmp>
+            </div>
+        </fieldset>
+
+        <fieldset id="vertical">
+            <legend id="vertical-code">垂直段落</legend>
+            <div class="lole-zone vertical zone">
+                <p>Te eum doming eirmod, nominati pertinacia argumentum ad his. Ex eam alia facete scriptorem,
+                    est autem aliquip detraxit at. Usu ocurreret referrentur at, cu epicurei appellantur vix.
+                    Cum ea laoreet recteque electram, eos choro alterum definiebas in. Vim dolorum definiebas an. Mei ex natum rebum iisque.</p>
+            </div>
+            <div class="lole-zone vertical zone">
+                <p>Audiam quaerendum eu sea, pro omittam definiebas ex. Te est latine definitiones.
+                    Quot wisi nulla ex duo. Vis sint solet expetenda ne, his te phaedrum referrentur consectetuer.
+                    Id vix fabulas oporteat, ei quo vide phaedrum, vim vivendum maiestatis in.</p>
+            </div>
+            <div class="lole-zone vertical zone">
+                <p>Eu quo homero blandit intellegebat. Incorrupte consequuntur mei id.
+                    Mei ut facer dolores adolescens, no illum aperiri quo, usu odio brute at. Qui te porro electram, ea dico facete utroque quo.
+                    Populo quodsi te eam, wisi everti eos ex, eum elitr altera utamur at. Quodsi convenire mnesarchum eu per, quas minimum postulant per id.</p>
+            </div>
+
+            <div class="lole-zone zone" id="vertical-code-show" style="display: none">
+<xmp>
+    <div class="lole-zone vertical zone">
+        <p>Te eum doming eirmod, nominati pertinacia argumentum ad his. Ex eam alia facete scriptorem,
+            est autem aliquip detraxit at. Usu ocurreret referrentur at, cu epicurei appellantur vix.
+            Cum ea laoreet recteque electram, eos choro alterum definiebas in. Vim dolorum definiebas an. Mei ex natum rebum iisque.</p>
+    </div>
+    <div class="lole-zone vertical zone">
+        <p>Audiam quaerendum eu sea, pro omittam definiebas ex. Te est latine definitiones.
+            Quot wisi nulla ex duo. Vis sint solet expetenda ne, his te phaedrum referrentur consectetuer.
+            Id vix fabulas oporteat, ei quo vide phaedrum, vim vivendum maiestatis in.</p>
+    </div>
+    <div class="lole-zone vertical zone">
+        <p>Eu quo homero blandit intellegebat. Incorrupte consequuntur mei id.
+            Mei ut facer dolores adolescens, no illum aperiri quo, usu odio brute at. Qui te porro electram, ea dico facete utroque quo.
+            Populo quodsi te eam, wisi everti eos ex, eum elitr altera utamur at. Quodsi convenire mnesarchum eu per, quas minimum postulant per id.</p>
+    </div>
+</xmp>
+
+            </div>
+        </fieldset>
+
+        <fieldset id="combine">
+            <legend id="combine-code">组合</legend>
+            <div class="lole-zone zones">
+                <div class="lole-zone zone">
+                    <p>Top</p>
+                </div>
+                <div class="lole-zone zone">
+                    <p>中间</p>
+                </div>
+                <div class="lole-zone zone">
+                    <p>中间</p>
+                </div>
+                <div class="lole-zone zone">
+                    <p>中间</p>
+                </div>
+                <div class="lole-zone zone">
+                    <p>Bottom</p>
+                </div>
+            </div>
+            <div class="lole-zone zone" id="combine-code-show" style="display: none">
+<xmp>
+    <div class="lole-zone zones">
+        <div class="lole-zone zone">
+            <p>Top</p>
+        </div>
+        <div class="lole-zone zone">
+            <p>中间</p>
+        </div>
+        <div class="lole-zone zone">
+            <p>中间</p>
+        </div>
+        <div class="lole-zone zone">
+            <p>中间</p>
+        </div>
+        <div class="lole-zone zone">
+            <p>Bottom</p>
+        </div>
+    </div>
+</xmp>
+            </div>
+        </fieldset>
+
+        <fieldset id="complex">
+            <legend id="complex-code">复杂组合</legend>
+            <div class="lole-zone zones">
+                <div class="lole-zone zone">
+                    <p>Top</p>
+                </div>
+                <div class="lole-grid equal width grid">
+                    <div class="col">
+                        <div class="lole-zone zones">
+                            <div class="lole-zone zone">
+                                <p>复杂组合 Grid——Zone——Top</p>
+                            </div>
+                            <div class="lole-zone zone">
+                                <p>复杂组合 Grid——Zone——Body</p>
+                            </div>
+                            <div class="lole-zone zone">
+                                <p>复杂组合 Grid——Zone——Bottom</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="lole-zone zones">
+                            <div class="lole-zone zone">
+                                <p>复杂组合 Grid——Zone——Top</p>
+                            </div>
+                            <div class="lole-zone zone">
+                                <p>复杂组合 Grid——Zone——Body</p>
+                            </div>
+                            <div class="lole-zone zone">
+                                <p>复杂组合 Grid——Zone——Bottom</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="lole-zone zones">
+                    <div class="lole-zone zone">
+                        <p>复杂组合 Zones-Zone-Top</p>
+                    </div>
+                    <div class="lole-zone zone">
+                        <p>复杂组合 Zones-Zone-Body</p>
+                    </div>
+                    <div class="lole-zone zone">
+                        <p>复杂组合 Zones-Zone-Bottom</p>
+                    </div>
+                </div>
+                <div class="lole-zone zone">
+                    <p>Body</p>
+                </div>
+                <div class="lole-zone horizontal zones">
+                    <div class="lole-zone zone">
+                        <p>复杂组合 Zones-Horizontal-Top</p>
+                    </div>
+                    <div class="lole-zone zone">
+                        <p>复杂组合 Zones-Horizontal-Body</p>
+                    </div>
+                    <div class="lole-zone zone">
+                        <p>复杂组合 Zones-Horizontal-Bottom</p>
+                    </div>
+                </div>
+                <div class="lole-zone zone">
+                    <p>Bottom</p>
+                </div>
+            </div>
+            <div class="lole-zone zone" style="display: none" id="complex-code-show">
+<xmp>
+    <div class="lole-zone zones">
+        <div class="lole-zone zone">
+            <p>Top</p>
+        </div>
+        <div class="lole-grid equal width grid">
+            <div class="col">
+                <div class="lole-zone zones">
+                    <div class="lole-zone zone">
+                        <p>复杂组合 Grid——Zone——Top</p>
+                    </div>
+                    <div class="lole-zone zone">
+                        <p>复杂组合 Grid——Zone——Body</p>
+                    </div>
+                    <div class="lole-zone zone">
+                        <p>复杂组合 Grid——Zone——Bottom</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="lole-zone zones">
+                    <div class="lole-zone zone">
+                        <p>复杂组合 Grid——Zone——Top</p>
+                    </div>
+                    <div class="lole-zone zone">
+                        <p>复杂组合 Grid——Zone——Body</p>
+                    </div>
+                    <div class="lole-zone zone">
+                        <p>复杂组合 Grid——Zone——Bottom</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="lole-zone zones">
+            <div class="lole-zone zone">
+                <p>复杂组合 Zones-Zone-Top</p>
+            </div>
+            <div class="lole-zone zone">
+                <p>复杂组合 Zones-Zone-Body</p>
+            </div>
+            <div class="lole-zone zone">
+                <p>复杂组合 Zones-Zone-Bottom</p>
+            </div>
+        </div>
+        <div class="lole-zone zone">
+            <p>Body</p>
+        </div>
+        <div class="lole-zone horizontal zones">
+            <div class="lole-zone zone">
+                <p>复杂组合 Zones-Horizontal-Top</p>
+            </div>
+            <div class="lole-zone zone">
+                <p>复杂组合 Zones-Horizontal-Body</p>
+            </div>
+            <div class="lole-zone zone">
+                <p>复杂组合 Zones-Horizontal-Bottom</p>
+            </div>
+        </div>
+        <div class="lole-zone zone">
+            <p>Bottom</p>
+        </div>
+    </div>
+</xmp>
+            </div>
+        </fieldset>
+
+        <fieldset id="horizontal">
+            <legend id="horizontal-code">水平组合</legend>
+            <div class="lole-zone horizontal zones">
+                <div class="lole-zone zone">
+                    <p>Zone1</p>
+                </div>
+                <div class="lole-zone zone">
+                    <p>Zone2</p>
+                </div>
+                <div class="lole-zone zone">
+                    <p>Zone3</p>
+                </div>
+            </div>
+            <div class="lole-zone zone" id="horizontal-code-show" style="display: none">
+<xmp>
+    <div class="lole-zone horizontal zones">
+        <div class="lole-zone zone">
+            <p>Zone1</p>
+        </div>
+        <div class="lole-zone zone">
+            <p>Zone2</p>
+        </div>
+        <div class="lole-zone zone">
+            <p>Zone3</p>
+        </div>
+    </div>
+</xmp>
+            </div>
+        </fieldset>
+
+        <fieldset id="disabled">
+            <legend id="disabled-code">禁用</legend>
+            <div class="lole-zone disabled zone">
+                <p>此Zone区块已被禁用</p>
+            </div>
+            <div class="lole-zone zone" style="display: none" id="disabled-code-show">
+<xmp>
+    <div class="lole-zone disabled zone">
+        <p>此Zone区块已被禁用</p>
+    </div>
+</xmp>
+            </div>
+        </fieldset>
+
+        <fieldset id="loading">
+            <legend id="loading-code">加载</legend>
+            <div class="lole-zone loading zone">
+                <p>此区块正在加载数据</p>
+                <p>Spin...</p>
+                <p>React,Vue等高阶框架请使用内置组件包裹使用</p>
+            </div>
+            <div class="lole-zone zone" id="loading-code-show" style="display: none">
+<xmp>
+    <div class="lole-zone loading zone">
+        <p>此区块正在加载数据</p>
+        <p>Spin...</p>
+        <p>React,Vue等高阶框架请使用内置组件包裹使用</p>
+    </div>
+</xmp>
+            </div>
+        </fieldset>
+
+        <fieldset id="inverted">
+            <legend id="inverted-code">反色</legend>
+            <div class="ui inverted segment">
+                <p>我是来告诉你一些事情的，你要先听我说喔。</p>
+            </div>
+            <div class="lole-zone zone" id="inverted-code-show" style="display: none">
+<xmp>
+    <div class="ui inverted segment">
+        <p>我是来告诉你一些事情的，你要先听我说喔。</p>
+    </div>
+</xmp>
+            </div>
+        </fieldset>
+
+        <fieldset id="color">
+            <legend id="color-code">色条</legend>
+            <div class="lole-zone primary zone">主题色</div>
+            <div class="lole-zone inverted primary zone">主题色</div>
+            <div class="lole-zone zone" id="color-code-show" style="display: none">
+<xmp>
+    <div class="lole-zone primary zone">主题色</div>
+    <div class="lole-zone inverted primary zone">主题色</div>
+</xmp>
+            </div>
+        </fieldset>
+
+        <fieldset id="circle">
+            <legend id="circle-code">圆形</legend>
+            <div class="lole-zone circular zone">
+                <h2>Zone</h2>
+            </div>
+            <div class="lole-zone inverted circular zone">
+                <h2>Zone</h2>
+            </div>
+            <div class="lole-zone zone" id="circle-code-show" style="display: none">
+<xmp>
+    <div class="lole-zone circular zone">
+        <h2>Zone</h2>
+    </div>
+    <div class="lole-zone inverted circular zone">
+        <h2>Zone</h2>
+    </div>
+</xmp>
+            </div>
+        </fieldset>
+
+        <fieldset id="floated">
+            <legend id="floated-code">浮动</legend>
+            <div>
+                <div class="lole-zone right floated zone">
+                    <p>此段落将显示在右边</p>
+                </div>
+                <div class="lole-zone left floated zone">
+                    <p>此段落将显示在左边</p>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <div class="lole-zone zone" style="display: none" id="floated-code-show">
+<xmp>
+    <div class="lole-zone right floated zone">
+        <p>此段落将显示在右边</p>
+    </div>
+    <div class="lole-zone left floated zone">
+        <p>此段落将显示在左边</p>
+    </div>
+</xmp>
+            </div>
+        </fieldset>
+
+
+
+        <fieldset id="aligned">
+            <legend id="aligned-code">文本对齐</legend>
+            <div class="lole-zone right aligned zone">
+                Right
+            </div>
+            <div class="lole-zone left aligned zone">
+                Left
+            </div>
+            <div class="lole-zone center aligned zone">居中 </div>
+            <div class="lole-zone zone" style="display: none" id="aligned-code-show">
+<xmp>
+    <div class="lole-zone right aligned zone">
+        Right
+    </div>
+    <div class="lole-zone left aligned zone">
+        Left
+    </div>
+    <div class="lole-zone center aligned zone">居中 </div>
+</xmp>
+            </div>
+        </fieldset>
+
+        <fieldset id="basic">
+            <legend id="basic-code">基本-只提供基本div封装</legend>
+            <div class="lole-zone basic zone">
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                    Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+                    Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+                </p>
+            </div>
+            <div class="lole-zone zone" id="basic-code-show" style="display: none">
+<xmp>
+    <div class="lole-zone basic zone">
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+            Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+            Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+        </p>
+    </div>
+</xmp>
+            </div>
+        </fieldset>
+
+    </div>
+
+</div>
+
+<script>
+
+    $('#basic-code').click(
+        function (){
+            if ($('#basic-code-show').css('display')==='none')
+                $('#basic-code-show').css('display','block')
+            else
+                $('#basic-code-show').css('display','none')
+        }
+    )
+
+    $('#aligned-code').click(
+        function (){
+            if ($('#aligned-code-show').css('display')==='none')
+                $('#aligned-code-show').css('display','block')
+            else
+                $('#aligned-code-show').css('display','none')
+        }
+    )
+
+    $('#floated-code').click(
+        function (){
+            if ($('#floated-code-show').css('display')==='none')
+                $('#floated-code-show').css('display','block')
+            else
+                $('#floated-code-show').css('display','none')
+        }
+    )
+
+
+    $('#circle-code').click(
+        function (){
+            if ($('#circle-code-show').css('display')==='none')
+                $('#circle-code-show').css('display','block')
+            else
+                $('#circle-code-show').css('display','none')
+        }
+    )
+
+    $('#color-code').click(
+        function (){
+            if ($('#color-code-show').css('display')==='none')
+                $('#color-code-show').css('display','block')
+            else
+                $('#color-code-show').css('display','none')
+        }
+    )
+
+    $('#inverted-code').click(
+        function (){
+            if ($('#inverted-code-show').css('display')==='none')
+                $('#inverted-code-show').css('display','block')
+            else
+                $('#inverted-code-show').css('display','none')
+        }
+    )
+
+    $('#loading-code').click(
+        function (){
+            if ($('#loading-code-show').css('display')==='none')
+                $('#loading-code-show').css('display','block')
+            else
+                $('#loading-code-show').css('display','none')
+        }
+    )
+
+    $('#disabled-code').click(
+        function (){
+            if ($('#disabled-code-show').css('display')==='none')
+                $('#disabled-code-show').css('display','block')
+            else
+                $('#disabled-code-show').css('display','none')
+        }
+    )
+
+    $('#horizontal-code').click(
+        function (){
+            if ($('#horizontal-code-show').css('display')==='none')
+                $('#horizontal-code-show').css('display','block')
+            else
+                $('#horizontal-code-show').css('display','none')
+        }
+    )
+
+    $('#complex-code').click(
+        function (){
+            if ($('#complex-code-show').css('display')==='none')
+                $('#complex-code-show').css('display','block')
+            else
+                $('#complex-code-show').css('display','none')
+        }
+    )
+
+    $('#combine-code').click(
+        function (){
+            if ($('#combine-code-show').css('display')==='none')
+                $('#combine-code-show').css('display','block')
+            else
+                $('#combine-code-show').css('display','none')
+        }
+    )
+
+    $('#base-code').click(
+        function (){
+            if ($('#base-code-show').css('display')==='none')
+                $('#base-code-show').css('display','block')
+            else
+                $('#base-code-show').css('display','none')
+        }
+    )
+
+    $('#raised-code').click(
+        function (){
+            if ($('#raised-code-show').css('display')==='none')
+                $('#raised-code-show').css('display','block')
+            else
+                $('#raised-code-show').css('display','none')
+        }
+    )
+
+    $('#stacked-code').click(
+        function (){
+            if ($('#stacked-code-show').css('display')==='none')
+                $('#stacked-code-show').css('display','block')
+            else
+                $('#stacked-code-show').css('display','none')
+        }
+    )
+
+    $('#piled-code').click(
+        function (){
+            if ($('#piled-code-show').css('display')==='none')
+                $('#piled-code-show').css('display','block')
+            else
+                $('#piled-code-show').css('display','none')
+        }
+    )
+
+    $('#vertical-code').click(
+        function (){
+            if ($('#vertical-code-show').css('display')==='none')
+                $('#vertical-code-show').css('display','block')
+            else
+                $('#vertical-code-show').css('display','none')
+        }
+    )
+
+</script>
+
+</body>
+</html>

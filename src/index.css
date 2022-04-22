@@ -1,6 +1,9 @@
 /* @font */
 @import '//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css';
 
+/*google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=ZCOOL+KuaiLe&display=swap');
+
 /* reboot */
 @import "./reboot.css";
 
@@ -19,3 +22,5 @@
 /* table */
 @import "./table.css";
 
+/* zone */
+@import "./zone.css";

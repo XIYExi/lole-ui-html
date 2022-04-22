@@ -1,0 +1,637 @@
+/*
+区块Zone对应一个div，提供基本的布局样式
+同时可以和其他组件进行联动。
+*/
+
+.lole-zone.zone{
+    position: relative;
+    background: #ffffff;
+
+    margin: 1rem 0em;
+    padding: 1em 1em;
+
+    border-radius: 0.2rem;
+    border: 1px solid rgba(34, 36, 38, 0.15);
+    box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
+    -webkit-box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
+}
+.lole-zone.zone:first-child{
+    margin-top: 0;
+}
+.lole-zone.zone:last-child{
+    margin-bottom: 0;
+}
+
+
+/*vertical*/
+.lole-zone.vertical.zone{
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+    background: none transparent;
+    border-radius: 0px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    border-bottom: 1px solid rgba(34, 36, 38, 0.15);
+}
+.lole-zone.vertical.zone:last-child {
+    border-bottom: none;
+}
+
+
+/* Label */
+.lole-zone[class*="bottom attached"].zone > [class*="top attached"].label {
+    border-top-left-radius: 0em;
+    border-top-right-radius: 0em;
+}
+.lole-zone[class*="top attached"].zone > [class*="bottom attached"].label {
+    border-bottom-left-radius: 0em;
+    border-bottom-right-radius: 0em;
+}
+
+/*
+top attached顶部吸附，所以需要把自己的顶部radius置为0
+*/
+.lole-zone.attached.zone:not(.top):not(.bottom) > [class*="top attached"].label {
+    border-top-left-radius: 0em;
+    border-top-right-radius: 0em;
+}
+
+/*
+bottom attached底部吸附，所以需要把自己的底部radius置为0
+*/
+.lole-zone.attached.zone:not(.top):not(.bottom) > [class*="bottom attached"].label {
+    border-bottom-left-radius: 0em;
+    border-bottom-right-radius: 0em;
+}
+
+
+
+/*piled*/
+.lole-zone.piled.zones,
+.lole-zone.piled.zone{
+    margin: 3em 0em;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    z-index: auto;
+}
+.lole-zone.piled.zone:first-child {
+    margin-top: 0em;
+}
+.lole-zone.piled.zone:last-child {
+    margin-bottom: 0em;
+}
+.lole-zone.piled.zones:after,
+.lole-zone.piled.zones:before,
+.lole-zone.piled.zone:after,
+.lole-zone.piled.zone:before {
+    background-color: #FFFFFF;
+    visibility: visible;
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0px;
+    position: absolute;
+    width: 100%;
+    border: 1px solid rgba(34, 36, 38, 0.15);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.lole-zone.piled.zones:before,
+.lole-zone.piled.zone:before {
+    -webkit-transform: rotate(-1.2deg);
+    transform: rotate(-1.2deg);
+    top: 0;
+    z-index: -2;
+}
+.lole-zone.piled.zones:after,
+.lole-zone.piled.zone:after {
+    -webkit-transform: rotate(1.2deg);
+    transform: rotate(1.2deg);
+    top: 0;
+    z-index: -1;
+}
+
+/*piled-attached*/
+.lole-zone[class*="top attached"].piled.zone {
+    margin-top: 3em;
+    margin-bottom: 0em;
+}
+.lole-zone.piled.zone[class*="top attached"]:first-child {
+    margin-top: 0em;
+}
+.lole-zone.piled.zone[class*="bottom attached"] {
+    margin-top: 0em;
+    margin-bottom: 3em;
+}
+.lole-zone.piled.zone[class*="bottom attached"]:last-child {
+    margin-bottom: 0em;
+}
+
+
+/*stacked堆叠*/
+.lole-zone.stacked.zone {
+    padding-bottom: 1.4em;
+}
+.lole-zone.stacked.zones:before,
+.lole-zone.stacked.zones:after,
+.lole-zone.stacked.zone:before,
+.lole-zone.stacked.zone:after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0%;
+    border-top: 1px solid rgba(34, 36, 38, 0.15);
+    background: rgba(0, 0, 0, 0.03);
+    width: 100%;
+    height: 6px;
+    visibility: visible;
+}
+.lole-zone.stacked.zones:before,
+.lole-zone.stacked.zone:before {
+    display: none;
+}
+/*stacked-Inverted */
+.lole-zone.stacked.inverted.zones:before,
+.lole-zone.stacked.inverted.zones:after,
+.lole-zone.stacked.inverted.zone:before,
+.lole-zone.stacked.inverted.zone:after {
+    background-color: rgba(0, 0, 0, 0.03);
+    border-top: 1px solid rgba(34, 36, 38, 0.35);
+}
+
+/*-------------------
+       Padded
+--------------------*/
+.lole-zone.padded.zone {
+    padding: 1.5em;
+}
+/* Padded vertical */
+.lole-zone.padded.zone.vertical.zone {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+/*-------------------
+       Compact
+--------------------*/
+.lole-zone.compact.zone {
+    display: table;
+}
+
+/* Compact Group */
+.lole-zone.compact.zones {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+.lole-zone.compact.zones .zone,
+.lole-zone.zones .compact.zone {
+    display: block;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+}
+
+/*-------------------
+       Circular
+--------------------*/
+.lole-zone.circular.zone {
+    display: table-cell;
+    padding: 2em;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 500em;
+}
+
+/*raised*/
+.lole-zone.raised.zones,
+.lole-zone.raised.zone {
+    -webkit-box-shadow: 0px 2px 4px 0px rgba(34, 36, 38, 0.12), 0px 2px 10px 0px rgba(34, 36, 38, 0.15);
+    box-shadow: 0px 2px 4px 0px rgba(34, 36, 38, 0.12), 0px 2px 10px 0px rgba(34, 36, 38, 0.15);
+}
+
+
+/*group*/
+.lole-zone.zones {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    margin: 1rem 0em;
+    border: 1px solid rgba(34, 36, 38, 0.15);
+    -webkit-box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
+    box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
+    border-radius: 0.28571429rem;
+}
+.lole-zone.zones:first-child {
+    margin-top: 0em;
+}
+.lole-zone.zones:last-child {
+    margin-bottom: 0em;
+}
+
+.lole-zone.zones > .zone {
+    top: 0px;
+    bottom: 0px;
+    border-radius: 0px;
+    margin: 0em;
+    width: auto;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    border-top: 1px solid rgba(34, 36, 38, 0.15);
+}
+.lole-zone.zones:not(.horizontal) > .zone:first-child {
+    border-top: none;
+    margin-top: 0em;
+    bottom: 0px;
+    margin-bottom: 0em;
+    top: 0px;
+    border-radius: 0.2rem 0.2rem 0em 0em;
+}
+
+/* Bottom */
+.lole-zone.zones:not(.horizontal) > .zone:last-child {
+    top: 0px;
+    bottom: 0px;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    -webkit-box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
+    box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
+    border-radius: 0em 0em 0.28571429rem 0.28571429rem;
+}
+
+/* Only */
+.lole-zone.zones:not(.horizontal) > .zone:only-child {
+    border-radius: 0.28571429rem;
+}
+
+.lole-zone.zones > .lole-zone.zones {
+    border-top: 1px solid rgba(34, 36, 38, 0.15);
+    margin: 1rem 1rem;
+}
+.lole-zone.zones > .zones:first-child {
+    border-top: none;
+}
+.lole-zone.zones > .zone + .zones:not(.horizontal) {
+    margin-top: 0em;
+}
+
+
+.lole-zone.horizontal.zones {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    background-color: transparent;
+    border-radius: 0px;
+    padding: 0em;
+    background-color: #FFFFFF;
+    -webkit-box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
+    box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
+    margin: 1rem 0em;
+    border-radius: 0.28571429rem;
+    border: 1px solid rgba(34, 36, 38, 0.15);
+}
+
+/* Nested Horizontal Group */
+.lole-zone.zones > .horizontal.zones {
+    margin: 0em;
+    background-color: transparent;
+    border-radius: 0px;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-top: 1px solid rgba(34, 36, 38, 0.15);
+}
+
+/* Horizontal Segment */
+.lole-zone.horizontal.zones > .zone {
+    -webkit-box-flex: 1;
+    flex: 1 1 auto;
+    -ms-flex: 1 1 0px;
+
+    /* Solves #2550 MS Flex */
+    margin: 0em;
+    min-width: 0px;
+    background-color: transparent;
+    border-radius: 0px;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-left: 1px solid rgba(34, 36, 38, 0.15);
+}
+/* Border Fixes */
+.lole-zone.zones > .horizontal.zones:first-child {
+    border-top: none;
+}
+.lole-zone.horizontal.zones > .zone:first-child {
+    border-left: none;
+}
+
+
+
+
+/*states*/
+/*disables*/
+.lole-zone.disabled.zone {
+    opacity: 0.45;
+    color: rgba(40, 40, 40, 0.3);
+}
+/*loading*/
+.lole-zone.loading.zone {
+    position: relative;
+    cursor: default;
+    pointer-events: none;
+    text-shadow: none !important;
+    color: transparent !important;
+    -webkit-transition: all 0s linear;
+    transition: all 0s linear;
+}
+.lole-zone.loading.zone:before {
+    position: absolute;
+    content: '';
+    top: 0%;
+    left: 0%;
+    background: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    height: 100%;
+    border-radius: 0.28571429rem;
+    z-index: 100;
+}
+.lole-zone.loading.zone:after {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    margin: -1.5em 0em 0em -1.5em;
+    width: 3em;
+    height: 3em;
+    -webkit-animation: zone-spin-html 0.6s linear;
+    animation: zone-spin-html 0.6s linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    border-radius: 500rem;
+    border-color: #767676 rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1);
+    border-style: solid;
+    border-width: 0.2em;
+    -webkit-box-shadow: 0px 0px 0px 1px transparent;
+    box-shadow: 0px 0px 0px 1px transparent;
+    visibility: visible;
+    z-index: 101;
+}
+/*
+由于原生不提供spin组件，这里显示的定义zone的loading状态动画，
+react和vue中可以直接使用标签包裹的形式进入加载状态
+*/
+@keyframes zone-spin-html {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+/*-------------------
+       Basic
+--------------------*/
+
+.lole-zone.basic.zone {
+    background: none transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    border-radius: 0px;
+}
+
+/*color*/
+/* primary */
+.lole-zone.primary.zone:not(.inverted) {
+    border-top: 2px solid  rgb(249, 204, 226) !important;
+}
+.lole-zone.inverted.primary.zone {
+    background-color:  rgb(249, 204, 226) !important;
+    color: #FFFFFF !important;
+}
+
+/* Orange */
+.lole-zone.orange.zone:not(.inverted) {
+    border-top: 2px solid #fd7e14 !important;
+}
+.lole-zone.inverted.orange.zone {
+    background-color: #fd7e14 !important;
+    color: #FFFFFF !important;
+}
+
+/* Yellow */
+.lole-zone.yellow.zone:not(.inverted) {
+    border-top: 2px solid #fadb14 !important;
+}
+.lole-zone.inverted.yellow.zone {
+    background-color: #fadb14 !important;
+    color: #FFFFFF !important;
+}
+
+/* indigo */
+.lole-zone.indigo.zone:not(.inverted) {
+    border-top: 2px solid #6610f2 !important;
+}
+.lole-zone.inverted.indigo.zone {
+    background-color: #6610f2 !important;
+    color: #FFFFFF !important;
+}
+
+/* Green */
+.lole-zone.green.zone:not(.inverted) {
+    border-top: 2px solid #52c41a !important;
+}
+.lole-zone.inverted.green.zone {
+    background-color: #52c41a !important;
+    color: #FFFFFF !important;
+}
+
+/* Teal */
+.lole-zone.teal.zone:not(.inverted) {
+    border-top: 2px solid #20c997 !important;
+}
+.lole-zone.inverted.teal.zone {
+    background-color: #20c997 !important;
+    color: #FFFFFF !important;
+}
+
+/* cyan */
+.lole-zone.cyan.zone:not(.inverted) {
+    border-top: 2px solid  #17a2b8 !important;
+}
+.lole-zone.inverted.cyan.zone {
+    background-color:  #17a2b8 !important;
+    color: #FFFFFF !important;
+}
+
+/* purple */
+.lole-zone.purple.zone:not(.inverted) {
+    border-top: 2px solid #6f42c1 !important;
+}
+.lole-zone.inverted.purple.zone {
+    background-color: #6f42c1 !important;
+    color: #FFFFFF !important;
+}
+
+/* red */
+.lole-zone.red.zone:not(.inverted) {
+    border-top: 2px solid #dc3545 !important;
+}
+.lole-zone.inverted.red.zone {
+    background-color: #dc3545 !important;
+    color: #FFFFFF !important;
+}
+
+/* Pink */
+.lole-zone.pink.zone:not(.inverted) {
+    border-top: 2px solid  #d63384 !important;
+}
+.lole-zone.inverted.pink.zone {
+    background-color:  #d63384 !important;
+    color: #FFFFFF !important;
+}
+
+/* gray-500 */
+.lole-zone.gray.zone:not(.inverted) {
+    border-top: 2px solid #adb5bd !important;
+}
+.lole-zone.inverted.gray.zone {
+    background-color: #adb5bd !important;
+    color: #FFFFFF !important;
+}
+
+/* Black */
+.lole-zone.black.zone:not(.inverted) {
+    border-top: 2px solid #1B1C1D !important;
+}
+.lole-zone.inverted.black.zone {
+    background-color: #1B1C1D !important;
+    color: #FFFFFF !important;
+}
+
+
+/*-------------------
+       Text-Aligned
+--------------------*/
+.lole-zone[class*="left aligned"].zone {
+    text-align: left;
+}
+.lole-zone[class*="right aligned"].zone {
+    text-align: right;
+}
+.lole-zone[class*="center aligned"].zone {
+    text-align: center;
+}
+
+
+/*-------------------
+       Zone-Floated
+--------------------*/
+
+.lole-zone.floated.zone,
+.lole-zone[class*="left floated"].zone {
+    float: left;
+    margin-right: 1em;
+}
+.lole-zone[class*="right floated"].zone {
+    float: right;
+    margin-left: 1em;
+}
+
+
+/*-------------------
+      Inverted
+--------------------*/
+.lole-zone.inverted.zone {
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.lole-zone.inverted.zone,
+.lole-zone.primary.inverted.zone {
+    background: #1B1C1D;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.lole-zone.inverted.zone .zone {
+    color: rgba(0, 0, 0, 0.87);
+}
+.lole-zone.inverted.zone .inverted.zone {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Attached */
+.lole-zone.inverted.attached.zone {
+    border-color: #555555;
+}
+
+/*-------------------
+      Attached
+--------------------*/
+/* Middle */
+.lole-zone.attached.zone {
+    top: 0px;
+    bottom: 0px;
+    border-radius: 0px;
+    margin: 0em -1px;
+    width: calc(100% +  2px );
+    max-width: calc(100% +  2px );
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 1px solid #D4D4D5;
+}
+.lole-zone.attached:not(.zone) + .ui.attached.zone:not(.top) {
+    border-top: none;
+}
+
+/* Top */
+.lole-zone[class*="top attached"].zone {
+    bottom: 0px;
+    margin-bottom: 0em;
+    top: 0px;
+    margin-top: 1rem;
+    border-radius: 0.28571429rem 0.28571429rem 0em 0em;
+}
+.lole-zone.zone[class*="top attached"]:first-child {
+    margin-top: 0em;
+}
+
+/* Bottom */
+.lole-zone.zone[class*="bottom attached"] {
+    bottom: 0px;
+    margin-top: 0em;
+    top: 0px;
+    margin-bottom: 1rem;
+    -webkit-box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
+    box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
+    border-radius: 0em 0em 0.28571429rem 0.28571429rem;
+}
+.lole-zone.zone[class*="bottom attached"]:last-child {
+    margin-bottom: 0em;
+}
+
+/*size*/
+.lole-zone.small.zones .zone,
+.lole-zone.small.zone {
+    font-size: 0.92857143rem;
+}
+.lole-zone.zones .zone,
+.lole-zone.zone {
+    font-size: 1rem;
+}
+.lole-zone.large.zones .zone,
+.lole-zone.large.zone {
+    font-size: 1.14285714rem;
+}
