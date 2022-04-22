@@ -13,6 +13,9 @@
 /*list*/
 @import "./list.css";
 
+/*menu*/
+@import "./menu.css";
+
 /* table */
-@import "table.css";
+@import "./table.css";
 

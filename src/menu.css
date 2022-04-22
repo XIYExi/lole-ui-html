@@ -1,0 +1,429 @@
+.lole-menu.menu{
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    margin: 1rem 0;
+    font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    background: transparent;
+    font-weight: normal;
+    flex-wrap: wrap;
+    list-style: none;
+    min-height: 0.2rem;
+}
+.lole-menu.menu:after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.lole-menu.menu:first-child {
+    margin-top: 0;
+}
+.lole-menu.menu:last-child {
+    margin-bottom: 0;
+}
+
+/*submenu*/
+
+/*水平！！!*/
+
+/*item*/
+/*水平item*/
+.lole-menu.menu:not(.vertical) .item{
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+}
+
+.lole-menu.menu .item {
+    position: relative;
+    vertical-align: middle;
+    line-height: 0.9em;
+    text-decoration: none;
+
+    -webkit-tap-highlight-color: transparent;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    background: none;
+    padding: 1em 1em;
+    text-transform: none;
+    color: rgba(0,0,0,0.8);
+    font-weight: normal;
+    -webkit-transition: background 0.1s ease, color 0.1s ease, -webkit-box-shadow 0.1s ease;
+    transition: background 0.1s ease, color 0.1s ease, -webkit-box-shadow 0.1s ease;
+    transition: background 0.1s ease, box-shadow 0.1s ease, color 0.1s ease;
+    transition: background 0.1s ease, box-shadow 0.1s ease, color 0.1s ease, -webkit-box-shadow 0.1s ease;
+}
+
+.lole-menu.menu > .item:first-child {
+    border-radius: 0.2rem 0 0 0.2rem;
+}
+
+/*文本内容*/
+.lole-menu.menu .text.item > *,
+.lole-menu.menu .item > a:not([class*='.lole']),
+.lole-menu.menu .item > p:only-child {
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+    line-height: 1.3;
+}
+
+.lole-menu.menu .item > p:first-child{
+    margin-top: 0;
+}
+
+.lole-menu.menu .item > p:last-child{
+    margin-bottom: 0;
+}
+
+/*Icons图标*/
+.lole-menu.menu .item > i.icon{
+    opacity: 0.8;
+    float: none;
+    margin: 0 0.35em 0 0;
+}
+
+/*item内button样式*/
+.lole-menu.menu:not(.vertical) .item > .button {
+    position: relative;
+    top: 0;
+    margin: -0.5em 0;
+    padding-bottom: 0.7em;
+    padding-top: 0.7em;
+    font-size: 14px;
+}
+
+/*menu内grid样式*/
+.lole-menu.menu > .grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: inherit;
+    -ms-flex-align: inherit;
+    align-items: inherit;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: inherit;
+    flex-direction: inherit;
+}
+
+
+/*cell*/
+.lole-menu.celled.menu {
+
+    border: 1px solid rgba(34, 36, 38, 0.15);
+    box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
+    border-radius: 0.2rem;
+}
+/*利用：before绘制分割线*/
+.lole-menu.celled.menu > .item:before{
+    content: '';
+    top: 0%;
+    right: 0px;
+    height: 100%;
+    width: 1px;
+    background: rgba(34, 36, 38, 0.1);
+    position: absolute;
+}
+
+/*active*/
+.lole-menu.menu:not(.celled):not(.vertical):not(.tabular) .active.item {
+    color: #f9cce2;
+    border-bottom: 2px solid #f9cce2;
+    font-weight: normal;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.lole-menu.celled.menu .active.item{
+    font-weight: normal;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #f9cce2;
+}
+
+
+.lole-menu.menu .active.item > i.icon {
+    opacity: 1;
+}
+
+/*celled active hover*/
+.lole-menu.celled.menu .active.item:hover
+.lole-menu.celled.vertical.menu .active.item:hover{
+    background-color: rgba(249, 206, 224, 0.15);
+    color: #f9cce2;
+}
+
+/*celled 普通情况下 hover只亮背景不良文字，只有选中才亮文字*/
+.lole-menu.celled.menu .item:hover{
+    background-color: rgba(249, 206, 224, 0.15);
+}
+
+
+/*hover*/
+.lole-menu.menu .item{
+    cursor: pointer;
+}
+/*其余情况下hover只亮颜色，不显示border-bottom*/
+.lole-menu.menu:not(.celled) .item:hover{
+    color: rgba(249,204,226,0.8);
+}
+
+
+/*disabled*/
+.lole-menu.menu .item.disabled,
+.lole-menu.menu .item.disabled:hover{
+    cursor: default;
+    background-color: transparent!important;
+    color: rgba(40,40,40,0.3);
+}
+
+
+
+/*type!!!*/
+/*floated*/
+/*left floated*/
+.lole-menu.menu:not(.vertical) .left.item,
+.lole-menu.menu:not(.vertical) .left.submenu{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: auto !important;
+}
+/*right floated*/
+.lole-menu.menu:not(.vertical) .right.item,
+.lole-menu.menu:not(.vertical) .right.submenu{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: auto !important;
+}
+.lole-menu.menu .right.item::before,
+.lole-menu.menu .right.submenu > .item::before {
+    right: auto;
+    left: 0;
+}
+
+
+/*vertical*/
+.lole-menu.vertical.menu{
+    display: block;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;/*关键！*/
+    border-bottom: none;
+}
+.lole-menu.vertical.menu > .item:first-child{
+    border-top: 0.2rem;
+    border-left: 0.2rem;
+}
+.lole-menu.vertical.menu > .item:last-child{
+    border-bottom: 0.2rem;
+    border-left: 0.2rem;
+}
+/*vertical label*/
+.lole-menu.vertical.menu .item > .label{
+    float: right;
+    text-align: center;
+}
+/*vertical icon*/
+.lole-menu.vertical.menu .item > i.icon{
+    width: 1em;
+    float: right;
+    margin: 0 0 0 0.5em;
+}
+.lole-menu.vertical.menu .item > .label + i.icon{
+    float: none;
+    margin: 0 0.5em 0 0;
+}
+/*vertical active*/
+.lole-menu.vertical.menu .active.item{
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0;
+}
+.lole-menu.vertical.menu:not(.celled) .active.item{
+    border-left: 2px solid #f9cce2;
+    color: rgba(249,204,226,0.8);
+}
+.lole-menu.celled.vertical.menu .active.item{
+    background-color: rgba(249,204,226,0.15);
+}
+
+
+/*submenu*/
+.lole-menu.vertical.menu .item > .submenu{
+    list-style:none;
+    white-space: nowrap;
+    flex-direction: column;/*关键！*/
+    display: flex;
+    position: relative
+}
+.lole-menu.vertical.menu .item > .submenu .label{
+    /*float: right;
+    text-align: center;*/
+    padding-bottom: 1em;
+}
+.lole-menu.vertical.menu .submenu .item {
+    background: none;
+    padding: 1em 1em;
+    color: rgba(255, 0, 0, 0.5);
+    position: relative;
+}
+/*投机取巧得方式，通过修改padding和margin得left值将active得条修改到和父组件一个高度上*/
+.lole-menu.vertical.menu .submenu .active.item{
+    border-left: 2px solid #f9cce2;
+    margin-left: calc(-1em);
+    padding-left: calc(2em);
+}
+
+
+
+.lole-menu.vertical.menu .item .submenu a.item:hover,
+.lole-menu.vertical.menu .item .submenu .link.item:hover{
+    color: rgba(0, 0, 0, 0.85);
+}
+.lole-menu.vertical.menu .submenu .item:before {
+    display: none;
+}
+
+
+/*dropdown 水平下拉框*/
+.lole-menu.menu .lole-menu.horizontal.submenu > .item{
+    margin: 0;
+    text-align: left;
+    font-size: 1em !important;
+    padding: 0.8em 1em !important;
+    background: transparent !important;
+    color: rgba(0, 0, 0, 0.87) !important;
+    text-transform: none !important;
+    font-weight: normal !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    -webkit-transition: none !important;
+    transition: none !important;
+}
+
+.lole-menu.menu .lole-menu.horizontal .submenu > .item:hover {
+    background: rgba(0, 0, 0, 0.05) !important;
+    color: rgba(0, 0, 0, 0.95) !important;
+}
+.lole-menu.menu .lole-menu.horizontal .submenu > .selected.item {
+    background: rgba(0, 0, 0, 0.05) !important;
+    color: rgba(0, 0, 0, 0.95) !important;
+}
+.lole-menu.menu .lole-menu.horizontal .submenu > .active.item {
+    background: rgba(0, 0, 0, 0.03) !important;
+    font-weight: bold !important;
+    color: rgba(0, 0, 0, 0.95) !important;
+}
+.lole-menu.menu .lole-menu.horizontal.item .submenu .item:not(.filtered) {
+    display: block;
+}
+.lole-menu.menu .lole-menu.horizontal .submenu > .item .icon:not(.horizontal) {
+    display: inline-block;
+    font-size: 1em !important;
+    float: none;
+    margin: 0em 0.75em 0em 0em;
+}
+
+
+
+
+
+/*Tabular表格式*/
+.lole-menu.tabular.menu {
+    border-radius: 0;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: none;
+    background: none transparent;
+    border-bottom: 1px solid #D4D4D5;
+}
+/*为了完全撑满屏幕width*/
+.lole-menu.tabular.fluid.menu {
+    width: calc(100% +  2px ) !important;
+}
+.lole-menu.tabular.menu .item{
+    background: transparent;
+    border-bottom: none;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-top: 2px solid transparent;
+    padding: 0.9em 1.5em;
+    color: rgba(0, 0, 0, 0.87);
+}
+.lole-menu.tabular.menu .item:before{
+    display: none;
+}
+/*tabular hover*/
+.lole-menu.tabular.menu .item:hover{
+    background-color: transparent;
+    color: rgba(0, 0, 0, 0.8);
+}
+/* tabular active */
+.lole-menu.tabular.menu .active.item {
+    background: none #FFFFFF;
+    color: rgba(249, 204, 226, 0.95);
+    border-top-width: 1px;
+    border-color: #D4D4D5;
+    font-weight: bold;
+    margin-bottom: -1px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0.2rem 0.2rem 0 0 !important;
+}
+/*tabular attached zone*/
+.lole-menu.tabular.menu + .attached:not(.top).zone,
+.lole-menu.tabular.menu + .attached:not(.top).zone + .attached:not(.top).zone {
+    border-top: none;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    width: 100%;
+}
+.top.attached.zone + .lole-menu.bottom.tabular.menu {
+    position: relative;
+    width: calc(100% +  2px );
+    left: -1px;
+}
+
+/*tabular vertical left(default)*/
+.lole-menu.vertical.tabular.menu{
+    background:none transparent;
+    border-radius: 0em;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border-bottom: none;
+    border-right: 1px solid #D4D4D5;
+}
+.lole-menu.vertical.tabular.menu .item{
+    background: none;
+    border-left: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid transparent;
+    border-right: none;
+}
+
+/*!!!!bug!!!!*/
+.lole-menu.vertical.tabular.menu .active.item {
+    background: none #FFFFFF;
+    color: rgba(249, 204, 226, 0.95);
+    border-color: #D4D4D5;
+    margin: 0px -1px 0px 0px;
+    border-radius: 0.2rem 0px 0px 0.2rem !important;
+}

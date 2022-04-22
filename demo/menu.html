@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lole-UI原生 Menu导航</title>
+    <link rel="stylesheet" href="../src/index.css">
+    <style>
+        fieldset{
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<fieldset>
+    <legend>基本使用</legend>
+    <div class="lole-menu celled menu">
+        <a class="active item">
+            Home
+        </a>
+        <a class="item">
+            Messages
+        </a>
+        <a class="item">好友 </a>
+        <div class="right submenu">
+            <a class="lole-menu item">登出 </a>
+        </div>
+    </div>
+</fieldset>
+
+
+<fieldset>
+    <legend>基本使用2</legend>
+    <div class="lole-menu menu">
+        <a class="active item">
+            Home
+        </a>
+        <a class="disabled item">
+            Messages
+        </a>
+        <a class="item">好友 </a>
+        <div class="right submenu">
+            <a class="lole-menu item">登出 </a>
+        </div>
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend>垂直</legend>
+    <div class="lole-menu menu">
+        <div class="active item">个人简历 </div>
+        <div class="item">照片 </div>
+        <div class="item">公司 </div>
+        <div class="item">
+            Links
+        </div>
+        <div class="item">
+            <div class="lole-menu horizontal submenu">
+                <div class="label">SubMenu</div>
+                <a class="active item">ok</a>
+                <div class="item">ok</div>
+                <div class="item">
+                    <div class="submenu">
+                        <div class="label">SubMenu</div>
+                        <a class="active item">ok</a>
+                        <div class="item">ok</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</fieldset>
+
+<fieldset>
+    <legend>垂直</legend>
+    <div class="lole-menu celled vertical menu">
+        <div class="active item">个人简历 </div>
+        <div class="item">照片 </div>
+        <div class="item">公司 </div>
+        <div class="item">
+            Links
+        </div>
+    </div>
+
+</fieldset>
+
+<fieldset>
+    <legend></legend>
+    <div class="lole-menu menu">
+        <a class="active item">个人简历 </a>
+        <a class="item">
+            Photos
+        </a>
+    </div>
+</fieldset>
+
+</body>
+</html>
