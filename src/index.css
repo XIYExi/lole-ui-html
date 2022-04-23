@@ -4,6 +4,9 @@
 /*google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=ZCOOL+KuaiLe&display=swap');
 
+/* other */
+@import "./other.css";
+
 /* reboot */
 @import "./reboot.css";
 
@@ -24,6 +27,9 @@
 
 /* placeholder */
 @import "./placeholder.css";
+
+/* statistic */
+@import "./statisitc.css";
 
 /* table */
 @import "./table.css";

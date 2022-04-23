@@ -1,0 +1,420 @@
+.lole-statistic.statistic {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: 1em 0em;
+    max-width: 100%;
+}
+.lole-statistic.statistic + .lole-statistic.statistic {
+    margin: 0em 0em 0em 1.5em;
+}
+.lole-statistic.statistic:first-child {
+    margin-top: 0em;
+}
+.lole-statistic.statistic:last-child {
+    margin-bottom: 0em;
+}
+
+/* Grouped */
+.lole-statistic.statistics {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.lole-statistic.statistics > .statistic {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: 0em 1.5em 2em;
+    max-width: 100%;
+}
+.lole-statistic.statistics {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 1em -1.5em -2em;
+}
+
+/* Clearing */
+.lole-statistic.statistics:after {
+    display: block;
+    content: ' ';
+    height: 0px;
+    clear: both;
+    overflow: hidden;
+    visibility: hidden;
+}
+.lole-statistic.statistics:first-child {
+    margin-top: 0em;
+}
+.lole-statistic.statistics:last-child {
+    margin-bottom: 0em;
+}
+
+/*value*/
+.lole-statistic.statistics .statistic > .value,
+.lole-statistic.statistic > .value {
+    font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+    font-weight: normal;
+    line-height: 1em;
+    color: #1B1C1D;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/*label*/
+.lole-statistic.statistics .statistic > .label,
+.lole-statistic.statistic > .label {
+    font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.87);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Top Label */
+.lole-statistic.statistics .statistic > .label ~ .value,
+.lole-statistic.statistic > .label ~ .value {
+    margin-top: 0rem;
+}
+/* Bottom Label */
+.lole-statistic.statistics .statistic > .value ~ .label,
+.lole-statistic.statistic > .value ~ .label {
+    margin-top: 0rem;
+}
+
+
+/*--------------
+   Icon Value
+---------------*/
+.lole-statistic.statistics .statistic > .value .icon,
+.lole-statistic.statistic > .value .icon {
+    opacity: 1;
+    width: auto;
+    margin: 0em;
+}
+
+/*--------------
+   Text Value
+---------------*/
+
+.lole-statistic.statistics .statistic > .text.value,
+.lole-statistic.statistic > .text.value {
+    line-height: 1em;
+    min-height: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+.lole-statistic.statistics .statistic > .text.value + .label,
+.lole-statistic.statistic > .text.value + .label {
+    text-align: center;
+}
+
+/*--------------
+   Image Value
+---------------*/
+.lole-statistic.statistics .statistic > .value img,
+.lole-statistic.statistic > .value img {
+    max-height: 3rem;
+    vertical-align: baseline;
+}
+
+
+/*--------------
+      Count
+---------------*/
+
+.lole-statistic.ten.statistics {
+    margin: 0em 0em -2em;
+}
+.lole-statistic.ten.statistics .statistic {
+    min-width: 10%;
+    margin: 0em 0em 2em;
+}
+.lole-statistic.nine.statistics {
+    margin: 0em 0em -2em;
+}
+.lole-statistic.nine.statistics .statistic {
+    min-width: 11.11111111%;
+    margin: 0em 0em 2em;
+}
+.lole-statistic.eight.statistics {
+    margin: 0em 0em -2em;
+}
+.lole-statistic.eight.statistics .statistic {
+    min-width: 12.5%;
+    margin: 0em 0em 2em;
+}
+.lole-statistic.seven.statistics {
+    margin: 0em 0em -2em;
+}
+.lole-statistic.seven.statistics .statistic {
+    min-width: 14.28571429%;
+    margin: 0em 0em 2em;
+}
+.lole-statistic.six.statistics {
+    margin: 0em 0em -2em;
+}
+.lole-statistic.six.statistics .statistic {
+    min-width: 16.66666667%;
+    margin: 0em 0em 2em;
+}
+.lole-statistic.five.statistics {
+    margin: 0em 0em -2em;
+}
+.lole-statistic.five.statistics .statistic {
+    min-width: 20%;
+    margin: 0em 0em 2em;
+}
+.lole-statistic.four.statistics {
+    margin: 0em 0em -2em;
+}
+.lole-statistic.four.statistics .statistic {
+    min-width: 25%;
+    margin: 0em 0em 2em;
+}
+.lole-statistic.three.statistics {
+    margin: 0em 0em -2em;
+}
+.lole-statistic.three.statistics .statistic {
+    min-width: 33.33333333%;
+    margin: 0em 0em 2em;
+}
+.lole-statistic.two.statistics {
+    margin: 0em 0em -2em;
+}
+.lole-statistic.two.statistics .statistic {
+    min-width: 50%;
+    margin: 0em 0em 2em;
+}
+.lole-statistic.one.statistics {
+    margin: 0em 0em -2em;
+}
+.lole-statistic.one.statistics .statistic {
+    min-width: 100%;
+    margin: 0em 0em 2em;
+}
+
+/*--------------
+   Horizontal
+---------------*/
+.lole-statistic.horizontal.statistic {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.lole-statistic.horizontal.statistics {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: 0em;
+    max-width: none;
+}
+.lole-statistic.horizontal.statistics .statistic {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    max-width: none;
+    margin: 1em 0em;
+}
+.lole-statistic.horizontal.statistic > .text.value,
+.lole-statistic.horizontal.statistics > .statistic > .text.value {
+    min-height: 0em !important;
+}
+.lole-statistic.horizontal.statistics .statistic > .value .icon,
+.lole-statistic.horizontal.statistic > .value .icon {
+    width: 1.18em;
+}
+.lole-statistic.horizontal.statistics .statistic > .value,
+.lole-statistic.horizontal.statistic > .value {
+    display: inline-block;
+    vertical-align: middle;
+}
+.lole-statistic.horizontal.statistics .statistic > .label,
+.lole-statistic.horizontal.statistic > .label {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0em 0em 0em 0.75em;
+}
+
+/*color*/
+.lole-statistic.primary.statistics .statistic > .value,
+.lole-statistic.statistics .primary.statistic > .value,
+.lole-statistic.primary.statistic > .value {
+    color:  rgb(249, 204, 226);
+}
+.lole-statistic.orange.statistics .statistic > .value,
+.lole-statistic.statistics .orange.statistic > .value,
+.lole-statistic.orange.statistic > .value {
+    color: #fd7e14;
+}
+.lole-statistic.yellow.statistics .statistic > .value,
+.lole-statistic.statistics .yellow.statistic > .value,
+.lole-statistic.yellow.statistic > .value {
+    color: #fadb14;
+}
+.lole-statistic.red.statistics .statistic > .value,
+.lole-statistic.statistics .red.statistic > .value,
+.lole-statistic.red.statistic > .value {
+    color: #dc3545;
+}
+.lole-statistic.green.statistics .statistic > .value,
+.lole-statistic.statistics .green.statistic > .value,
+.lole-statistic.green.statistic > .value {
+    color: #52c41a;
+}
+.lole-statistic.teal.statistics .statistic > .value,
+.lole-statistic.statistics .teal.statistic > .value,
+.lole-statistic.teal.statistic > .value {
+    color:#20c997;
+}
+.lole-statistic.indigo.statistics .statistic > .value,
+.lole-statistic.statistics .indigo.statistic > .value,
+.lole-statistic.indigo.statistic > .value {
+    color: #6610f2;
+}
+.lole-statistic.purple.statistics .statistic > .value,
+.lole-statistic.statistics .purple.statistic > .value,
+.lole-statistic.purple.statistic > .value {
+    color: #6f42c1;
+}
+.lole-statistic.pink.statistics .statistic > .value,
+.lole-statistic.statistics .pink.statistic > .value,
+.lole-statistic.pink.statistic > .value {
+    color: #d63384;
+}
+.lole-statistic.cyan.statistics .statistic > .value,
+.lole-statistic.statistics .cyan.statistic > .value,
+.lole-statistic.cyan.statistic > .value {
+    color: #17a2b8;
+}
+.lole-statistic.gray.statistics .statistic > .value,
+.lole-statistic.statistics .gray.statistic > .value,
+.lole-statistic.gray.statistic > .value {
+    color: #767676;
+}
+
+/*--------------
+    Floated
+---------------*/
+.lole-statistic[class*="left floated"].statistic {
+    float: left;
+    margin: 0em 2em 1em 0em;
+}
+.lole-statistic[class*="right floated"].statistic {
+    float: right;
+    margin: 0em 0em 1em 2em;
+}
+.lole-statistic.floated.statistic:last-child {
+    margin-bottom: 0em;
+}
+
+/*size*/
+/* Mini */
+.lole-statistic.mini.statistics .statistic > .value,
+.lole-statistic.mini.statistic > .value {
+    font-size: 1.5rem !important;
+}
+.lole-statistic.mini.horizontal.statistics .statistic > .value,
+.lole-statistic.mini.horizontal.statistic > .value {
+    font-size: 1.5rem !important;
+}
+.lole-statistic.mini.statistics .statistic > .text.value,
+.lole-statistic.mini.statistic > .text.value {
+    font-size: 1rem !important;
+}
+
+/* Tiny */
+.lole-statistic.tiny.statistics .statistic > .value,
+.lole-statistic.tiny.statistic > .value {
+    font-size: 2rem !important;
+}
+.lole-statistic.tiny.horizontal.statistics .statistic > .value,
+.lole-statistic.tiny.horizontal.statistic > .value {
+    font-size: 2rem !important;
+}
+.lole-statistic.tiny.statistics .statistic > .text.value,
+.lole-statistic.tiny.statistic > .text.value {
+    font-size: 1rem !important;
+}
+
+/* Small */
+.lole-statistic.small.statistics .statistic > .value,
+.lole-statistic.small.statistic > .value {
+    font-size: 3rem !important;
+}
+.lole-statistic.small.horizontal.statistics .statistic > .value,
+.lole-statistic.small.horizontal.statistic > .value {
+    font-size: 2rem !important;
+}
+.lole-statistic.small.statistics .statistic > .text.value,
+.lole-statistic.small.statistic > .text.value {
+    font-size: 1rem !important;
+}
+
+/* Medium */
+.lole-statistic.statistics .statistic > .value,
+.lole-statistic.statistic > .value {
+    font-size: 4rem !important;
+}
+.lole-statistic.horizontal.statistics .statistic > .value,
+.lole-statistic.horizontal.statistic > .value {
+    font-size: 3rem !important;
+}
+.lole-statistic.statistics .statistic > .text.value,
+.lole-statistic.statistic > .text.value {
+    font-size: 2rem !important;
+}
+
+/* Large */
+.lole-statistic.large.statistics .statistic > .value,
+.lole-statistic.large.statistic > .value {
+    font-size: 5rem !important;
+}
+.lole-statistic.large.horizontal.statistics .statistic > .value,
+.lole-statistic.large.horizontal.statistic > .value {
+    font-size: 4rem !important;
+}
+.lole-statistic.large.statistics .statistic > .text.value,
+.lole-statistic.large.statistic > .text.value {
+    font-size: 2.5rem !important;
+}
+
+/* Huge */
+.lole-statistic.huge.statistics .statistic > .value,
+.lole-statistic.huge.statistic > .value {
+    font-size: 6rem !important;
+}
+.lole-statistic.huge.horizontal.statistics .statistic > .value,
+.lole-statistic.huge.horizontal.statistic > .value {
+    font-size: 5rem !important;
+}
+.lole-statistic.huge.statistics .statistic > .text.value,
+.lole-statistic.huge.statistic > .text.value {
+    font-size: 2.5rem !important;
+}

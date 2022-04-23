@@ -1,0 +1,10 @@
+/*
+进行通用配置，如鼠标选中，滑动条等浏览器配置
+*/
+
+*::selection{
+    background: rgba(249,204,226,0.35)!important;
+}
+*::-moz-selection{
+    background: rgba(249,204,226,0.35)!important;
+}

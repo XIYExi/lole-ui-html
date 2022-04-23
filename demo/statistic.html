@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lole-UI原生 Statistic 静态数据统计</title>
+    <link rel="stylesheet" href="../src/index.css">
+    <style>
+        legend{
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        fieldset{
+            margin-top: 5em;
+            border-style:none!important;
+            margin-left: 10em;
+            margin-right: 10em;
+        }
+    </style>
+</head>
+<body>
+
+<div id="loleMouseClickListener">
+
+<h1 style="text-align: center">lole-UI原生 Statistic静态数据统计</h1>
+
+<fieldset>
+    <legend>基本使用</legend>
+    <div class="lole-statistic statistics">
+        <div class="lole-statistic listener statistic">
+            <div class="value">
+                5,550
+            </div>
+            <div class="label">浏览量 </div>
+        </div>
+
+        <div class="lole-statistic listener statistic">
+            <div class="label">收藏数 </div>
+            <div class="value">
+                40,509
+            </div>
+        </div>
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend>标签</legend>
+    <div class="lole-statistic listener statistic">
+        <div class="value">
+            2,204
+        </div>
+        <div class="label">这是标签，辅助说明 </div>
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend>统计组</legend>
+    <div class="listener lole-statistic statistics">
+        <div class="statistic">
+            <div class="value">
+                22
+            </div>
+            <div class="label">
+                岁
+            </div>
+        </div>
+        <div class="statistic">
+            <div class="value">
+                妹妹
+            </div>
+            <div class="label">lole-UI </div>
+        </div>
+        <div class="statistic">
+            <div class="value">
+                系
+            </div>
+            <div class="label">萝莉 </div>
+        </div>
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend>组合使用</legend>
+    <div class="lole-statistic statistics">
+        <div class="listener statistic">
+            <div class="value">
+                22
+            </div>
+            <div class="label">岁 </div>
+        </div>
+        <div class="listener statistic">
+            <div class="text value">妹<br>妹 </div>
+            <div class="label">
+                ？
+            </div>
+        </div>
+        <div class="listener statistic">
+            <div class="value">
+                1 <i class="fa fa-eye"></i>
+            </div>
+            <div class="label">
+                identification
+            </div>
+        </div>
+        <div class="listener statistic">
+            <div class="value">
+                <img src="https://semantic-ui.com/images/avatar/small/joe.jpg" class="lole-image circular inline image">
+                100%
+            </div>
+            <div class="label">过期货 </div>
+        </div>
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend>水平展示</legend>
+    <div class="listener lole-statistic horizontal statistic">
+        <div class="value">
+            2,204
+        </div>
+        <div class="label">视图 </div>
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend>垂直组合</legend>
+    <div class="lole-statistic horizontal statistics">
+        <div class="listener statistic">
+            <div class="value">
+                2,204
+            </div>
+            <div class="label">视图 </div>
+        </div>
+        <div class="listener statistic">
+            <div class="value">
+                3,322
+            </div>
+            <div class="label">下载 </div>
+        </div>
+        <div class="listener statistic">
+            <div class="value">
+                22
+            </div>
+            <div class="label">
+                Tasks
+            </div>
+        </div>
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend>主题色</legend>
+    <div class="lole-statistic statistics">
+        <div class="primary statistic">
+            <div class="value">
+                Primary
+            </div>
+            <div class="label">主题色 </div>
+        </div>
+        <div class="orange statistic">
+            <div class="value">
+                orange
+            </div>
+            <div class="label">橘黄色 </div>
+        </div>
+        <div class="yellow statistic">
+            <div class="value">
+                yellow
+            </div>
+            <div class="label">黄色 </div>
+        </div>
+        <div class="indigo statistic">
+            <div class="value">
+                indigo
+            </div>
+            <div class="label">
+                靛蓝色
+            </div>
+        </div>
+        <div class="green statistic">
+            <div class="value">
+                green
+            </div>
+            <div class="label">绿色 </div>
+        </div>
+        <div class="teal statistic">
+            <div class="value">
+                teal
+            </div>
+            <div class="label">
+                青色
+            </div>
+        </div>
+        <div class="red statistic">
+            <div class="value">
+                Red
+            </div>
+            <div class="label">红色 </div>
+        </div>
+        <div class="purple statistic">
+            <div class="value">
+                purple
+            </div>
+            <div class="label">紫色 </div>
+        </div>
+        <div class="pink statistic">
+            <div class="value">
+                pink
+            </div>
+            <div class="label">粉色 </div>
+        </div>
+        <div class="gray statistic">
+            <div class="value">
+                Gray
+            </div>
+            <div class="label">灰色 </div>
+        </div>
+        <div class="statistic">
+            <div class="value">
+                default
+            </div>
+            <div class="label">默认 </div>
+        </div>
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend>组合</legend>
+    <div class="lole-zone zone">
+        <div class="lole-statistic right floated statistic">
+            <div class="value">
+                2,204
+            </div>
+            <div class="label">视图 </div>
+        </div>
+        <p>Te eum doming eirmod, nominati pertinacia argumentum ad his. Ex eam alia facete scriptorem, est autem aliquip detraxit at. Usu ocurreret referrentur at, cu epicurei appellantur vix. Cum ea laoreet recteque electram, eos choro alterum definiebas in. Vim dolorum definiebas an. Mei ex natum rebum iisque.</p>
+        <p>Audiam quaerendum eu sea, pro omittam definiebas ex. Te est latine definitiones. Quot wisi nulla ex duo. Vis sint solet expetenda ne, his te phaedrum referrentur consectetuer. Id vix fabulas oporteat, ei quo vide phaedrum, vim vivendum maiestatis in.</p>
+        <div class="lole-statistic left floated statistic">
+            <div class="value">
+                <img src="../assets/meimei.jpg" class="lole-image circular inline image">
+                18
+            </div>
+            <div class="label">妹妹 <icon style="color: palevioletred" class="fa fa-heart-o" /> </div>
+        </div>
+        <p>Eu quo homero blandit intellegebat. Incorrupte consequuntur mei id. Mei ut facer dolores adolescens, no illum aperiri quo, usu odio brute at. Qui te porro electram, ea dico facete utroque quo. Populo quodsi te eam, wisi everti eos ex, eum elitr altera utamur at. Quodsi convenire mnesarchum eu per, quas minimum postulant per id.</p>
+        <p>Audiam quaerendum eu sea, pro omittam definiebas ex. Te est latine definitiones. Quot wisi nulla ex duo. Vis sint solet expetenda ne, his te phaedrum referrentur consectetuer. Id vix fabulas oporteat, ei quo vide phaedrum, vim vivendum maiestatis in.</p>
+    </div>
+</fieldset>
+
+<fieldset>
+     <legend></legend>
+    <div class="lole-statistic mini statistic">
+        <div class="value">
+            18-year-old
+        </div>
+        <div class="label">18-year-old </div>
+    </div>
+    <div class="lole-statistic tiny statistic">
+        <div class="value">
+            sister
+        </div>
+        <div class="label">sister </div>
+    </div>
+    <div class="lole-statistic small statistic">
+        <div class="value">
+            卡哇伊
+        </div>
+        <div class="label">卡哇伊 </div>
+    </div>
+    <div class="lole-statistic statistic">
+        <div class="value">
+            好き
+        </div>
+        <div class="label">好き </div>
+    </div>
+    <div class="lole-statistic large statistic">
+        <div class="value">
+            好き
+        </div>
+        <div class="label">好き </div>
+    </div>
+    <div class="lole-statistic huge statistic">
+        <div class="value">
+            大好き
+        </div>
+        <div class="label">大好き </div>
+    </div>
+</fieldset>
+
+</div>
+<script src="../src/loleMouseClickListener.js"></script>
+</body>
+</html>
