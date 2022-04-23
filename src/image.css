@@ -1,0 +1,238 @@
+.lole-image.image{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+    background-color: transparent;;
+}
+
+img.lole-image.image{
+    display: block;
+}
+.lole-image.image svg,
+.lole-image.image img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*states*/
+.lole-image.hidden.images,
+.lole-image.hidden.image {
+    display: none;
+}
+.lole-image.hidden.transition.images,
+.lole-image.hidden.transition.image{
+    display: block;
+    visibility: hidden;
+}
+.lole-image.disabled.images,
+.lole-image.disabled.image {
+    cursor: default;
+    opacity: 0.45;
+}
+
+
+/*inline*/
+.lole-image.inline.image,
+.lole-image.inline.image svg,
+.lole-image.inline.image img {
+    display: inline-block;
+}
+
+
+/*vertical-aligned*/
+.lole-image.aligned.images .image,
+.lole-image.top.aligned.image,
+.lole-image.top.aligned.image svg,
+.lole-image.top.aligned.image img{
+    display: inline-block;
+    vertical-align: top;
+}
+.lole-image.middle.aligned.images image,
+.lole-image.middle.aligned.image,
+.lole-image.middle.aligned.image svg,
+.lole-image.middle.aligned.image img{
+    display: inline-block;
+    vertical-align: middle;
+}
+.lole-image.bottom.aligned.images image,
+.lole-image.bottom.aligned.image,
+.lole-image.bottom.aligned.image svg,
+.lole-image.bottom.aligned.image img{
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+/*--------------
+     Rounded
+---------------*/
+.lole-image.rounded.images .image,
+.lole-image.rounded.image,
+.lole-image.rounded.images .image > *,
+.lole-image.rounded.image > * {
+    border-radius: 0.3em;
+}
+
+/*--------------
+    Circular
+---------------*/
+.lole-image.circular.images,
+.lole-image.circular.image {
+    overflow: hidden;
+}
+.lole-image.circular.images .image,
+.lole-image.circular.image,
+.lole-image.circular.images .image > *,
+.lole-image.circular.image > * {
+    border-radius: 500rem;
+}
+
+/*--------------
+    Bordered
+---------------*/
+.lole-image.bordered.images .image,
+.lole-image.bordered.images img,
+.lole-image.bordered.images svg,
+.lole-image.bordered.image img,
+.lole-image.bordered.image svg,
+img.lole-image.bordered.image {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+/*--------------
+     Fluid
+---------------*/
+.lole-image.fluid.images,
+.lole-image.fluid.image,
+.lole-image.fluid.images img,
+.lole-image.fluid.images svg,
+.lole-image.fluid.image svg,
+.lole-image.fluid.image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/*--------------
+     Avatar
+---------------*/
+.lole-image.avatar.images .image,
+.lole-image.avatar.images img,
+.lole-image.avatar.images svg,
+.lole-image.avatar.image img,
+.lole-image.avatar.image svg,
+.lole-image.avatar.image {
+    margin-right: 0.25em;
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    border-radius: 500rem;
+}
+
+
+/*-------------------
+       Spaced
+--------------------*/
+.lole-image.spaced.image {
+    display: inline-block !important;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+.lole-image[class*="left spaced"].image {
+    margin-left: 0.5em;
+    margin-right: 0em;
+}
+.lole-image[class*="right spaced"].image {
+    margin-left: 0em;
+    margin-right: 0.5em;
+}
+
+
+/*-------------------
+       Floated
+--------------------*/
+.lole-image.floated.image,
+.lole-image.floated.images {
+    float: left;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+.lole-image.right.floated.images,
+.lole-image.right.floated.image {
+    float: right;
+    margin-right: 0em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+.lole-image.floated.images:last-child,
+.lole-image.floated.image:last-child {
+    margin-bottom: 0em;
+}
+.lole-image.centered.images,
+.lole-image.centered.image {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*size*/
+.lole-image.mini.images .image,
+.lole-image.mini.images img,
+.lole-image.mini.images svg,
+.lole-image.mini.image{
+    width: 35px;
+    height: auto;
+    font-size: 0.7rem;
+}
+.lole-image.tiny.images .image,
+.lole-image.tiny.images img,
+.lole-image.tiny.images svg,
+.lole-image.tiny.image{
+    width: 80px;
+    height: auto;
+    font-size: 0.7rem;
+}
+.lole-image.small.images .image,
+.lole-image.small.images img,
+.lole-image.small.images svg,
+.lole-image.small.image{
+    width: 150px;
+    height: auto;
+    font-size: 0.8rem;
+}
+.lole-image.medium.images .image,
+.lole-image.medium.images img,
+.lole-image.medium.images svg,
+.lole-image.medium.image {
+    width: 300px;
+    height: auto;
+    font-size: 1rem;
+}
+.lole-image.large.images .image,
+.lole-image.large.images img,
+.lole-image.large.images svg,
+.lole-image.large.image {
+    width: 450px;
+    height: auto;
+    font-size: 1.2rem;
+}
+
+
+/*group*/
+.lole-image.images {
+    font-size: 0em;
+    margin: 0em -0.25rem 0rem;
+}
+.lole-image.images .image,
+.lole-image.images img,
+.lole-image.images svg {
+    display: inline-block;
+    margin: 0em 0.25rem 0.5rem;
+}
+
+
+
+
+

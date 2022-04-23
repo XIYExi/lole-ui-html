@@ -13,11 +13,17 @@
 /* grid */
 @import "./grid.css";
 
+/* image */
+@import "./image.css";
+
 /*list*/
 @import "./list.css";
 
 /*menu*/
 @import "./menu.css";
+
+/* placeholder */
+@import "./placeholder.css";
 
 /* table */
 @import "./table.css";
