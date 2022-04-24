@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lole-UI原生 Alert警告通知栏</title>
+    <link rel="stylesheet" href="../src/index.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        legend{
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        fieldset{
+            margin-top: 5em;
+            border-style:none!important;
+            margin-left: 10em;
+            margin-right: 10em;
+        }
+    </style>
+</head>
+<body>
+
+<h1 style="text-align: center">lole-UI原生 Alert警告通知栏</h1>
+
+
+<fieldset>
+    <legend>基本使用</legend>
+    <div class="lole-alert alert">
+        <div class="container">
+            <div class="message">这是一条通知</div>
+        </div>
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend>添加描述</legend>
+    <div class="lole-alert alert">
+        <div class="container">
+            <div class="message">这是一条通知</div>
+            <div class="description">对Alert内容加以描述</div>
+        </div>
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend>图标消息</legend>
+    <div class="lole-alert alert">
+        <i class="fa fa-envelope-open-o icon"></i>
+        <div class="container">
+            <div class="message">Header</div>
+            <div class="description">
+                <p>BodysadasfasdfdasfasdfasdrfawefasdfcewgdascasfegasdcsadasdrwasfAS</p>
+            </div>
+        </div>
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend>关闭</legend>
+    <div id="handleClose" class="lole-alert alert">
+        <div class="container">
+            <div class="message">Header</div>
+            <div class="description">
+                <p>BodysadasfasdfdasfasdfasdrfawefasdfcewgdascasfegasdcsadasdrwasfAS</p>
+            </div>
+        </div>
+        <i id="close" class="fa fa-close close"></i>
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend>额外的操作按钮</legend>
+    <div class="lole-alert alert">
+        <div class="container">
+            <div class="message">Header</div>
+            <div class="description">
+                <p>你可以使用操作操作按钮来执行额外的逻辑</p>
+            </div>
+            <div class="action"><button class="lole-btn primary ghost button">Action</button></div>
+        </div>
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend>类型</legend>
+    <div class="lole-alert primary alert">
+        <div class="container">
+            <div class="message">Primary</div>
+            <div class="description">主题色</div>
+        </div>
+    </div>
+    <div class="lole-alert info alert">
+        <div class="container">
+            <div class="message">Info</div>
+            <div class="description">提示</div>
+        </div>
+    </div>
+    <div class="lole-alert error alert">
+        <div class="container">
+            <div class="message">Error</div>
+            <div class="description">错误</div>
+        </div>
+    </div>
+    <div class="lole-alert warning alert">
+        <div class="container">
+            <div class="message">Warning</div>
+            <div class="description">警告</div>
+        </div>
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend>圆角</legend>
+    <div class="lole-alert alert">
+        <div class="container">
+            <div class="message">默认</div>
+        </div>
+    </div>
+    <div class="lole-alert round alert">
+        <div class="container">
+            <div class="message">弧度</div>
+        </div>
+    </div>
+    <div class="lole-alert circle alert">
+        <div class="container">
+            <div class="message">圆角</div>
+        </div>
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend>组合</legend>
+    <div class="lole-alert warning alert">
+        <i class="fa fa-envelope-open-o icon"></i>
+        <div class="container">
+            <div class="message">Header</div>
+            <div class="description">
+                <p>完全组合，可以编辑关闭图标，操作图片，前置图标。</p>
+            </div>
+            <div class="action"><button class="lole-btn primary ghost button">Action</button></div>
+        </div>
+        <i class="fa fa-close close"></i>
+    </div>
+</fieldset>
+
+<script>
+    $('#close').click(
+        function (){
+            $('#handleClose').attr('class','lole-alert hidden alert')
+        }
+    )
+</script>
+
+
+</body>
+</html>

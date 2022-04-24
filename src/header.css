@@ -1,0 +1,400 @@
+
+.lole-header.header{
+    border: none;
+    margin: calc(2rem -  0.15em ) 0 1rem;
+    padding: 0 0;
+    font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    line-height: 1.25em;
+    text-transform: none;
+    color: rgba(0, 0, 0, 0.87);
+}
+.lole-header:first-child{
+    margin-top: -0.15em;
+}
+.lole-header:last-child{
+    margin-bottom: 0;
+}
+
+/*副标题*/
+.lole-header.header .sub.header{
+    display: block;
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    color: rgba(0,0,0,0.6);
+}
+
+
+/*icon*/
+.lole-header.header > .icon{
+    display: table-cell;
+    opacity: 1;
+    font-size: 1.5rem;
+    padding-top: 0;
+    vertical-align: middle;
+}
+.lole-header.header .icon:only-child {
+    display: inline-block;
+    padding: 0;
+    margin-right: 0.75rem;
+}
+
+/*image*/
+.lole-header.header > .image:not(.icon),
+.lole-header.header > img{
+    display: inline-block;
+    margin-top: 0.15em;
+    width: 2.5em;
+    height: auto;
+    vertical-align: middle;
+}
+.lole-header.header > .image:not(.icon):only-child,
+.lole-header.header > img:only-child {
+    margin-right: 0.75rem;
+}
+
+.lole-header.header .container {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* After Image */
+.lole-header.header > img + .container,
+.lole-header.header > .image + .container {
+    padding-left: 0.75rem;
+    vertical-align: middle;
+}
+
+/* After Icon */
+.lole-header.header > .icon + .container {
+    padding-left: 0.75rem;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/* Positioning */
+.lole-header.header + p {
+    margin-top: 0;
+}
+
+/*元素*/
+h1.lole-header.header {
+    font-size: 2rem;
+}
+h2.lole-header.header {
+    font-size: 1.7rem;
+}
+h3.lole-header.header {
+    font-size: 1.3rem;
+}
+h4.lole-header.header {
+    font-size: 1.1rem;
+}
+h5.lole-header.header {
+    font-size: 1rem;
+}
+
+/*size*/
+.lole-header.huge.header {
+    min-height: 1em;
+    font-size: 2em;
+}
+.lole-header.large.header {
+    font-size: 1.7em;
+}
+.lole-header.medium.header {
+    font-size: 1.3em;
+}
+.lole-header.small.header {
+    font-size: 1.1em;
+}
+.lole-header.tiny.header {
+    font-size: 1em;
+}
+
+.lole-header.huge.header .sub.header {
+    font-size: 1.15rem;
+}
+.lole-header.large.header .sub.header {
+    font-size: 1.15rem;
+}
+.lole-header.header .sub.header {
+    font-size: 1rem;
+}
+.lole-header.small.header .sub.header {
+    font-size: 1rem;
+}
+.lole-header.tiny.header .sub.header {
+    font-size: 0.9rem;
+}
+
+.lole-header.sub.header {
+    padding: 0;
+    margin-bottom: 0.15rem;
+    font-weight: bold;
+    font-size: 0.85em;
+    text-transform: uppercase;
+}
+.lole-header.small.sub.header {
+    font-size: 0.75em;
+}
+.lole-header.sub.header {
+    font-size: 0.85em;
+}
+.lole-header.large.sub.header {
+    font-size: 0.9em;
+}
+.lole-header.huge.sub.header {
+    font-size: 1em;
+}
+
+/*icon*/
+.lole-header.icon.header {
+    display: inline-block;
+    text-align: center;
+    margin: 2rem 0em 1rem;
+}
+.lole-header.icon.header:after {
+    content: '';
+    display: block;
+    height: 0px;
+    clear: both;
+    visibility: hidden;
+}
+.lole-header.icon.header:first-child {
+    margin-top: 0em;
+}
+.lole-header.icon.header .icon {
+    float: none;
+    display: block;
+    width: auto;
+    height: auto;
+    line-height: 1;
+    padding: 0em;
+    font-size: 3em;
+    margin: 0em auto 0.5rem;
+    opacity: 1;
+}
+.lole-header.icon.header .content {
+    display: block;
+    padding: 0em;
+}
+.lole-header.icon.header .circular.icon {
+    font-size: 2em;
+}
+.lole-header.icon.header .square.icon {
+    font-size: 2em;
+}
+.lole-header.block.icon.header .icon {
+    margin-bottom: 0em;
+}
+.lole-header.icon.header.aligned {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+/*disable*/
+.lole-header.disabled.header {
+    opacity: 0.45;
+}
+
+/*color*/
+.lole-header.primary.header {
+    color: rgb(249,204,226) !important;
+}
+a.lole-header.primary.header:hover {
+    color:rgb(249,204,226) !important;
+}
+.lole-header.primary.dividing.header {
+    border-bottom: 2px solid rgb(249,204,226);
+}
+
+.lole-header.orange.header {
+    color: #fd7e14 !important;
+}
+a.lole-header.orange.header:hover {
+    color:#fd7e14 !important;
+}
+.lole-header.orange.dividing.header {
+    border-bottom: 2px solid #fd7e14;
+}
+
+
+.lole-header.yellow.header {
+    color: #fadb14 !important;
+}
+a.lole-header.yellow.header:hover {
+    color:#fadb14 !important;
+}
+.lole-header.yellow.dividing.header {
+    border-bottom: 2px solid #fadb14;
+}
+
+.lole-header.red.header {
+    color: #dc3545 !important;
+}
+a.lole-header.red.header:hover {
+    color:#dc3545 !important;
+}
+.lole-header.red.dividing.header {
+    border-bottom: 2px solid #dc3545;
+}
+
+.lole-header.green.header {
+    color: #52c41a !important;
+}
+a.lole-header.green.header:hover {
+    color:#52c41a !important;
+}
+.lole-header.green.dividing.header {
+    border-bottom: 2px solid #52c41a;
+}
+
+
+.lole-header.teal.header {
+    color: #20c997 !important;
+}
+a.lole-header.teal.header:hover {
+    color:#20c997 !important;
+}
+.lole-header.teal.dividing.header {
+    border-bottom: 2px solid #20c997;
+}
+
+.lole-header.indigo.header {
+    color: #6610f2 !important;
+}
+a.lole-header.indigo.header:hover {
+    color:#6610f2 !important;
+}
+.lole-header.indigo.dividing.header {
+    border-bottom: 2px solid #6610f2;
+}
+
+
+.lole-header.purple.header {
+    color: #6f42c1 !important;
+}
+a.lole-header.purple.header:hover {
+    color:#6f42c1 !important;
+}
+.lole-header.purple.dividing.header {
+    border-bottom: 2px solid #6f42c1;
+}
+
+.lole-header.pink.header {
+    color: #d63384 !important;
+}
+a.lole-header.pink.header:hover {
+    color:#d63384 !important;
+}
+.lole-header.pink.dividing.header {
+    border-bottom: 2px solid #d63384;
+}
+
+.lole-header.cyan.header {
+    color: #17a2b8 !important;
+}
+a.lole-header.cyan.header:hover {
+    color:#17a2b8 !important;
+}
+.lole-header.cyan.dividing.header {
+    border-bottom: 2px solid #17a2b8;
+}
+
+.lole-header.gray.header {
+    color: #767676 !important;
+}
+a.lole-header.gray.header:hover {
+    color:#767676 !important;
+}
+.lole-header.gray.dividing.header {
+    border-bottom: 2px solid #767676;
+}
+
+/*align 对齐*/
+.lole-header.left.aligned.header {
+    text-align: left;
+}
+.lole-header.right.aligned.header {
+    text-align: right;
+}
+.lole-header.centered.header,
+.lole-header.center.aligned.header {
+    text-align: center;
+}
+.lole-header.justified.header {
+    text-align: justify;
+}
+.lole-header.justified.header:after {
+    display: inline-block;
+    content: '';
+    width: 100%;
+}
+
+/*floated浮动*/
+.lole-header.floated.header,
+.lole-header[class*="left floated"].header {
+    float: left;
+    margin-top: 0em;
+    margin-right: 0.5em;
+}
+.lole-header[class*="right floated"].header {
+    float: right;
+    margin-top: 0em;
+    margin-left: 0.5em;
+}
+
+.lole-header.fitted.header {
+    padding: 0;
+}
+
+
+/*自带分割线*/
+.lole-header.dividing.header {
+    padding-bottom: 0.2rem;
+    border-bottom: 1px solid rgba(34, 36, 38, 0.15);
+}
+.lole-header.dividing.header .sub.header {
+    padding-bottom: 0.2rem;
+}
+.lole-header.dividing.header .icon {
+    margin-bottom: 0em;
+}
+.lole-header.inverted.dividing.header {
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+/*block*/
+.lole-header.block.header {
+    background: #F3F4F5;
+    padding: 0.78571429rem 1rem;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 1px solid #D4D4D5;
+    border-radius: 0.28571429rem;
+}
+.lole-header.tiny.block.header {
+    font-size: 0.85rem;
+}
+.lole-header.small.block.header {
+    font-size: 0.9rem;
+}
+.lole-header.block.header:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
+    font-size: 1rem;
+}
+.lole-header.large.block.header {
+    font-size: 1.1rem;
+}
+.lole-header.huge.block.header {
+    font-size: 1.4rem;
+}
+
+.lole-header.header:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
+    font-size: 1.28571429em;
+}
+

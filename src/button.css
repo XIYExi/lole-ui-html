@@ -1,5 +1,5 @@
 /*默认样式*/
-.lole-btn{
+.lole-btn.button{
     outline: none;
     position: relative;
     display: inline-block;
@@ -20,22 +20,22 @@
 }
 
 /*禁用*/
-.disabled{
+.lole-btn.disabled.button{
     cursor: not-allowed;
     opacity: .65;
     box-shadow: none;
 }
-.disabled >*{
+.lole-btn.disabled.button >*{
     pointer-events: none;
 }
 
 /*block属性*/
-.block{
+.lole-btn.block.button{
     width: 100%;
 }
 
 /*幽灵按钮*/
-.ghost{
+.lole-btn.ghost.button{
     background: rgba(255, 255, 255, 0.7);
     opacity: .65;
     font-weight: 400;
@@ -43,107 +43,107 @@
 }
 
 /*圆角*/
-.round{
+.lole-btn.round.button{
     border-radius: 15em;
 }
-.circle{
+.lole-btn.circle.button{
     border-radius: 25em;
 }
 
 /*尺寸*/
-.lg{
+.lole-btn.lg.button{
     padding: .5rem 1rem;
     font-size: 1.25rem;
 }
-.sm{
+.lole-btn.sm.button{
     padding: .25rem .5rem;
     font-size: .875rem;
 }
-.md{
+.lole-btn.md.button{
     padding: .375rem .75rem;
     font-size: 1rem;
 }
 
 /*类型*/
-.primary.button{
+.lole-btn.primary.button{
     color: #fff;
     background: rgb(249, 204, 226);
     border-color: rgb(249, 204, 226);
 }
-.primary.button:hover{
+.lole-btn.primary.button:hover{
     color: #fff;
     background: rgba(249,204,226,0.75);
     border-color: rgba(249,204,226,0.1);
 }
-.primary.button:focus{
+.lole-btn.primary.button:focus{
     color: #fff;
     background: rgba(249,204,226,0.075);
     border-color: rgba(249,204,226,0.1);
 }
-.primary.button.disabled{
+.lole-btn.primary.button.disabled{
     color: #fff;
     background: rgba(249,204,226,0.75);
     border-color: rgba(249,204,226,0.1);
 }
 
-.danger.button{
+.lole-btn.danger.button{
     color: #fff;
     background: #dc3545;
     border-color: #dc3545;
 }
-.danger.button:hover{
+.lole-btn.danger.button:hover{
     color: #fff;
     background: rgba(220,53,69,0.75);
     border-color: rgba(220,53,69,0.1);
 }
-.danger.button:focus{
+.lole-btn.danger.button:focus{
     color: #fff;
     background: rgba(220,53,69,0.75);
     border-color: rgba(220,53,69,0.1);
 }
-.danger.button.disabled{
+.lole-btn.danger.button.disabled{
     color: #fff;
     background: rgba(220,53,69,0.75);
     border-color: rgba(220,53,69,0.1);
 }
 
-.link.button {
+.lole-btn.link.button {
     font-weight: 400;
     color: rgba(249, 204, 226,0.75);
     text-decoration: none;
     box-shadow: none;
 }
-.link.button:hover{
+.lole-btn.link.button:hover{
     color: rgba(249, 204, 226,0.75);
     text-decoration: underline;
 }
-.link.button:focus{
+.lole-btn.link.button:focus{
     text-decoration: underline;
     box-shadow: none;
 }
-.link.button.disabled{
+.lole-btn.link.button.disabled{
     color: rgba(249, 204, 226,0.75);
     box-shadow: none;
     pointer-events: none;
 }
 
-.dash.button{
+.lole-btn.dash.button{
     color: #5b6067;
     background: #fff;
     border-color: #ced4da;
     border-style: dashed;
 }
-.dash.button:hover{
+.lole-btn.dash.button:hover{
     color: rgb(249, 204, 226);
     background: #fff;
     border-color: rgb(249, 204, 226);
 }
-.dash.button:focus{
+.lole-btn.dash.button:focus{
     color: rgb(249, 204, 226);
     background: #fff;
     border-color: rgb(249, 204, 226);
 }
-.dash.button.disabled{
+.lole-btn.dash.button.disabled{
     color: rgb(249, 204, 226);
     background: #fff;
     border-color: rgb(249, 204, 226);
