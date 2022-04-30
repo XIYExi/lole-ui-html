@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lole-UI原生 Typography文本排版和美化效果</title>
+    <link rel="stylesheet" href="../src/index.css">
+    <script src="../src/loleTextAnimationTyper.js"></script>
+    <style>
+        legend{
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        fieldset{
+            margin-top: 5em;
+            border-style:none!important;
+            margin-left: 10em;
+            margin-right: 10em;
+        }
+    </style>
+</head>
+<body>
+<h1 class="lole-header center aligned header">lole-UI原生 Typography文本排版和美化效果</h1>
+
+<fieldset>
+    <legend><h3 class="lole-header header">Underline 下划线</h3></legend>
+
+    <h2 class="lole-header sub header">默认Underline样式1</h2>
+    <div class="lole-zone primary stacked zone">
+        <p style="line-height: 1.35;font-size: 2em;">
+            <span class="lole-typography cyan underline typography">你知道吗</span>，
+            <span class="lole-typography orange underline typography">乌拉圭</span>
+            的人口有
+            <span class="lole-typography underline typography">345.7万</span>，同时，
+            仅<span class="lole-typography red underline typography">澳大利亚</span>就有
+            <span class="lole-typography yellow underline typography">4700万只袋鼠</span>。
+            如果袋鼠决定<span class="lole-typography green underline typography">入侵乌拉圭</span> ，
+            那么<span class="lole-typography indigo underline typography">每一个乌拉圭人</span>
+            都要打<span class="lole-typography purple underline typography">14只袋鼠</span>。
+            <span class="lole-typography teal underline typography">你不知道</span>，
+            <span class="lole-typography pink underline typography">你不在乎</span> ，
+            <span class="lole-typography leaf underline typography">因为</span>你只关心<span class="lole-typography sky underline typography">你自己</span>
+        </p>
+    </div>
+
+    <h2 class="lole-header sub header">Underline 样式2</h2>
+    <div class="lole-zone primary stacked zone">
+        <p style="line-height: 1.35;font-size: 2em;">
+            <span class="lole-typography gradient-2 underline-2 typography">你知道吗</span>，
+            如果<span class="lole-typography gradient-1 underline-2 typography">4700万只袋鼠</span>想要
+            <span class="lole-typography underline-2 typography">入侵乌拉圭</span>，
+            它们需要在澳洲西部的<span class="lole-typography yellow underline-2 typography">弗里曼特尔</span>登船，
+            生活在<span class="lole-typography teal underline-2 typography">澳洲北部</span>的绝大多数
+            <span class="lole-typography gradient-3 underline-2 typography">羚大袋鼠</span>会
+            <span class="lole-typography gradient-4 underline-2 typography">死在迁徙途中</span> ，
+            之后<span class="lole-typography gradient-5 underline-2 typography">逆着印度洋</span>的
+            <span class="lole-typography gradient-6 underline-2 typography">南赤道洋流向西</span>，
+            以<span class="lole-typography gradient-7 underline-2 typography">3月为主要繁殖季</span>的
+            <span class="lole-typography gradient-8 underline-2 typography">西部灰袋鼠</span>半数
+            无法熬到<span class="lole-typography red underline-2 typography">好望角</span>，
+            再<span class="lole-typography sky underline-2 typography">逆着西风漂流挺进</span>
+            <span class="lole-typography green underline-2 typography">蒙得维的亚</span>，
+            途中又会因为<span class="lole-typography orange underline-2 typography">食物和生存空间</span>而损失大半
+            <span class="lole-typography indigo underline-2 typography">红大袋鼠</span>。
+            <span class="lole-typography leaf underline-2 typography">这些你都不知道</span>，你不在乎，
+            <span class="lole-typography cyan underline-2 typography">因为你只关心你自己</span>
+        </p>
+
+    </div>
+
+    <h2 class="lole-header sub header">Underline 样式3</h2>
+    <div class="lole-zone primary stacked zone">
+        <p style="line-height: 1.35;font-size: 2em;">
+            <span class="lole-typography underline-3 style-1 primary typography">袋鼠</span>有资格
+            <span class="lole-typography style-1 underline-3 green typography">入侵乌拉圭</span>吗？
+            如果<span class="lole-typography style-2 underline-3 primary typography">乌拉圭人得知会被袋鼠入侵</span>，
+            那么<span class="lole-typography style-2 underline-3 red typography">极度愤怒</span>的乌拉圭人直接
+            <span class="lole-typography style-2 underline-3 leaf typography">入侵澳大利亚一拳一只袋鼠</span>，
+            毕竟<span class="lole-typography style-3 underline-3 typography">人与人的体质不能一概而论</span>,
+            这你<span class="lole-typography style-3 underline-3 yellow typography">也不知道</span>，
+            <span class="lole-typography style-3 underline-3 dark typography">你根本不关心</span>，
+            <span class="lole-typography style-1 underline-3 red typography">因为你只在乎你自己</span>。
+        </p>
+    </div>
+
+</fieldset>
+
+<fieldset>
+    <legend><h3 class="lole-header header">Mark标记</h3> </legend>
+    <div class="lole-zone stacked zone">
+        <p style="line-height: 1.5;font-size: 2em;">
+            你说得对，但是<mark>中国的人口有14亿</mark>，
+            同时，仅澳大利亚就有4700万只袋鼠。
+            <span class="lole-typography mark typography">如果袋鼠决定入侵中国</span>，
+            那么每一个袋鼠要打30个中国人，
+            你不知道，你不在乎，你只关心乌拉圭。
+        </p>
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend><h3 class="lole-header header">文字动画</h3> </legend>
+
+    <h3 class="lole-header sub header">播放一组动画</h3>
+    <div class="lole-zone stacked primary zone">
+        <p style="line-height: 1.5;font-size: 2em;">
+            你说的对，但是你自己只有1个人，仅澳大利亚就有4700万只袋鼠，所以袋鼠决定入侵你家。
+            <span class="lole-text-typer text-primary"
+                  data-loop="false"
+                  data-delay="100"
+                  data-words="你不知道,你也不会关心,因为你只在乎你自己"
+                  data-colors="#F9CCE2"
+            >
+            </span>
+            <span class="cursor" data-owner="lole-text-typer" style="color: rgba(249,204,226,0.5)"></span>
+        </p>
+    </div>
+
+    <h3 class="lole-header sub header">循环播放</h3>
+    <div class="lole-zone stacked primary zone">
+        <p style="line-height: 1.5;font-size: 2em;">
+            你说的对，但是你自己只有1个人，仅澳大利亚就有4700万只袋鼠，所以袋鼠决定入侵你家。
+            <span class="lole-text-typer text-primary"
+                  data-loop="true"
+                  data-delay="100"
+                  data-words="你不知道,你也不会关心,因为你只在乎你自己"
+                  data-colors="#F9CCE2"
+            >
+            </span>
+            <span class="cursor" data-owner="lole-text-typer" style="color: rgba(249,204,226,0.5)"></span>
+        </p>
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend><h3 class="lole-header header">Dropcap首字母大写</h3> </legend>
+    <div class="lole-zone stacked primary zone">
+        <div class="lole-grid equal width grid">
+            <div class="row">
+                <div class="col">
+                    <h3 class="lole-header sub header">基本使用</h3>
+                    <p style="line-height: 1.5;font-size: 16px;">
+                        <span class="lole-typography dropcap typography">你</span>知道吗？广东省的人口有1.15亿，同时，澳大利亚只有4700万只袋鼠。
+                        如果袋鼠决定入侵广东，那么每个广东人（只能）打到半只袋鼠，根本就不够吃。
+                        你不知道，你不关心广东人，你只关心袋鼠。
+                    </p>
+                </div>
+                <div class="col">
+                    <h3 class="lole-header sub header">颜色</h3>
+                    <p style="line-height: 1.5;font-size: 16px;">
+                        <span style="color: rgba(249,204,226,0.5)" class="lole-typography dropcap typography">你</span>知道吗？广东省的人口有1.15亿，同时，澳大利亚只有4700万只袋鼠。
+                        如果袋鼠决定入侵广东，那么每个广东人（只能）打到半只袋鼠，根本就不够吃。
+                        你不知道，你不关心广东人，你只关心袋鼠。
+                    </p>
+                </div>
+                <div class="col">
+                    <h3 class="lole-header sub header">配合Background</h3>
+                    <p style="line-height: 1.5;font-size: 16px;">
+                        <span style="color: white" class="lole-typography circle dropcap typography lole-background gradient-3 background">你</span>知道吗？广东省的人口有1.15亿，同时，澳大利亚只有4700万只袋鼠。
+                        如果袋鼠决定入侵广东，那么每个广东人（只能）打到半只袋鼠，根本就不够吃。
+                        你不知道，你不关心广东人，你只关心袋鼠。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend><h2 class="lole-header header">Link超链接覆盖</h2> </legend>
+    <div class="lole-zone stacked primary zone">
+        <a style="color: #5eb9f0" href="#" class="lole-typography hover link-primary typography">Link example</a>
+        <a href="#" class="lole-typography hover typography">Link example</a>
+        <a href="#" class="lole-typography hover more typography">Link example</a>
+    </div>
+
+    <div class="lole-zone stacked primary zone">
+        <a href="#" class="lole-typography hover-2 link-primary typography">Link example</a>
+        <a href="#" class="lole-typography hover-2 typography">Link example</a>
+        <a href="#" class="lole-typography hover-2 more typography">Link example</a>
+    </div>
+
+    <div class="lole-zone stacked primary zone">
+        <a href="#" class="lole-typography hover-3 link-body typography">Link example</a>
+        <a href="#" class="lole-typography hover-3 typography">Link example</a>
+        <a href="#" class="lole-typography hover-3 more typography">Link example</a>
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend><h2 class="lole-header header">Blockquote文本区块</h2> </legend>
+
+    <h3 class="lole-header sub header">基本使用</h3>
+    <div class="lole-zone basic zone">
+        <div class="lole-grid equal width grid">
+            <div class="row">
+                <div class="col">
+                    <h2 class="lole-header sub header">直接使用blockquote标签</h2>
+                    <div class="lole-zone stacked primary zone">
+                        <figure>
+                            <blockquote>
+                                <p style="line-height: 1.5;font-size: 16px;">
+                                    你知道吗？
+                                    母猪产后护理，首先要从产前做起，
+                                    母猪产前四五天要逐渐减少饲喂量，
+                                    其目的是减少腹部压力产前吃得少产后才能吃得多。
+                                    若产前吃得多，不仅会使产程过长，还会造成产后胃积食。
+                                    你不知道，你只关心你的袋鼠。
+                                </p>
+                            </blockquote>
+                            <figcaption class="footer">Love Letter UI</figcaption>
+                        </figure>
+                    </div>
+                </div>
+
+
+                <div class="col">
+                    <h2 class="lole-header sub header">使用css渲染</h2>
+                    <div class="lole-zone stacked primary zone">
+                        <div class="lole-typography figure typography">
+                            <div class="lole-typography blockquote typography">
+                                <p style="line-height: 1.5;font-size: 16px;">
+                                    你知道吗？
+                                    母猪产后护理，首先要从产前做起，
+                                    母猪产前四五天要逐渐减少饲喂量，
+                                    其目的是减少腹部压力产前吃得少产后才能吃得多。
+                                    若产前吃得多，不仅会使产程过长，还会造成产后胃积食。
+                                    你不知道，你只关心你的袋鼠。
+                                </p>
+                            </div>
+                            <div class="lole-typography footer figcaption typography">
+                                Love Letter UI
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h3 class="lole-header sub header">Icon水印</h3>
+    <div class="lole-zone primary stacked zone">
+        <figure>
+            <blockquote class="icon">
+                <p style="line-height: 1.5;font-size: 16px;">
+                    你知道吗？
+                    母猪产后护理，首先要从产前做起，
+                    母猪产前四五天要逐渐减少饲喂量，
+                    其目的是减少腹部压力产前吃得少产后才能吃得多。
+                    若产前吃得多，不仅会使产程过长，还会造成产后胃积食。
+                    你不知道，你只关心你的袋鼠。
+                </p>
+            </blockquote>
+            <figcaption class="footer">Love Letter UI</figcaption>
+        </figure>
+    </div>
+
+</fieldset>
+
+<fieldset>
+    <legend><h2 class="lole-header header">文本处理</h2></legend>
+
+    <h3 class="lole-header sub header">大写</h3>
+    <div class="lole-zone stacked primary zone">
+        <p class="lole-typography upper text typography" style="line-height: 1.5;font-size: 16px;">
+            You only care about yourself.
+        </p>
+    </div>
+
+    <h3 class="lole-header sub header">小写</h3>
+    <div class="lole-zone stacked primary zone">
+        <p class="lole-typography lower text typography" style="line-height: 1.5;font-size: 16px;">
+            You Only Care About YOURSELF.
+        </p>
+    </div>
+
+</fieldset>
+
+
+<script>
+    TyperSetup();
+</script>
+
+</body>
+</html>

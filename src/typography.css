@@ -1,0 +1,779 @@
+.lole-typography.typography{
+
+}
+.lole-typography.typography:first-child{
+    margin-top: 0;
+}
+.lole-typography.typography:last-child{
+    margin-bottom: 0;
+}
+
+/*
+mask
+*/
+.lole-typography.mark.typography,
+mark{
+    color: inherit;
+    border-radius: 0.4rem;
+    padding: 0.05rem 0.4rem 0.2rem;
+    background-color: rgba(249,204,226,0.5);
+}
+/*
+underline下划线
+*/
+.lole-typography.underline.typography{
+    position: relative;
+    z-index: 2;
+    white-space: nowrap;
+}
+.lole-typography.underline.typography:after{
+    content: "";
+    display: block;
+    background: rgba(249, 204, 226, 0.7);
+    border-radius: 5rem;
+    position: absolute;
+    width: calc(100% + 2.5%);
+    height: 30%;
+    left: -1.5%;
+    bottom: 9%;
+    z-index: -1;
+    margin-top: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.lole-typography.orange.underline.typography:after{
+    background: rgba(253,126,20,0.3);
+}
+
+.lole-typography.red.underline.typography:after{
+    background: rgba(253,53,69,0.3);
+}
+
+.lole-typography.yellow.underline.typography:after{
+    background: rgba(250,219,20,0.3);
+}
+
+.lole-typography.green.underline.typography:after{
+    background: rgba(82,196,26,0.3);
+}
+
+.lole-typography.indigo.underline.typography:after{
+    background: rgba(102,16,242,0.3);
+}
+
+.lole-typography.purple.underline.typography:after{
+    background: rgba(111,66,193,0.3);
+}
+
+.lole-typography.teal.underline.typography:after{
+    background: rgba(32,201,151,0.3);
+}
+
+.lole-typography.pink.underline.typography:after{
+    background: rgba(214,51,132,0.3);
+}
+
+.lole-typography.cyan.underline.typography:after{
+    background: rgba(23,162,184,0.3);
+}
+
+.lole-typography.white.underline.typography:after{
+    background: rgba(255, 255, 255,3);
+}
+
+.lole-typography.sky.underline.typography:after{
+    background: rgba(94, 185, 240,0.3);
+}
+
+.lole-typography.leaf.underline.typography:after{
+    background: rgba(124, 183, 152,0.5);
+}
+
+
+/*underline 样式2*/
+.lole-typography.underline-2.typography {
+    position: relative;
+    z-index: 2;
+    white-space: nowrap;
+}
+
+.lole-typography.underline-2.typography:after {
+    content: "";
+    display: block;
+    background: rgba(249, 204, 226, 0.7);
+    border-radius: 5rem;
+    position: absolute;
+    width: calc(100% + 2.5%);
+    height: 12%;
+    left: -1.5%;
+    bottom: -10%;
+    z-index: -1;
+    margin-top: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.lole-typography.orange.underline-2.typography:after{
+    background: rgba(253,126,20,0.3);
+}
+
+.lole-typography.red.underline-2.typography:after{
+    background: rgba(253,53,69,0.3);
+}
+
+.lole-typography.yellow.underline-2.typography:after{
+    background: rgba(250,219,20,0.3);
+}
+
+.lole-typography.green.underline-2.typography:after{
+    background: rgba(82,196,26,0.3);
+}
+
+.lole-typography.indigo.underline-2.typography:after{
+    background: rgba(102,16,242,0.3);
+}
+
+.lole-typography.purple.underline-2.typography:after{
+    background: rgba(111,66,193,0.3);
+}
+
+.lole-typography.teal.underline-2.typography:after{
+    background: rgba(32,201,151,0.3);
+}
+
+.lole-typography.pink.underline-2.typography:after{
+    background: rgba(214,51,132,0.3);
+}
+
+.lole-typography.cyan.underline-2.typography:after{
+    background: rgba(23,162,184,0.3);
+}
+
+.lole-typography.white.underline-2.typography:after{
+    background: rgba(255, 255, 255,3);
+}
+
+.lole-typography.sky.underline-2.typography:after{
+    background: rgba(94, 185, 240,0.3);
+}
+
+.lole-typography.leaf.underline-2.typography:after{
+    background: rgba(124, 183, 152,0.5);
+}
+
+.lole-typography.gradient-1.typography:after{
+    background: linear-gradient(120deg, #f857a6 10%, #ef3f6e 100%) !important;
+}
+
+.lole-typography.gradient-2.typography:after{
+    background: linear-gradient(40deg, #f5b161 0.4%, #ec366e 100.2%) !important;
+}
+.lole-typography.gradient-3.typography:after{
+    background: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%) !important;
+}
+.lole-typography.gradient-4.typography:after{
+    background: linear-gradient(125deg, #9040db, #ff72c2 50%, #ffd84f) !important;
+}
+.lole-typography.gradient-5.typography:after{
+    background: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%) !important;
+}
+.lole-typography.gradient-6.typography:after{
+    background: linear-gradient(45deg, #08AEEA 0%, #2AF598 100%) !important;
+}
+.lole-typography.gradient-7.typography:after{
+    background: linear-gradient(100deg, #0093e9 0, #80d0c7 95%) !important;
+}
+.lole-typography.gradient-8.typography:after{
+    background: linear-gradient(45deg, #ffdee9, #b5fffc) !important;
+}
+
+
+/*样式3 需配合style-*使用 因为提供了三种不同形式*/
+.lole-typography.underline-3.typography {
+    position: relative;
+    z-index: 1;
+}
+.lole-typography.underline-3.typography:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    display: block;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    left: 50%;
+    bottom: -0.1em;
+    width: 110%;
+    height: 0.3em;
+    transform: translateX(-50%);
+}
+
+.lole-typography.underline-3.style-1.typography:before,
+.lole-typography.underline-3.style-1.typography:after {
+    content: "";
+    z-index: -1;
+    border: 3px solid rgba(249,204,226,0.7);
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    opacity: 1;
+    border-radius: 80%;
+}
+
+.lole-typography.underline-3.style-1.typography:before {
+    transform: translate(-50%, -50%) rotate(-2deg);
+    border-top-width: 0;
+    width: 110%;
+    height: 130%;
+}
+
+.lole-typography.underline-3.style-1.typography:after {
+    transform: translate(-50%, -50%) rotate(-5deg);
+    border-left-width: 0;
+    border-bottom-width: 0;
+    width: 110%;
+    height: 140%;
+}
+
+
+.lole-typography.underline-3.style-1.sky.typography:before,
+.lole-typography.underline-3.style-1.sky.typography:after {
+    border-color: #5eb9f0;
+}
+
+.lole-typography.underline-3.style-1.purple.typography:before,
+.lole-typography.underline-3.style-1.purple.typography:after {
+    border-color: #747ed1;
+}
+
+.lole-typography.underline-3.style-1.pink.typography:before,
+.lole-typography.underline-3.style-1.pink.typography:after {
+    border-color: #d16b86;
+}
+
+
+.lole-typography.underline-3.style-1.red.typography:before,
+.lole-typography.underline-3.style-1.red.typography:after {
+    border-color: #e2626b;
+}
+
+.lole-typography.underline-3.style-1.orange.typography:before,
+.lole-typography.underline-3.style-1.orange.typography:after {
+    border-color: #f78b77;
+}
+
+.lole-typography.underline-3.style-1.yellow.typography:before,
+.lole-typography.underline-3.style-1.yellow.typography:after {
+    border-color: #fab758;
+}
+
+.lole-typography.underline-3.style-1.green.typography:before,
+.lole-typography.underline-3.style-1.green.typography:after {
+    border-color: #45c4a0;
+}
+
+.lole-typography.underline-3.style-1.leaf.typography:before,
+.lole-typography.underline-3.style-1.leaf.typography:after {
+    border-color: #7cb798;
+}
+
+.lole-typography.underline-3.style-1.white.typography:before,
+.lole-typography.underline-3.style-1.white.typography:after {
+    border-color: #fff;
+}
+
+.lole-typography.underline-3.style-1.light.typography:before,
+.lole-typography.underline-3.style-1.light.typography:after {
+    border-color: #fefefe;
+}
+
+.lole-typography.underline-3.style-1.gray.typography:before,
+.lole-typography.underline-3.style-1.gray.typography:after {
+    border-color: #f6f7f9;
+}
+
+.lole-typography.underline-3.style-1.dark.typography:before,
+.lole-typography.underline-3.style-1.dark.typography:after {
+    border-color: #262b32;
+}
+
+.lole-typography.underline-3.style-1.primary.typography:before,
+.lole-typography.underline-3.style-1.primary.typography:after {
+    border-color: rgba(249,204,226,0.7);
+}
+
+.lole-typography.underline-3.style-2.typography:after {
+   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 208.01 8.3'%3E%3Cpath fill='rgba(249,204,226,0.7)' d='M64.42,2.42Q42.78,1.46,21.19,0c-2.8-.19-4.09.89-3.87,2L3.92,1.87c-5.13-.05-5.28,3.87-.12,3.92l60.49.55c46.63,2.08,93.34,2.51,139.81,1.27,5-.13,5.39-3.87.13-3.92Z'/%3E%3C/svg%3E");
+}
+
+
+.lole-typography.underline-3.style-2.sky.typography:after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 208.01 8.3'%3E%3Cpath fill='%235eb9f0' d='M64.42,2.42Q42.78,1.46,21.19,0c-2.8-.19-4.09.89-3.87,2L3.92,1.87c-5.13-.05-5.28,3.87-.12,3.92l60.49.55c46.63,2.08,93.34,2.51,139.81,1.27,5-.13,5.39-3.87.13-3.92Z'/%3E%3C/svg%3E");
+}
+
+.lole-typography.underline-3.style-2.purple.typography:after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 208.01 8.3'%3E%3Cpath fill='%23747ed1' d='M64.42,2.42Q42.78,1.46,21.19,0c-2.8-.19-4.09.89-3.87,2L3.92,1.87c-5.13-.05-5.28,3.87-.12,3.92l60.49.55c46.63,2.08,93.34,2.51,139.81,1.27,5-.13,5.39-3.87.13-3.92Z'/%3E%3C/svg%3E");
+}
+
+.lole-typography.underline-3.style-2.pink.typography:after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 208.01 8.3'%3E%3Cpath fill='%23d16b86' d='M64.42,2.42Q42.78,1.46,21.19,0c-2.8-.19-4.09.89-3.87,2L3.92,1.87c-5.13-.05-5.28,3.87-.12,3.92l60.49.55c46.63,2.08,93.34,2.51,139.81,1.27,5-.13,5.39-3.87.13-3.92Z'/%3E%3C/svg%3E");
+}
+
+
+.lole-typography.underline-3.style-2.red.typography:after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 208.01 8.3'%3E%3Cpath fill='%23e2626b' d='M64.42,2.42Q42.78,1.46,21.19,0c-2.8-.19-4.09.89-3.87,2L3.92,1.87c-5.13-.05-5.28,3.87-.12,3.92l60.49.55c46.63,2.08,93.34,2.51,139.81,1.27,5-.13,5.39-3.87.13-3.92Z'/%3E%3C/svg%3E");
+}
+
+.lole-typography.underline-3.style-2.orange.typography:after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 208.01 8.3'%3E%3Cpath fill='%23f78b77' d='M64.42,2.42Q42.78,1.46,21.19,0c-2.8-.19-4.09.89-3.87,2L3.92,1.87c-5.13-.05-5.28,3.87-.12,3.92l60.49.55c46.63,2.08,93.34,2.51,139.81,1.27,5-.13,5.39-3.87.13-3.92Z'/%3E%3C/svg%3E");
+}
+
+.lole-typography.underline-3.style-2.yellow.typography:after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 208.01 8.3'%3E%3Cpath fill='%23fab758' d='M64.42,2.42Q42.78,1.46,21.19,0c-2.8-.19-4.09.89-3.87,2L3.92,1.87c-5.13-.05-5.28,3.87-.12,3.92l60.49.55c46.63,2.08,93.34,2.51,139.81,1.27,5-.13,5.39-3.87.13-3.92Z'/%3E%3C/svg%3E");
+}
+
+.lole-typography.underline-3.style-2.green.typography:after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 208.01 8.3'%3E%3Cpath fill='%2345c4a0' d='M64.42,2.42Q42.78,1.46,21.19,0c-2.8-.19-4.09.89-3.87,2L3.92,1.87c-5.13-.05-5.28,3.87-.12,3.92l60.49.55c46.63,2.08,93.34,2.51,139.81,1.27,5-.13,5.39-3.87.13-3.92Z'/%3E%3C/svg%3E");
+}
+
+.lole-typography.underline-3.style-2.leaf.typography:after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 208.01 8.3'%3E%3Cpath fill='%237cb798' d='M64.42,2.42Q42.78,1.46,21.19,0c-2.8-.19-4.09.89-3.87,2L3.92,1.87c-5.13-.05-5.28,3.87-.12,3.92l60.49.55c46.63,2.08,93.34,2.51,139.81,1.27,5-.13,5.39-3.87.13-3.92Z'/%3E%3C/svg%3E");
+}
+
+.lole-typography.underline-3.style-2.white.typography:after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 208.01 8.3'%3E%3Cpath fill='%23fff' d='M64.42,2.42Q42.78,1.46,21.19,0c-2.8-.19-4.09.89-3.87,2L3.92,1.87c-5.13-.05-5.28,3.87-.12,3.92l60.49.55c46.63,2.08,93.34,2.51,139.81,1.27,5-.13,5.39-3.87.13-3.92Z'/%3E%3C/svg%3E");
+}
+
+.lole-typography.underline-3.style-2.light.typography:after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 208.01 8.3'%3E%3Cpath fill='%23fefefe' d='M64.42,2.42Q42.78,1.46,21.19,0c-2.8-.19-4.09.89-3.87,2L3.92,1.87c-5.13-.05-5.28,3.87-.12,3.92l60.49.55c46.63,2.08,93.34,2.51,139.81,1.27,5-.13,5.39-3.87.13-3.92Z'/%3E%3C/svg%3E");
+}
+
+.lole-typography.underline-3.style-2.gray.typography:after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 208.01 8.3'%3E%3Cpath fill='%23f6f7f9' d='M64.42,2.42Q42.78,1.46,21.19,0c-2.8-.19-4.09.89-3.87,2L3.92,1.87c-5.13-.05-5.28,3.87-.12,3.92l60.49.55c46.63,2.08,93.34,2.51,139.81,1.27,5-.13,5.39-3.87.13-3.92Z'/%3E%3C/svg%3E");
+}
+
+.lole-typography.underline-3.style-2.dark.typography:after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 208.01 8.3'%3E%3Cpath fill='%23262b32' d='M64.42,2.42Q42.78,1.46,21.19,0c-2.8-.19-4.09.89-3.87,2L3.92,1.87c-5.13-.05-5.28,3.87-.12,3.92l60.49.55c46.63,2.08,93.34,2.51,139.81,1.27,5-.13,5.39-3.87.13-3.92Z'/%3E%3C/svg%3E");
+}
+
+.lole-typography.underline-3.style-2.primary.typography:after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 208.01 8.3'%3E%3Cpath fill='rgba(249,204,226,0.7)' d='M64.42,2.42Q42.78,1.46,21.19,0c-2.8-.19-4.09.89-3.87,2L3.92,1.87c-5.13-.05-5.28,3.87-.12,3.92l60.49.55c46.63,2.08,93.34,2.51,139.81,1.27,5-.13,5.39-3.87.13-3.92Z'/%3E%3C/svg%3E");
+}
+
+.lole-typography.underline-3.style-3.typography:after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 205 9.37'%3E%3Cpath fill='rgba(249,204,226,0.7)' d='M202.47,9.37A1191.26,1191.26,0,0,0,1.79,7.48,1.67,1.67,0,0,1,0,5.92H0A1.76,1.76,0,0,1,1.63,4.21c67-5.71,133.83-5.43,200.8-.27A2.75,2.75,0,0,1,205,6.88h0A2.6,2.6,0,0,1,202.47,9.37Z'/%3E%3C/svg%3E");
+}
+
+.lole-typography.underline-3.style-3.sky.typography:after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 205 9.37'%3E%3Cpath fill='%235eb9f0' d='M202.47,9.37A1191.26,1191.26,0,0,0,1.79,7.48,1.67,1.67,0,0,1,0,5.92H0A1.76,1.76,0,0,1,1.63,4.21c67-5.71,133.83-5.43,200.8-.27A2.75,2.75,0,0,1,205,6.88h0A2.6,2.6,0,0,1,202.47,9.37Z'/%3E%3C/svg%3E");
+}
+
+.lole-typography.underline-3.style-3.purple.typography:after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 205 9.37'%3E%3Cpath fill='%23747ed1' d='M202.47,9.37A1191.26,1191.26,0,0,0,1.79,7.48,1.67,1.67,0,0,1,0,5.92H0A1.76,1.76,0,0,1,1.63,4.21c67-5.71,133.83-5.43,200.8-.27A2.75,2.75,0,0,1,205,6.88h0A2.6,2.6,0,0,1,202.47,9.37Z'/%3E%3C/svg%3E");
+}
+
+.lole-typography.underline-3.style-3.pink.typography:after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 205 9.37'%3E%3Cpath fill='%23d16b86' d='M202.47,9.37A1191.26,1191.26,0,0,0,1.79,7.48,1.67,1.67,0,0,1,0,5.92H0A1.76,1.76,0,0,1,1.63,4.21c67-5.71,133.83-5.43,200.8-.27A2.75,2.75,0,0,1,205,6.88h0A2.6,2.6,0,0,1,202.47,9.37Z'/%3E%3C/svg%3E");
+}
+
+.lole-typography.underline-3.style-3.red.typography:after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 205 9.37'%3E%3Cpath fill='%23e2626b' d='M202.47,9.37A1191.26,1191.26,0,0,0,1.79,7.48,1.67,1.67,0,0,1,0,5.92H0A1.76,1.76,0,0,1,1.63,4.21c67-5.71,133.83-5.43,200.8-.27A2.75,2.75,0,0,1,205,6.88h0A2.6,2.6,0,0,1,202.47,9.37Z'/%3E%3C/svg%3E");
+}
+
+.lole-typography.underline-3.style-3.orange.typography:after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 205 9.37'%3E%3Cpath fill='%23f78b77' d='M202.47,9.37A1191.26,1191.26,0,0,0,1.79,7.48,1.67,1.67,0,0,1,0,5.92H0A1.76,1.76,0,0,1,1.63,4.21c67-5.71,133.83-5.43,200.8-.27A2.75,2.75,0,0,1,205,6.88h0A2.6,2.6,0,0,1,202.47,9.37Z'/%3E%3C/svg%3E");
+}
+
+.lole-typography.underline-3.style-3.yellow.typography:after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 205 9.37'%3E%3Cpath fill='%23fab758' d='M202.47,9.37A1191.26,1191.26,0,0,0,1.79,7.48,1.67,1.67,0,0,1,0,5.92H0A1.76,1.76,0,0,1,1.63,4.21c67-5.71,133.83-5.43,200.8-.27A2.75,2.75,0,0,1,205,6.88h0A2.6,2.6,0,0,1,202.47,9.37Z'/%3E%3C/svg%3E");
+}
+
+.lole-typography.underline-3.style-3.green.typography:after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 205 9.37'%3E%3Cpath fill='%2345c4a0' d='M202.47,9.37A1191.26,1191.26,0,0,0,1.79,7.48,1.67,1.67,0,0,1,0,5.92H0A1.76,1.76,0,0,1,1.63,4.21c67-5.71,133.83-5.43,200.8-.27A2.75,2.75,0,0,1,205,6.88h0A2.6,2.6,0,0,1,202.47,9.37Z'/%3E%3C/svg%3E");
+}
+
+.lole-typography.underline-3.style-3.leaf.typography:after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 205 9.37'%3E%3Cpath fill='%237cb798' d='M202.47,9.37A1191.26,1191.26,0,0,0,1.79,7.48,1.67,1.67,0,0,1,0,5.92H0A1.76,1.76,0,0,1,1.63,4.21c67-5.71,133.83-5.43,200.8-.27A2.75,2.75,0,0,1,205,6.88h0A2.6,2.6,0,0,1,202.47,9.37Z'/%3E%3C/svg%3E");
+}
+
+.lole-typography.underline-3.style-3.white.typography:after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 205 9.37'%3E%3Cpath fill='%23fff' d='M202.47,9.37A1191.26,1191.26,0,0,0,1.79,7.48,1.67,1.67,0,0,1,0,5.92H0A1.76,1.76,0,0,1,1.63,4.21c67-5.71,133.83-5.43,200.8-.27A2.75,2.75,0,0,1,205,6.88h0A2.6,2.6,0,0,1,202.47,9.37Z'/%3E%3C/svg%3E");
+}
+
+.lole-typography.underline-3.style-3.light.typography:after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 205 9.37'%3E%3Cpath fill='%23fefefe' d='M202.47,9.37A1191.26,1191.26,0,0,0,1.79,7.48,1.67,1.67,0,0,1,0,5.92H0A1.76,1.76,0,0,1,1.63,4.21c67-5.71,133.83-5.43,200.8-.27A2.75,2.75,0,0,1,205,6.88h0A2.6,2.6,0,0,1,202.47,9.37Z'/%3E%3C/svg%3E");
+}
+
+.lole-typography.underline-3.style-3.gray.typography:after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 205 9.37'%3E%3Cpath fill='%23f6f7f9' d='M202.47,9.37A1191.26,1191.26,0,0,0,1.79,7.48,1.67,1.67,0,0,1,0,5.92H0A1.76,1.76,0,0,1,1.63,4.21c67-5.71,133.83-5.43,200.8-.27A2.75,2.75,0,0,1,205,6.88h0A2.6,2.6,0,0,1,202.47,9.37Z'/%3E%3C/svg%3E");
+}
+
+.lole-typography.underline-3.style-3.dark.typography:after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 205 9.37'%3E%3Cpath fill='%23262b32' d='M202.47,9.37A1191.26,1191.26,0,0,0,1.79,7.48,1.67,1.67,0,0,1,0,5.92H0A1.76,1.76,0,0,1,1.63,4.21c67-5.71,133.83-5.43,200.8-.27A2.75,2.75,0,0,1,205,6.88h0A2.6,2.6,0,0,1,202.47,9.37Z'/%3E%3C/svg%3E");
+}
+
+.lole-typography.underline-3.style-3.primary.typography:after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 205 9.37'%3E%3Cpath fill='rgba(249,204,226,0.7)' d='M202.47,9.37A1191.26,1191.26,0,0,0,1.79,7.48,1.67,1.67,0,0,1,0,5.92H0A1.76,1.76,0,0,1,1.63,4.21c67-5.71,133.83-5.43,200.8-.27A2.75,2.75,0,0,1,205,6.88h0A2.6,2.6,0,0,1,202.47,9.37Z'/%3E%3C/svg%3E");
+}
+
+/*首字母大写*/
+
+.lole-typography.dropcap.typography {
+    display: block;
+    float: left;
+    font-size: calc(1.375rem + 1.5vw);
+    line-height: 1;
+    font-weight: 500;
+    padding: 0;
+    margin: 0.2rem 0.6rem 0 0;
+
+}
+
+.lole-typography.circle.dropcap.typography {
+    font-size: calc(1.265rem + 0.18vw);
+    height: 2.3rem;
+    width: 2.3rem;
+    margin: 0.25rem 0.5rem 0 0;
+    padding-bottom: 0.15rem;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50% !important;
+}
+
+
+
+/*
+
+links
+
+*/
+a.lole-typography.typography {
+    transition: all 0.2s ease-in-out;
+    color: #60697b;
+}
+
+a.lole-typography.hover.typography {
+    position: relative;
+}
+
+a.lole-typography.hover.typography::before {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: currentColor;
+    top: 100%;
+    left: 0;
+    pointer-events: none;
+}
+
+a.lole-typography.hover.typography::before {
+    content: "";
+    transform-origin: 100% 50%;
+    transform: scale3d(0, 1, 1);
+    transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+}
+
+
+
+a.lole-typography.hover.typography:hover:before {
+    transform-origin: 0 50%;
+    transform: scale3d(1, 1, 1);
+    transition-timing-function: cubic-bezier(0.4, 1, 0.8, 1);
+}
+
+
+a.lole-typography.hover-2.typography {
+    position: relative;
+    z-index: 1;
+    padding: 0 0.2rem 0.05rem;
+}
+
+a.lole-typography.hover-2.typography::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(249,204,226,0.5);
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+
+a.lole-typography.hover-2.typography::before {
+    content: "";
+    transform-origin: 100% 50%;
+    transform: scale3d(0, 1, 1);
+    transition: transform 0.5s cubic-bezier(0.7, 0, 0.2, 1);
+}
+
+a.lole-typography.hover-2.typography:hover.link-body {
+    color: inherit;
+}
+
+a.lole-typography.hover-2.typography:hover:before {
+    transform-origin: 0 50%;
+    transform: scale3d(1, 1, 1);
+    transition-timing-function: cubic-bezier(0.4, 1, 0.8, 1);
+}
+
+a.lole-typography.hover-3.typography {
+    position: relative;
+    padding: 0 0.2rem 0.05rem;
+    transition: color ease 0.3s;
+    z-index: 1;
+}
+
+a.lole-typography.hover-3.typography:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    bottom: -3px;
+    background-color: rgba(249,204,226,0.5);
+    transition: all 0.3s ease-in-out;
+}
+
+a.lole-typography.hover-3.typography:hover.link-body {
+    color: inherit;
+}
+
+a.lole-typography.hover-3.typography:hover:before {
+    height: calc(100% + 6px);
+}
+
+a.lole-typography.hover-3.more.typography:before {
+    bottom: -1px;
+}
+
+a.lole-typography.hover-3.more.typography:hover:before {
+    height: calc(100% + 3px);
+}
+
+/*links colors*/
+
+a.lole-typography.hover-2.link-sky.typography:before {
+    background: #5eb9f0;
+}
+
+a.lole-typography.hover-2.link-purple.typography:before {
+    background: #747ed1;
+}
+
+a.lole-typography.hover-2.link-pink.typography:before {
+    background: #d16b86;
+}
+
+a.lole-typography.hover-2.link-red.typography:before {
+    background: #e2626b;
+}
+
+a.lole-typography.hover-2.link-orange.typography:before {
+    background: #f78b77;
+}
+
+a.lole-typography.hover-2.link-yellow.typography:before {
+    background: #fab758;
+}
+
+a.lole-typography.hover-2.link-green.typography:before {
+    background: #45c4a0;
+}
+
+a.lole-typography.hover-2.link-leaf.typography:before {
+    background: #7cb798;
+}
+
+a.lole-typography.hover-2.link-white.typography:before {
+    background: #fff;
+}
+
+a.lole-typography.hover-2.link-light.typography:before {
+    background: #fefefe;
+}
+
+a.lole-typography.hover-2.link-gray.typography:before {
+    background: #f6f7f9;
+}
+
+a.lole-typography.hover-2.link-dark.typography:before {
+    background: #262b32;
+}
+
+a.lole-typography.hover-2.link-primary.typography:before {
+    background: rgba(249,204,226,0.5);
+}
+
+a.lole-typography.hover-3.link-primary.typography:before {
+    background-color: #e0e9fa;
+}
+
+a.lole-typography.hover-3.link-sky.typography:before {
+    background-color: #e5f4fd;
+}
+
+a.lole-typography.hover-3.link-purple.typography:before {
+    background-color: #e9eaf8;
+}
+
+a.lole-typography.hover-3.link-pink.typography:before {
+    background-color: #f8e7ec;
+}
+
+a.lole-typography.hover-3.link-red.typography:before {
+    background-color: #fae6e7;
+}
+
+a.lole-typography.hover-3.link-orange.typography:before {
+    background-color: #feece9;
+}
+
+a.lole-typography.hover-3.link-yellow.typography:before {
+    background-color: #fef3e4;
+}
+
+a.lole-typography.hover-3.link-green.typography:before {
+    background-color: #e1f6f0;
+}
+
+a.lole-typography.hover-3.link-leaf.typography:before {
+    background-color: #eaf3ef;
+}
+
+a.lole-typography.hover-3.link-white.typography:before {
+    background-color: white;
+}
+
+a.lole-typography.hover-3.link-light.typography:before {
+    background-color: white;
+}
+
+a.lole-typography.hover-3.link-gray.typography:before {
+    background-color: #fefefe;
+}
+
+a.lole-typography.hover-3.link-dark.typography:before {
+    background-color: #dcddde;
+}
+
+a.lole-typography.hover-3.link-primary.typography:before {
+    background-color: #e0e9fa;
+}
+
+.more {
+    font-weight: 700;
+    letter-spacing: -0.01rem;
+    display: inline-block;
+}
+
+.more:after {
+    min-height: 100%;
+    line-height: 1;
+    content: "\25BA";
+    margin-bottom: 0.1em;
+    padding-left: 0.05rem;
+    font-size: 1.2rem;
+    font-weight: normal;
+    vertical-align: -2px;
+    display: inline-block;
+}
+
+/*
+
+文本区块
+
+*/
+
+figure,
+.lole-typography.figure.typography{
+    margin: 0;
+    padding: 0;
+}
+
+
+blockquote,
+.lole-typography.blockquote.typography {
+    border-left: 0.15rem solid rgba(249,204,226,0.7);
+    padding-left: 1rem;
+    font-size: 0.85rem;
+    line-height: 1.7;
+    margin: 0 0 1rem;
+    font-weight: 500;
+}
+
+blockquote.icon,
+.lole-typography.icon.blockquote.typography{
+    position: relative;
+    border: 0;
+    padding: 0;
+}
+
+blockquote.icon:before,
+.lole-typography.icon.blockquote.typography:before {
+    content: "\201d";
+    position: absolute;
+    top: -1.5rem;
+    left: -0.9rem;
+    color: rgba(249, 204, 226, 0.3);
+    font-size: 10rem;
+    line-height: 1;
+    z-index: 1;
+}
+
+blockquote.icon.top,
+.lole-typography.icon.top.blockquote.typography{
+    padding-top: 3.75rem;
+    position: relative;
+}
+
+blockquote.icon.top:before,
+.lole-typography.icon.top.blockquote.typography:before {
+    content: "\201c";
+    color: rgb(249,204,226);
+    opacity: 0.3;
+    font-size: 6.5rem;
+    font-weight: normal;
+    top: 0;
+    left: -0.3rem;
+}
+
+blockquote.icon.top.text.white:before,
+.lole-typography.icon.top.text.white.blockquote.typography:before {
+    color: #fff;
+}
+
+blockquote.center.aligned.icon.top:before,
+.lole-typography.center.aligned.icon.top.blockquote.typography:before {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*blockquote footer*/
+figcaption.footer,
+.lole-typography.footer.figcaption.typography{
+    font-weight: 700;
+    margin-top: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.02rem;
+
+    margin-bottom: 1rem;
+    font-size: 0.6rem;
+    color: #aab0bc;
+}
+
+figcaption.footer::before,
+.lole-typography.footer.figcaption.typography::before{
+    content: "\2014\a0";
+    font-size: 0.6rem;
+}
+
+/*大写*/
+.lole-typography.upper.text.typography{
+    text-transform: uppercase !important;
+}
+/*小写*/
+.lole-typography.lower.text.typography{
+    text-transform: lowercase !important;
+}

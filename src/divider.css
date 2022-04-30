@@ -1,0 +1,167 @@
+
+.lole-divider.divider:not(.svg){
+    border-top:1px solid rgba(249,204,226,0.6);
+}
+.lole-divider.divider:first-child{
+    margin-top: 0;
+}
+.lole-divider.divider:last-child{
+    margin-bottom: 0;
+}
+
+/*
+type 垂直 | 水平
+*/
+.lole-divider.vertical.divider{
+    position: relative;
+    top: -0.06em;
+    display: inline-block;
+    height: 0.9em;
+    margin: 0 8px;
+    vertical-align: middle;
+    border-top: 0;
+    border-left: 1px solid rgba(249,204,226,0.6);
+}
+.lole-divider.horizontal.divider{
+    display: flex;
+    clear: both;
+    width: 100%;
+    min-width: 100%; /*Fix https://github.com/ant-design/ant-design/issues/10914*/
+    margin: 24px 0;
+}
+
+/*水平文本*/
+.lole-divider.horizontal.text.divider{
+    display: flex;
+    margin: 16px 0;
+    color: rgba(0,0,0,0.8);
+    font-weight: 500;
+    font-size: 1.25em;
+    white-space: nowrap;
+    text-align: center;
+    border-top: 0;
+    border-top-color: rgba(249,204,226,0.6);
+}
+.lole-divider.horizontal.text.divider::before,
+.lole-divider.horizontal.text.divider::after{
+    content: '';
+    position: relative;
+    top: 50%;
+    width: 50%;
+    border-top: 1px solid transparent;
+    /* Chrome not accept `inherit` in `border-top`*/
+    border-top-color: inherit;
+    border-bottom: 0;
+    transform: translateY(50%);
+}
+
+/*水平文本对齐*/
+.lole-divider.horizontal.left.aligned.text.divider::before{
+    top: 50%;
+    width: 5%;
+}
+.lole-divider.horizontal.left.aligned.text.divider::after{
+    top: 50%;
+    width: 95%;
+}
+
+.lole-divider.horizontal.right.aligned.text.divider::before{
+    top: 50%;
+    width: 95%;
+}
+.lole-divider.horizontal.right.aligned.text.divider::after{
+    top: 50%;
+    width: 5%;
+}
+
+/*内部span文本*/
+.lole-divider.divider .inner{
+    display: inline-block;
+    padding: 0 1em;
+}
+
+/*虚线*/
+.lole-divider.dashed.divider{
+    background: none;
+    border-color: rgba(0,0,0,0.8);
+    border-style: dashed;
+    border-width: 1px 0 0;
+}
+
+.lole-divider.horizontal.dashed.text.divider::before,
+.lole-divider.horizontal.dashed.text.divider::after{
+    border-style: dashed none none;
+}
+.lole-divider.vertical.dashed.divider{
+    border-width: 0 0 0 1px;
+}
+
+/*plain*/
+.lole-divider.plain.text.divider{
+    color: rgba(0,0,0,0.8);
+    font-weight: normal;
+    font-size: 1em;
+}
+
+
+/*orientation*/
+.lole-divider.left.aligned.text.divider::before,
+.lole-divider.right.aligned.text.divider::after{
+    width: 0;
+}
+.lole-divider.left.aligned.text.divider::after
+.lole-divider.right.aligned.text.divider::before{
+    width: 100%;
+}
+
+.lole-divider.left.aligned.text.divider .inner{
+    padding-left: 0;
+}
+.lole-divider.right.aligned.text.divider .inner{
+    padding-right: 0;
+}
+
+
+
+
+
+.lole-divider.svg.divider{
+    --bs-text-opacity: 1;
+    color: #fff !important;
+
+    overflow: hidden;
+}
+
+.lole-divider.svg.divider:after{
+    content: "";
+    width: 100%;
+    height: 5px;
+    background: currentColor;
+    display: block;
+    margin-top: -5px;
+}
+
+.lole-zone.zone > .img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    --bs-text-opacity: 1;
+    color: #343f52 !important;
+    font-size: calc(1.265rem + 0.18vw);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

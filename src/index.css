@@ -14,8 +14,14 @@
 /* alert */
 @import "./alert.css";
 
+/* background */
+@import "./background.css";
+
 /* button */
 @import "./button.css";
+
+/* divider */
+@import "./divider.css";
 
 /* grid */
 @import "./grid.css";
@@ -40,6 +46,9 @@
 
 /* table */
 @import "./table.css";
+
+/* typography */
+@import "./typography.css";
 
 /* zone */
 @import "./zone.css";

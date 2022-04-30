@@ -1,0 +1,331 @@
+.lole-background.background{
+    background: no-repeat center center;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+
+}
+
+.lole-background.background:first-child{
+    margin-top: 0;
+}
+.lole-background.background:last-child{
+    margin-bottom: 0;
+}
+
+/*默认为0.5*/
+.lole-background.img.overlay.background:before{
+    background: rgba(30, 34, 40, 0.5);
+}
+
+.lole-background.img.overlay-400.background:before{
+    background: rgba(30, 34, 40, 0.4);
+}
+
+.lole-background.img.overlay-300.background:before{
+    background: rgba(30, 34, 40, 0.3);
+}
+
+.lole-background.img.overlay-light-300.background:before{
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.lole-background.img.overlay-light-400.background:before{
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.lole-background.img.overlay-light.background:before{
+    background: rgba(255, 255, 255, 0.5);
+}
+
+/*img mode*/
+.lole-background.img.background{
+    color: #fff!important;
+    --bs-text-opacity: 1;
+    background-attachment: fixed !important;
+}
+.lole-background.img.background:before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+
+}
+
+/*dark mode*/
+.lole-background.dark.background{
+    --bs-dark-rgb: 38, 43, 50;
+    --bs-bg-opacity: 1;
+    background-color:rgba(var(--bs-dark-rgb), var(--bs-bg-opacity))!important;
+    color: #fff !important;
+}
+
+
+
+/* 裁剪 cropper */
+.lole-background.auto.background{
+    background-size: auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll !important;
+}
+
+.lole-background.cover.background{
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll !important;
+}
+
+.lole-background.full.background{
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll !important;
+}
+
+/*渐变预设*/
+.lole-background.gradient-1.background {
+    background-image: linear-gradient(120deg, #f857a6 10%, #ef3f6e 100%);
+}
+
+.lole-background.gradient-2.background {
+    background-image: linear-gradient(40deg, #f5b161 0.4%, #ec366e 100.2%);
+}
+
+.lole-background.gradient-3.background {
+    background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+}
+
+.lole-background.gradient-4.background {
+    background-image: linear-gradient(125deg, #9040db, #ff72c2 50%, #ffd84f);
+}
+
+.lole-background.gradient-5.background {
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+
+.lole-background.gradient-6.background {
+    background-image: linear-gradient(45deg, #08AEEA 0%, #2AF598 100%);
+}
+
+.lole-background.gradient-7.background {
+    background-image: linear-gradient(100deg, #0093e9 0, #80d0c7 95%);
+}
+
+.lole-background.gradient-8.background {
+    background-image: linear-gradient(45deg, #ffdee9, #b5fffc);
+}
+
+.lole-background.gradient-6.background,
+.lole-background.gradient-7.background {
+    background-size: 130% auto;
+}
+
+/*渐变主题色*/
+.lole-background.primary.gradient.background{
+    background: linear-gradient(
+            180deg,
+            rgba(249,204,226,0.7),
+            rgba(255, 255, 255, 0) 100%);
+}
+
+.lole-background.orange.gradient.background{
+    background: linear-gradient(
+            180deg,
+            rgba(253,126,20,0.3),
+            rgba(255, 255, 255, 0) 100%);
+}
+
+.lole-background.red.gradient.background{
+    background: linear-gradient(
+            180deg,
+            rgba(253,53,69,0.3),
+            rgba(255, 255, 255, 0) 100%);
+}
+
+.lole-background.yellow.gradient.background{
+    background: linear-gradient(
+            180deg,
+            rgba(250,219,20,0.5),
+            rgba(255, 255, 255, 0) 100%);
+}
+
+.lole-background.green.gradient.background{
+    background: linear-gradient(
+            180deg,
+            rgba(82,196,26,0.3),
+            rgba(255, 255, 255, 0) 100%);
+}
+
+.lole-background.indigo.gradient.background{
+    background: linear-gradient(
+            180deg,
+            rgba(102,16,242,0.3),
+            rgba(255, 255, 255, 0) 100%);
+}
+
+.lole-background.purple.gradient.background{
+    background: linear-gradient(
+            180deg,
+            rgba(111,66,193,0.4),
+            rgba(255, 255, 255, 0) 100%);
+}
+
+.lole-background.teal.gradient.background{
+    background: linear-gradient(
+            180deg,
+            rgba(32,201,151,0.4),
+            rgba(255, 255, 255, 0) 100%);
+}
+
+.lole-background.pink.gradient.background{
+    background: linear-gradient(
+            180deg,
+            rgba(214,51,132,0.3),
+            rgba(255, 255, 255, 0) 100%);
+}
+
+.lole-background.cyan.gradient.background{
+    background: linear-gradient(
+            180deg,
+            rgba(23,162,184,0.3),
+            rgba(255, 255, 255, 0) 100%);
+}
+
+/*color 色彩背景*/
+.lole-background.primary.color.background{
+    background-color: rgba(249,204,226,0.3);
+}
+.lole-background.orange.color.background{
+    background-color: rgba(253,126,20,0.15);
+}
+.lole-background.red.color.background{
+    background-color: rgba(253,53,69,0.15);
+}
+
+.lole-background.yellow.color.background{
+    background-color: rgba(250,219,20,0.15);
+}
+
+.lole-background.green.color.background{
+    background-color: rgba(82,196,26,0.1);
+}
+
+.lole-background.indigo.color.background{
+    background-color: rgba(102,16,242,0.1);
+}
+
+.lole-background.purple.color.background{
+    background-color: rgba(111,66,193,0.2);
+}
+
+.lole-background.teal.color.background{
+    background-color: rgba(32,201,151,0.1);
+}
+
+.lole-background.pink.color.background{
+    background-color: rgba(214,51,132,0.15);
+}
+
+.lole-background.cyan.color.background{
+    background-color: rgba(23,162,184,0.1);
+}
+
+.lole-background.white.color.background{
+    background-color: rgba(255, 255, 255,1);
+}
+
+.lole-background.sky.color.background{
+    background-color: rgba(94, 185, 240,0.2);
+}
+
+.lole-background.leaf.color.background{
+    background-color: rgba(124, 183, 152,0.5);
+}
+
+/*video*/
+.lole-background.video.background{
+    position: relative;
+    overflow: hidden;
+}
+
+
+.lole-background.video.background .container{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.lole-background.overlay.video.background:after{
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(30, 34, 40, 0.4);
+    z-index: 1;
+}
+
+.lole-background.overlay.gradient.video.background{
+    opacity: 0.4;
+    background: linear-gradient(120deg, #542461 20%, #332487 100%) !important;
+}
+
+/*关闭容器和拖动条，使其完全融入背景*/
+.video-wrapper video::-webkit-media-slider-thumb {
+    display: none !important;
+}
+
+.video-wrapper video::-webkit-media-slider-container {
+    display: none !important;
+}
+
+/*比例*/
+.lole-background.ratio.video.background {
+    position: relative;
+    width: 100%;
+}
+
+.lole-background.ratio.video.background::before {
+    display: block;
+    padding-top: var(--bs-aspect-ratio);
+    content: "";
+}
+
+.lole-background.ratio.video.background>* {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*缩放比例*/
+.lole-background.ratio.ratio-1x1.video.background {
+    --bs-aspect-ratio: 100%;
+}
+
+.lole-background.ratio.ratio-4x3.video.background {
+    --bs-aspect-ratio: calc(3 / 4 * 100%);
+}
+
+.lole-background.ratio.ratio-16x9.video.background {
+    --bs-aspect-ratio: calc(9 / 16 * 100%);
+}
+
+.lole-background.ratio.ratio-21x9.video.background {
+    --bs-aspect-ratio: calc(9 / 21 * 100%);
+}
