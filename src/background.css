@@ -247,6 +247,10 @@
 .lole-background.leaf.color.background{
     background-color: rgba(124, 183, 152,0.5);
 }
+.lole-background.gray.color.background{
+    background-color: rgba(246, 247, 249,1);
+}
+
 
 /*video*/
 .lole-background.video.background{

@@ -592,7 +592,7 @@ react和vue中可以直接使用标签包裹的形式进入加载状态
     box-shadow: none;
     border: 1px solid #D4D4D5;
 }
-.lole-zone.attached:not(.zone) + .ui.attached.zone:not(.top) {
+.lole-zone.attached:not(.zone) + .lole-zone.attached.zone:not(.top) {
     border-top: none;
 }
 

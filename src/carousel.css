@@ -1,0 +1,76 @@
+.lole-carousel.carousel{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    display: block;
+}
+
+
+.lole-carousel.carousel .wrapper{
+    display: flex;
+    flex: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.lole-carousel.carousel .wrapper > *{
+    width: 100%;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.lole-carousel.carousel .wrapper.transitionTime{
+    transition: transform 0.5s ease;
+}
+
+.lole-carousel.carousel .dots-wrapper{
+    position: absolute;
+    display: flex;
+}
+
+.lole-carousel.carousel .dots-wrapper.bottom{
+    bottom: 15px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+
+.lole-carousel.carousel .dots-wrapper.top{
+    top:15px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.lole-carousel.carousel .dots-wrapper.right{
+    right: 15px;
+    top:50%;
+    transform-origin:100% 100%;
+    transform: rotate(90deg) translate(50%);
+}
+
+.lole-carousel.carousel .dots-wrapper.left{
+    left: 15px;
+    top:50%;
+    transform-origin:0 0;
+    transform: rotate(90deg) translate(-50%);
+}
+
+.lole-carousel.carousel .dots-wrapper .dot{
+    display: block;
+    background-color: #fff;
+    opacity: 0.3;
+    width: 16px;
+    height: 3px;
+    border-radius: 1px;
+    margin: 0 2px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.lole-carousel.carousel .dots-wrapper .dot.action{
+    width: 24px;
+    opacity: 0.9;
+}
+

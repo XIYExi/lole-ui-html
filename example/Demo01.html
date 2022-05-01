@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lole-UI 原生 Demo01</title>
+    <link rel="stylesheet" href="../src/index.css">
+    <link rel="stylesheet" href="../src/demo01.css">
+    <link rel="stylesheet" href="../src/design.css">
+    <link rel="stylesheet" href="../src/carousel.css">
+
+</head>
+<body>
+
+<div class="content-wrapper">
+
+    <!--首页背景滚动视差-->
+    <section class="lole-background overlay-400 img background"
+             style="background-image: url('../assets/bg/bg2.png')">
+        <div class="lole-zone basic center aligned zone pt-21 pb-22" style="z-index: 1">
+            <h3 class="lole-header header mb-12 text-white">Hello! Welcome to use lole</h3>
+            <h1 class="lole-header header mb-7 text-white">Love Letter UI Basic Example</h1>
+            <h1 class="lole-header header pt-12 mb-8">
+                <a href="http://lole.feifeilong.work" target="_blank"
+                   class="lole-typography hover typography text-white">Love Letter UI</a>
+            </h1>
+        </div>
+    </section>
+
+    <!--原情感专家模块-->
+    <section class="wrapper bg-light angled upper-end lower-end mb-18" style="background: rgba(249,204,226,0.1)">
+        <div class="lole-zone basic zone">
+            <div class="lole-grid grid pb-14">
+                <!--图片-->
+                <div class="row">
+                    <div class="col mt-n22">
+                        <!--由于原图尺寸问题，选择style强行拉伸图片尺寸，使用模板请替换尺寸合适的图片-->
+                        <img class="lole-image rounded centered image" src="../assets/meimei.jpg" alt=""
+                             style="width: 70%;height: 70vh;"/>
+                    </div>
+                </div>
+                <!--图片下面的bar-->
+                <div class="lole-grid centered grid mx-auto">
+                    <!--图片下方的卡片条-->
+                    <!--调整padding(p-*)之后需要修改margin-top(mt-n*)大小-->
+                    <div class="lole-background img background mt-n16 p-12 r-3"
+                             style="background-image: url('../assets/bg/bg2.png')">
+                            <!--card里面写什么完全自定义,甚至可以用其他的替换cards-->
+                            <div class="col">
+                                <div class="lole-grid equal width grid">
+                                    <div class="row">
+                                        <div class="col px-6">
+                                            <div class="lole-statistic listener statistic">
+                                                <div class="value">
+                                                    7,829
+                                                </div>
+                                                <div class="label">妹妹 </div>
+                                            </div>
+                                        </div>
+                                        <div class="col px-6">
+                                            <div class="lole-statistic listener statistic">
+                                                <div class="value">
+                                                    7,829
+                                                </div>
+                                                <div class="label">妹妹 </div>
+                                            </div>
+                                        </div>
+                                        <div class="col px-6">
+                                            <div class="lole-statistic listener statistic">
+                                                <div class="value">
+                                                    5,000
+                                                </div>
+                                                <div class="label">妹妹 </div>
+                                            </div>
+                                        </div>
+                                        <div class="col px-6">
+                                            <div class="lole-statistic listener statistic">
+                                                <div class="value">
+                                                    5,550
+                                                </div>
+                                                <div class="label">妹妹 </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+            <div class="lole-grid grid mt-12">
+                <div class="row">
+                    <!--左边的描述-->
+                    <div class="twelve wide col">
+                        <div class="lole-zone basic zone ms-22 mt-7">
+                            <div class="col">
+                                <!--左部-->
+                                <div>
+                                    <h1 class="lole-header header mb-3">lole 你的情感专家</h1>
+                                    <p class="mb-12">
+                                        <span class="lole-typography primary  underline typography" style="font-size: 1.5em">最遥远的陌生人</span>
+                                        莫过于昨天发生的事情今天却能用轻浮的玩笑话搪塞过去
+                                    </p>
+                                    <!--左部四宫格-->
+                                    <div class="lole-grid grid">
+                                        <div class="col">
+                                            <div class="lole-grid grid">
+                                                <div class="row mb-2">
+                                                    <div class="twelve wide col">
+                                                        <!--里面随意填充，但是保证每一行(row)中col的宽度合计为12列(12 wide)-->
+                                                        <h2 class="lole-header header">
+                                                            <img class="lole-image circular image" src="../assets/meimei.jpg">
+                                                            <div class="container">
+                                                                <span style="font-size: 0.8em">妹妹</span>
+                                                                <div class="sub header text-black-50">嘶哈嘶哈</div>
+                                                                <div class="sub header text-black-50">嘶哈嘶哈</div>
+                                                            </div>
+                                                        </h2>
+                                                    </div>
+                                                    <div class="twelve wide col">
+                                                        <h2 class="lole-header header">
+                                                            <img class="lole-image circular image" src="../assets/meimei.jpg">
+                                                            <div class="container">
+                                                                <span style="font-size: 0.8em">妹妹</span>
+                                                                <div class="sub header text-black-50">嘶哈嘶哈</div>
+                                                                <div class="sub header text-black-50">嘶哈嘶哈</div>
+                                                            </div>
+                                                        </h2>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="twelve wide col">
+                                                        <h2 class="lole-header header">
+                                                            <img class="lole-image circular image" src="../assets/meimei.jpg">
+                                                            <div class="container">
+                                                                <span style="font-size: 0.8em">妹妹</span>
+                                                                <div class="sub header text-black-50">嘶哈嘶哈</div>
+                                                                <div class="sub header text-black-50">嘶哈嘶哈</div>
+                                                            </div>
+                                                        </h2>
+                                                    </div>
+                                                    <div class="twelve wide col">
+                                                        <h2 class="lole-header header">
+                                                            <img class="lole-image circular image" src="../assets/meimei.jpg">
+                                                            <div class="container">
+                                                                <span style="font-size: 0.8em">妹妹</span>
+                                                                <div class="sub header text-black-50">嘶哈嘶哈</div>
+                                                                <div class="sub header text-black-50">嘶哈嘶哈</div>
+                                                            </div>
+                                                        </h2>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--通过grid和image拼接而成，需更具自己提供的图片修改距离，也可以不适用图片直接替换成其余组件-->
+                    <div class="twelve wide col">
+                        <div class="lole-grid grid me-22">
+                            <div class="row">
+                                <div class="six wide col align-self-end offset-md-2" >
+                                    <img class="lole-image rounded image" src="../assets/img/g1.jpg"
+                                         srcset="../assets/img/g1@2x.jpg 2x">
+                                </div>
+                                <div class="nine wide col align-self-end">
+                                    <img class="lole-image rounded image" src="../assets/img/g2.jpg"
+                                         srcset="../assets/img/g2@2x.jpg 2x">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="nine wide col offset-md-1">
+                                    <img class="lole-image rounded image" src="../assets/img/g3.jpg"
+                                         srcset="../assets/img/g3@2x.jpg 2x">
+                                </div>
+                                <div class="six wide col align-self-start">
+                                    <img class="lole-image rounded image" src="../assets/img/g4.jpg"
+                                         srcset="../assets/img/g4@2x.jpg 2x">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lole-zone basic zone mt-17 mx-22">
+                <div>
+                    <h1 class="lole-header header mb-3">How We Do It?</h1>
+                    <p class="mb-10">
+                        <span class="lole-typography yellow  underline typography" style="font-size: 1.5em">红酒配电影</span>
+                        莫过于昨天发生的事情今天却能用轻浮的玩笑话搪塞过去
+                    </p>
+
+                    <div class="lole-grid equal width grid">
+                        <div class="row">
+                            <div class="col">
+                                <div class="lole-zone basic zone">
+                                    <!--tiny尺寸略微显大，手动调小-->
+                                    <div class="lole-divider horizontal text divider">
+                                        <div class="inner">
+                                            <img class="lole-image centered tiny circular image" src="../assets/meimei.jpg">
+                                        </div>
+                                    </div>
+                                    <h3 class="lole-header center aligned header">Concept</h3>
+                                    <p>
+                                        Nulla vitae elit libero elit non porta gravida eget metus cras.
+                                        Aenean eu leo quam. Pellentesque ornare.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="lole-zone basic zone">
+                                    <!--tiny尺寸略微显大，手动调小-->
+                                    <div class="lole-divider horizontal text divider">
+                                        <div class="inner">
+                                            <img class="lole-image centered tiny circular image" src="../assets/meimei.jpg">
+                                        </div>
+                                    </div>
+                                    <h3 class="lole-header center aligned header">Concept</h3>
+                                    <p>
+                                        Nulla vitae elit libero elit non porta gravida eget metus cras.
+                                        Aenean eu leo quam. Pellentesque ornare.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="lole-zone basic zone">
+                                    <!--tiny尺寸略微显大，手动调小-->
+                                    <div class="lole-divider horizontal text divider">
+                                        <div class="inner">
+                                            <img class="lole-image centered tiny circular image" src="../assets/meimei.jpg">
+                                        </div>
+                                    </div>
+                                    <h3 class="lole-header center aligned header">Concept</h3>
+                                    <p>
+                                        Nulla vitae elit libero elit non porta gravida eget metus cras.
+                                        Aenean eu leo quam. Pellentesque ornare.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="lole-zone basic zone">
+                                    <!--tiny尺寸略微显大，手动调小-->
+                                    <div class="lole-divider horizontal text divider">
+                                        <div class="inner">
+                                            <img class="lole-image centered tiny circular image" src="../assets/meimei.jpg">
+                                        </div>
+                                    </div>
+                                    <h3 class="lole-header center aligned header">Concept</h3>
+                                    <p>
+                                        Nulla vitae elit libero elit non porta gravida eget metus cras.
+                                        Aenean eu leo quam. Pellentesque ornare.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--第二段滚动视差-->
+    <section class="lole-background overlay-400 img background"
+             style="background-image: url('../assets/bg/bg2.png')">
+        <div class="lole-zone basic center aligned zone pt-16 pb-12" style="z-index: 1">
+            <h1 class="lole-header header text-white">Love Letter UI</h1>
+            <div class="lole-carousel carousel ">
+                <div class="wrapper">
+                    <div class="mb-12">
+                        <p style="font-size: 1.2em">“Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum ligula porta felis euismod semper. Cras justo odio consectetur adipiscing dapibus.”</p>
+                        <h2 class="lole-header header">
+                            <img class="lole-image circular image" src="../assets/meimei.jpg">
+                            <div class="container">
+                                妹妹
+                                <div class="sub header">可爱可爱</div>
+                            </div>
+                        </h2>
+                    </div>
+                </div>
+                <div class="dots-wrapper bottom">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--三组图片-->
+    <section class="bg-light mt-17 pb-12">
+        <div class="lole-zone basic zone mx-22">
+            <h1 class="lole-header header">啊吧啊吧</h1>
+            <p class="mb-12">
+                <span class="lole-typography sky underline typography" style="font-size: 1.5em">最遥远的陌生人</span>
+                莫过于昨天发生的事情今天却能用轻浮的玩笑话搪塞过去
+            </p>
+
+            <div class="lole-grid grid">
+                <div class="stretched row">
+                    <div class="ten wide col">
+                        <div class="m-6 pb-9">
+                            <div class="image">
+                                <img class="lole-image rounded image" alt="" src="../assets/img/rp1.jpg" srcset="../assets/img/rp1@2x.jpg 2x">
+                            </div>
+                            <h2 class="lole-header sub header text-purple">Stationary</h2>
+                            <h3 class="lole-header header mt-4">Ipsum Ultricies Cursus</h3>
+                        </div>
+
+                        <div class="m-6">
+                            <div class="image">
+                                <img class="lole-image rounded image" alt="" src="../assets/img/rp3.jpg" srcset="../assets/img/rp3@2x.jpg 2x">
+                            </div>
+                            <h2 class="lole-header sub header text-red">Stationary</h2>
+                            <h3 class="lole-header header mt-4">Ipsum Ultricies Cursus</h3>
+                        </div>
+
+                    </div>
+                    <div class="fourteen wide col">
+                        <div class="m-6 pt-13">
+                            <div class="image">
+                                <img class="lole-image rounded image" alt="" src="../assets/img/rp2.jpg" srcset="../assets/img/rp2@2x.jpg 2x">
+                            </div>
+                            <h2 class="lole-header sub header text-yellow">Stationary</h2>
+                            <h3 class="lole-header header mt-4">Ipsum Ultricies Cursus</h3>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!--背景长条-->
+    <section class="lole-background gray color background">
+        <div class="lole-zone basic zone mx-22 mt-12 pb-17">
+            <div class="lole-grid grid">
+                <div class="row">
+                    <div class="eight wide col">
+                        <h1 class="lole-header header mb-4 pt-16">
+                            <p class="m-0">Trusted by over</p> 300+ clients
+                        </h1>
+                        <p class="text-black-50 mb-0" style="font-size: 1.3em">
+                            We
+                            <span class="lole-typography leaf style-1 underline-3 typography">bring solutions</span>
+                            to make life easier for our customers.</p>
+                    </div>
+
+                    <!--8组广告图片，上下各四个排列-->
+                    <div class="sixteen wide col">
+                        <div class="lole-grid equal width grid pt-12">
+                            <div class="row">
+                                <div class="col">
+                                    <img src="../assets/img/b/z1.png" class="lole-image small image">
+                                </div>
+                                <div class="col">
+                                    <img src="../assets/img/b/z2.png" class="lole-image small image">
+                                </div>
+                                <div class="col">
+                                    <img src="../assets/img/b/z3.png" class="lole-image small image">
+                                </div>
+                                <div class="col">
+                                    <img src="../assets/img/b/z4.png" class="lole-image small image">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <img src="../assets/img/b/z5.png" class="lole-image small image">
+                                </div>
+                                <div class="col">
+                                    <img src="../assets/img/b/z6.png" class="lole-image small image">
+                                </div>
+                                <div class="col">
+                                    <img src="../assets/img/b/z7.png" class="lole-image small image">
+                                </div>
+                                <div class="col">
+                                    <img src="../assets/img/b/z8.png" class="lole-image small image">
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="wrapper bg-light angled upper-end lower-end">
+        <div class="lole-zone basic zone mx-22">
+            <div class="lole-grid grid mt-11">
+                <div class="row">
+                    <div class="twelve wide col">
+                        <div class="pt-14">
+                            <h1 class="lole-header header mb-5">Our Pricing</h1>
+                            <div class="mx-2">
+                                <p class="text-black-50" style="font-size: 1.1em">
+                                    We offer
+                                    <span class="lole-typography underline typography">great prices</span>
+                                    , premium and quality products for your business.</p>
+                                <p class="text-black-50" style="font-size: 0.9em">
+                                    Enjoy a
+                                    <a href="#" class="lole-typography hover typography">free 30-day trial</a>
+                                    and experience the full service.
+                                <p class="text-black-50" style="font-size: 0.9em">No credit card required!</p>
+
+                                <button class="lole-btn circle primary lg button mt-8">See All Price</button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--card的性质导致不会占满剩余空间，通过style强协调宽度，再用margin和padding改位置-->
+                    <div class="six wide col p-4">
+                        <div class="lole-card link raised card" style="width: 90%;height: 100%">
+                            <div class="content mt-6">
+                                <div class="header pb-5">
+                                    <div class="prices">
+                                        <div class="show-price ps-16">
+                                            <span class="price-currency">$</span>
+                                            <span class="price-value">19</span>
+                                            <span class="price-duration">month</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="description ms-14">
+                                    <div class="mt-3 mb-3 ms-5">
+                                        <h4 class="lole-header header mt-2 mb-3">Premium Plan</h4>
+                                    </div>
+                                    <div class="mt-3 mb-3">
+                                        <p><icon style="color: rgb(249,204,226)" class="fa fa-check-circle me-5"></icon>5 Projects</p>
+                                    </div>
+                                    <div class="mt-3 mb-3">
+                                        <p><icon style="color: rgb(249,204,226)" class="fa fa-check-circle me-5"></icon>100K API Access</p>
+                                    </div>
+                                    <div class="mt-3 mb-3">
+                                        <p><icon style="color: rgb(249,204,226)" class="fa fa-check-circle me-5"></icon>200MB Storage</p>
+                                    </div>
+                                    <div class="mt-3 mb-3">
+                                        <p><icon style="color: rgb(249,204,226)" class="fa fa-check-circle me-5"></icon>Weekly Reports</p>
+                                    </div>
+                                    <div class="mt-3 mb-3">
+                                        <p><icon class="fa fa-times-circle text-red me-5"></icon> 7/24 Support</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="extra content">
+                                <div class="center aligned">
+                                    <button class="lole-btn circle primary button">Choose Plan</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="six wide col">
+                        <div class="lole-card link raised card" style="width: 90%;height: 100%">
+                            <div class="content mt-8">
+                                <div class="header pb-5">
+                                    <div class="prices">
+                                        <div class="show-price ps-16">
+                                            <span class="price-currency">$</span>
+                                            <span class="price-value">49</span>
+                                            <span class="price-duration">month</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="description ms-14">
+                                    <div class="mt-3 mb-3 ms-5">
+                                        <h4 class="lole-header header mt-2 mb-3">Corporate Plan</h4>
+                                    </div>
+                                    <div class="mt-3 mb-3">
+                                        <p><icon style="color: rgb(249,204,226)" class="fa fa-check-circle me-5"></icon>20 Projects</p>
+                                    </div>
+                                    <div class="mt-3 mb-3">
+                                        <p><icon style="color: rgb(249,204,226)" class="fa fa-check-circle me-5"></icon>300K API Access</p>
+                                    </div>
+                                    <div class="mt-3 mb-3">
+                                        <p><icon style="color: rgb(249,204,226)" class="fa fa-check-circle me-5"></icon>500MB Storage</p>
+                                    </div>
+                                    <div class="mt-3 mb-3">
+                                        <p><icon style="color: rgb(249,204,226)" class="fa fa-check-circle me-5"></icon>Weekly Reports</p>
+                                    </div>
+                                    <div class="mt-3 mb-3">
+                                        <p><icon style="color: rgb(249,204,226)" class="fa fa-check-circle me-5"></icon> 7/24 Support</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="extra content">
+                                <div class="center aligned">
+                                    <button class="lole-btn circle primary button">Choose Plan</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <section class="wrapper bg-light angled upper-end lower-end">
+        <div class="lole-zone basic zone mx-22 mt-16 pb-8">
+            <div class="lole-grid grid mb-14">
+                <div class="row">
+                    <div class="six wide col">
+                        <div class="m-3 pt-2">
+                            <img src="../assets/img/g5.jpg" srcset="../assets/img/g5@2x.jpg 2x" class="lole-image rounded image"/>
+                        </div>
+                    </div>
+                    <div class="six wide col">
+                        <div class="lole-zone primary inverted center aligned zone">
+                            <h1 class="lole-header header text-white">5000+</h1>
+                            <p class="mb-0">Satisfied Customers</p>
+                        </div>
+                        <div>
+                            <img src="../assets/img/g6.jpg" srcset="../assets/img/g6@2x.jpg 2x" class="lole-image rounded image"/>
+                        </div>
+                    </div>
+                    <div class="two wide col"></div>
+
+                    <div class="ten wide col">
+
+                        <h1 class="lole-header header">Let’s Talk</h1>
+                        <p class="text-black-50" style="font-size: 1.05em;line-height: 1.6;font-weight: 500">
+                            Let’s make something great together. We are trusted by over 5000+ clients. Join them by using our services and grow your business.
+                        </p>
+                        <p class="text-black-50" style="font-size: 1.05em;line-height: 1.6;font-weight: 500">
+                            Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas faucibus mollis interdum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                        </p>
+                        <button class="lole-btn circle primary button mt-5">Join Us</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="bg-dark">
+        <div class="lole-zone basic zone mx-22 text-white-50 pt-15 pb-15" >
+            <div class="lole-grid equal width grid">
+                <div class="row">
+                    <div class="col">
+                        <div class="mt-8">
+                            <h2 class="lole-header header text-white">Love Letter UI</h2>
+                            <div>
+                                <p>©2022 lole UI</p>
+                                <p>All rights reserved.</p>
+                            </div>
+                            <div>
+                                <icon class="fa fa-github pe-2"></icon>
+                                <icon class="fa fa-facebook pe-2"></icon>
+                                <icon class="fa fa-qq pe-2"></icon>
+                                <icon class="fa fa-telegram pe-2"></icon>
+                                <icon class="fa fa-weibo pe-2"></icon>
+                                <icon class="fa fa-twitter pe-2"></icon>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="mt-8">
+                            <h3 class="lole-header header text-white">Get in Touch</h3>
+                            <div>
+                                <p>Moonshine St. 14/05</p>
+                                <p>Light City, London,</p>
+                                <p>United Kingdom</p>
+                            </div>
+                            <div>
+                                <p>info@email.com</p>
+                                <p>+86 123-1231-2312</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="col">
+                        <div class="mt-8">
+                            <h3 class="lole-header header text-white">Learn More</h3>
+                            <p>About Us</p>
+                            <p>Our Story</p>
+                            <p>Projects</p>
+                            <p>Terms of Use</p>
+                            <p>Privacy Policy</p>
+                        </div>
+
+                    </div>
+                    <div class="col">
+                        <div class="mt-8">
+                            <h3 class="lole-header header text-white">Our Newsletter</h3>
+                            <p>Subscribe to our newsletter to get our news & deals delivered to you.</p>
+                            <p>暂未开放</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+
+
+</body>
+</html>

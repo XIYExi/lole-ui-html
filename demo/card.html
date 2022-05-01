@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lole-UI原生 Card卡片</title>
+    <link rel="stylesheet" href="../src/index.css">
+
+    <style>
+        legend{
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        fieldset{
+            margin-top: 5em;
+            border-style:none!important;
+            margin-left: 10em;
+            margin-right: 10em;
+        }
+    </style>
+</head>
+<body>
+<h1 class="lole-header center aligned header">lole-UI原生 Card卡片</h1>
+
+
+<fieldset>
+    <legend><h2 class="lole-header header">基本使用</h2> </legend>
+    <div class="lole-card card">
+        <div class="image">
+            <img src="../assets/meimei.jpg">
+        </div>
+        <div class="content">
+            <a href="#" class="header">Xiye</a>
+            <div class="meta">
+                <span class="date">2013年加入</span>
+            </div>
+            <div class="description">
+                Kristy is an art director living in New York.
+            </div>
+        </div>
+        <div class="extra content">
+            <a><i class="fa fa-user icon"></i> 22 个好友 </a>
+        </div>
+    </div>
+
+
+    <div class="lole-card card">
+        <div class="content">
+            <div class="right floated meta">14h</div>
+            <img class="lole-image avatar image" src="../assets/meimei.jpg"> Xiye </div>
+        <div class="image">
+            <div class="lole-placeholder placeholder">
+                <div class="image" style="height: 250px"></div>
+            </div>
+        </div>
+        <div class="content">
+    <span class="right floated">
+      <i class="heart outline like icon"></i>
+      17 likes
+    </span>
+            <i class="comment icon"></i>
+            3 comments
+        </div>
+        <div class="extra content">
+            <a><i class="fa fa-user icon"></i> 22 个好友 </a>
+        </div>
+    </div>
+</fieldset>
+
+
+<fieldset>
+    <legend><h2 class="lole-header header">卡片组</h2></legend>
+    <div class="lole-card link cards">
+        <div class="card">
+            <div class="image">
+                <img src="../assets/meimei.jpg">
+            </div>
+            <div class="content">
+                <div class="header">Matt Giampietro</div>
+                <div class="meta">
+                    <a>好友</a>
+                </div>
+                <div class="description">
+                    Matthew is an interior designer living in New York.
+                </div>
+            </div>
+            <div class="extra content">
+                <span class="right floated">2013年加入 </span>
+                <span><i class="fa fa-user icon"></i> 75 个好友 </span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="../assets/meimei.jpg">
+            </div>
+            <div class="content">
+                <div class="header">Molly</div>
+                <div class="meta">
+                    <span class="date">Coworker</span>
+                </div>
+                <div class="description">
+                    Molly is a personal assistant living in Paris.
+                </div>
+            </div>
+            <div class="extra content">
+                <span class="right floated">2011年加入 </span>
+                <span><i class="fa fa-user icon"></i> 35 个好友 </span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="../assets/meimei.jpg">
+            </div>
+            <div class="content">
+                <div class="header">Elyse</div>
+                <div class="meta">
+                    <a>Coworker</a>
+                </div>
+                <div class="description">
+                    Elyse is a copywriter working in New York.
+                </div>
+            </div>
+            <div class="extra content">
+                <span class="right floated">2014年加入 </span>
+                <span><i class="fa fa-user icon"></i> 151 个好友 </span>
+            </div>
+        </div>
+    </div>
+</fieldset>
+
+
+<fieldset>
+    <legend><h2 class="lole-header header">内容</h2> </legend>
+    <div class="lole-card card">
+        <div class="content">
+            <div class="header">Project Timeline</div>
+        </div>
+        <div class="content">
+            <h4 class="lole-header sub header">活动</h4>
+            <div class="lole-placeholder placeholder">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="extra content">
+            <button class="lole-btn button">Join Project</button>
+        </div>
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend><h2 class="lole-header header">标题</h2> </legend>
+    <div class="lole-card cards">
+        <div class="card">
+            <div class="content">
+                <div class="header">Elliot Fu</div>
+                <div class="meta">好友</div>
+                <div class="description">Elliot Fu是一名来自纽约的电影工作者。 </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <div class="header">Veronika Ossi</div>
+                <div class="meta">好友</div>
+                <div class="description">Veronika Ossi是一名居住在纽约的舞美师，她喜爱小猫、音乐和派对。 </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <div class="header">Jenny Hess</div>
+                <div class="meta">好友</div>
+                <div class="description">Jenny是一名在该新学校学习媒体管理的在校生。 </div>
+            </div>
+        </div>
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend><h2 class="lole-header header">Meta</h2> </legend>
+    <div class="lole-card card">
+        <div class="content">
+            <div class="header">可爱的小狗</div>
+            <div class="meta">
+                <span>2 天前</span>
+                <a>动物</a>
+            </div>
+            <p></p>
+        </div>
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend><h2 class="lole-header header">审批</h2> </legend>
+    <div class="lole-card card">
+        <div class="content">
+            <i class="right floated like icon"></i>
+            <i class="right floated star icon"></i>
+            <div class="header">可爱的小狗</div>
+            <div class="description">
+               <div class="lole-placeholder placeholder">
+                   <div class="line"></div>
+                   <div class="line"></div>
+                   <div class="line"></div>
+                   <div class="line"></div>
+               </div>
+            </div>
+        </div>
+        <div class="extra content">
+    <span class="left floated like">
+      <i class="fa fa-heart-o icon"></i>
+      Like
+    </span>
+            <span class="right floated star">
+      <i class="fa fa-star icon"></i>
+      Favorite
+    </span>
+        </div>
+    </div>
+
+</fieldset>
+
+<fieldset>
+    <legend><h2 class="lole-header header">描述</h2> </legend>
+    <div class="lole-card card">
+        <div class="content">
+            <div class="header">可爱的小狗</div>
+            <div class="meta">2 天前</div>
+            <div class="description">
+                <p>萌萌狗有各种形状和大小。有的小狗因为呆萌的表情惹人疼爱，有的则因为五短身材令人怜惜。甚至还有一些会因为巨大的体型也会显得傻缺。</p>
+                <p>Many people also have their own barometers for what makes a cute dog.</p>
+            </div>
+        </div>
+    </div>
+</fieldset>
+
+ <fieldset>
+     <legend><h2 class="lole-header header">流式布局</h2></legend>
+     <div class="lole-grid three col grid">
+         <div class="col">
+             <div class="lole-card fluid card">
+                 <div class="image">
+                     <img src="../assets/meimei.jpg">
+                 </div>
+                 <div class="content">
+                     <a class="header">妹妹</a>
+                 </div>
+             </div>
+         </div>
+         <div class="col">
+             <div class="lole-card fluid card">
+                 <div class="image">
+                     <img src="../assets/meimei.jpg">
+                 </div>
+                 <div class="content">
+                     <a class="header">妹妹</a>
+                 </div>
+             </div>
+         </div>
+         <div class="col">
+             <div class="lole-card fluid card">
+                 <div class="image">
+                     <img src="../assets/meimei.jpg">
+                 </div>
+                 <div class="content">
+                     <a class="header">妹妹</a>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </fieldset>
+
+<fieldset>
+    <legend><h2 class="lole-header header">居中</h2></legend>
+    <div class="lole-card centered card">
+        <div class="image">
+            <img src="../assets/meimei.jpg">
+        </div>
+        <div class="content">
+            <a class="header">Elyse</a>
+        </div>
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend><h2 class="lole-header header">提升</h2> </legend>
+    <div class="lole-card link raised card">
+        <div class="content">
+            <div class="header">可爱的小狗</div>
+            <div class="meta">
+                <span class="category">动物</span>
+            </div>
+            <div class="description">
+                <div class="lole-placeholder placeholder">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+        <div class="extra content">
+            <div class="right floated author">
+                <img class="lole-image avatar image" src="../assets/meimei.jpg"> Matt
+            </div>
+        </div>
+    </div>
+</fieldset>
+
+
+<fieldset>
+    <legend><h2 class="lole-header header">文本对齐</h2> </legend>
+    <div class="lole-card card">
+        <div class="content">
+            <div class="center aligned header">Jenny Hess</div>
+            <div class="center aligned description">
+                <p>Jenny是一名在该新学校学习媒体管理的在校生。</p>
+            </div>
+        </div>
+        <div class="extra content">
+            <div class="center aligned author">
+                <img class="lole-image avatar image"
+                     src="../assets/meimei.jpg"> Jenny
+            </div>
+        </div>
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend>排列</legend>
+    <div class="lole-card four cards">
+        <div class="card">
+            <div class="image">
+                <div class="lole-placeholder placeholder">
+                    <div class="image"></div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <div class="lole-placeholder placeholder">
+                    <div class="image"></div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <div class="lole-placeholder placeholder">
+                    <div class="image"></div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <div class="lole-placeholder placeholder">
+                    <div class="image"></div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <div class="lole-placeholder placeholder">
+                    <div class="image"></div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <div class="lole-placeholder placeholder">
+                    <div class="image"></div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <div class="lole-placeholder placeholder">
+                    <div class="image"></div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <div class="lole-placeholder placeholder">
+                    <div class="image"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</fieldset>
+
+
+
+
+</body>
+</html>
